@@ -18,61 +18,66 @@
         />
       </NuxtLink>
 
-      <NavigationMenu class="hidden md:flex">
-        <NavigationMenuList>
-          <NavigationMenuItem
-            v-for="item in navigationItems"
-            :key="item.labelKey"
-          >
-            <NavigationMenuTrigger
-              v-if="item.items"
-              class="text-sm font-medium text-foreground"
+      <div class="flex items-center gap-2">
+        <NavigationMenu class="hidden md:flex">
+          <NavigationMenuList>
+            <NavigationMenuItem
+              v-for="item in navigationItems"
+              :key="item.labelKey"
             >
-              {{ $t(item.labelKey) }}
-            </NavigationMenuTrigger>
+              <NavigationMenuTrigger
+                v-if="item.items"
+                class="text-sm font-medium text-foreground"
+              >
+                {{ $t(item.labelKey) }}
+              </NavigationMenuTrigger>
 
-            <NavigationMenuLink
-              v-else
-              :href="item.href"
-              class="text-sm font-medium text-foreground"
-            >
-              {{ $t(item.labelKey) }}
-            </NavigationMenuLink>
+              <NavigationMenuLink
+                v-else
+                :href="item.href"
+                class="text-sm font-medium text-foreground"
+              >
+                {{ $t(item.labelKey) }}
+              </NavigationMenuLink>
 
-            <NavigationMenuContent v-if="item.items">
-              <ul class="grid w-70 gap-2 p-3">
-                <li
-                  v-for="subItem in item.items"
-                  :key="subItem.labelKey"
-                >
-                  <NavigationMenuLink :href="subItem.href">
-                    <div class="p-2">
-                      <div class="text-sm font-medium leading-none">
-                        {{ $t(subItem.labelKey) }}
+              <NavigationMenuContent v-if="item.items">
+                <ul class="grid w-70 gap-2 p-3">
+                  <li
+                    v-for="subItem in item.items"
+                    :key="subItem.labelKey"
+                  >
+                    <NavigationMenuLink :href="subItem.href">
+                      <div class="p-2">
+                        <div class="text-sm font-medium leading-none">
+                          {{ $t(subItem.labelKey) }}
+                        </div>
                       </div>
-                    </div>
-                  </NavigationMenuLink>
-                </li>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
 
-      <Sheet v-model:open="mobileMenuOpen">
-        <SheetTrigger as-child>
-          <Button
-            variant="ghost"
-            size="icon"
-            class="md:hidden"
-            :aria-label="$t('nav.openMenu')"
-          >
-            <Icon
-              name="Menu"
-              :size="24"
-            />
-          </Button>
-        </SheetTrigger>
+        <LanguageSwitcher class="hidden md:flex" />
+      </div>
+
+      <div class="flex items-center gap-2 md:hidden">
+        <LanguageSwitcher />
+        <Sheet v-model:open="mobileMenuOpen">
+          <SheetTrigger as-child>
+            <Button
+              variant="ghost"
+              size="icon"
+              :aria-label="$t('nav.openMenu')"
+            >
+              <Icon
+                name="Menu"
+                :size="24"
+              />
+            </Button>
+          </SheetTrigger>
 
         <SheetContent
           side="right"
@@ -147,7 +152,8 @@
             </template>
           </nav>
         </SheetContent>
-      </Sheet>
+        </Sheet>
+      </div>
     </nav>
   </header>
 </template>
