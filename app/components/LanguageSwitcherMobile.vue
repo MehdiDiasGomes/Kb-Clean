@@ -1,21 +1,11 @@
 <template>
-  <div
-    class="w-full px-4 py-3"
-    role="group"
-    :aria-label="$t('common.language')"
-  >
+  <div class="w-full px-4 py-3" role="group" :aria-label="$t('common.language')">
     <div class="mb-2 text-sm font-medium">
       {{ $t('common.language') }}
     </div>
     <!-- eslint-disable vuejs-accessibility/form-control-has-label -->
-    <Select
-      :model-value="currentLocale"
-      @update:model-value="switchLanguage"
-    >
-      <SelectTrigger
-        class="w-full"
-        :aria-label="$t('common.selectLanguage')"
-      >
+    <Select :model-value="currentLocale" @update:model-value="switchLanguage">
+      <SelectTrigger class="w-full" :aria-label="$t('common.selectLanguage')">
         <SelectValue>
           <span class="flex items-center gap-3">
             <span class="shrink-0 text-lg">
@@ -28,11 +18,7 @@
         </SelectValue>
       </SelectTrigger>
       <SelectContent>
-        <SelectItem
-          v-for="loc in allLocales"
-          :key="loc.code"
-          :value="loc.code"
-        >
+        <SelectItem v-for="loc in allLocales" :key="loc.code" :value="loc.code">
           <span class="flex items-center gap-3">
             <span class="shrink-0 text-lg">
               {{ loc.code === 'fr' ? '🇫🇷' : '🇬🇧' }}
@@ -61,9 +47,7 @@ const { locale, locales, setLocale } = useI18n<{ fr: object; en: object }>()
 
 const currentLocale = computed((): string => locale.value)
 
-const allLocales = computed(
-  () => locales.value as Array<{ code: string; name: string }>,
-)
+const allLocales = computed(() => locales.value as Array<{ code: string; name: string }>)
 
 const switchLanguage = (newLocale: string | number | null): void => {
   if (typeof newLocale === 'string') {

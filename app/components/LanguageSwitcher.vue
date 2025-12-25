@@ -1,21 +1,11 @@
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger as-child>
-      <Button
-        variant="ghost"
-        size="icon"
-        :aria-label="$t('common.selectLanguage')"
-      >
-        <Icon
-          name="Languages"
-          :size="20"
-        />
+      <Button variant="ghost" size="icon" :aria-label="$t('common.selectLanguage')">
+        <Icon name="Languages" :size="20" />
       </Button>
     </DropdownMenuTrigger>
-    <DropdownMenuContent
-      align="end"
-      class="w-54"
-    >
+    <DropdownMenuContent align="end" class="w-54">
       <DropdownMenuLabel>{{ $t('common.language') }}</DropdownMenuLabel>
       <DropdownMenuSeparator />
       <DropdownMenuItem
@@ -25,16 +15,8 @@
         @click="switchLanguage(loc.code)"
       >
         <span class="flex items-center gap-3">
-          <Icon
-            v-if="currentLocale === loc.code"
-            name="Check"
-            :size="16"
-            class="shrink-0"
-          />
-          <span
-            v-else
-            class="w-4 shrink-0"
-          />
+          <Icon v-if="currentLocale === loc.code" name="Check" :size="16" class="shrink-0" />
+          <span v-else class="w-4 shrink-0" />
           <span class="shrink-0 text-lg">
             {{ loc.code === 'fr' ? '🇫🇷' : '🇬🇧' }}
           </span>
@@ -62,9 +44,7 @@ const { locale, locales, setLocale } = useI18n<{ fr: object; en: object }>()
 
 const currentLocale = computed((): string => locale.value)
 
-const allLocales = computed(
-  () => locales.value as Array<{ code: string; name: string }>,
-)
+const allLocales = computed(() => locales.value as Array<{ code: string; name: string }>)
 
 const switchLanguage = (newLocale: string): void => {
   setLocale(newLocale as 'fr' | 'en')
