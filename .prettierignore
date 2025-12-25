@@ -29,3 +29,6 @@ bun.lock
 
 # OS
 .DS_Store
+
+# Shadcnui
+app/components/ui
