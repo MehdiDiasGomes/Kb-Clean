@@ -12,13 +12,15 @@
         />
       </Button>
     </DropdownMenuTrigger>
-    <DropdownMenuContent align="end">
+    <DropdownMenuContent
+      align="end"
+      class="w-54"
+    >
       <DropdownMenuLabel>{{ $t('common.language') }}</DropdownMenuLabel>
       <DropdownMenuSeparator />
       <DropdownMenuItem
         v-for="loc in allLocales"
         :key="loc.code"
-        :class="{ 'bg-accent': currentLocale === loc.code }"
         class="py-3"
         @click="switchLanguage(loc.code)"
       >
