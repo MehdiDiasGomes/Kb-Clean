@@ -5,38 +5,36 @@
         <NuxtImg src="/images/kb_clean_logo_v1.webp" :alt="$t('common.logoAlt')" width="200" height="100" />
       </NuxtLink>
 
-      <div class="flex items-center gap-2">
-        <NavigationMenu class="hidden md:flex">
-          <NavigationMenuList>
-            <NavigationMenuItem v-for="item in navigationItems" :key="item.labelKey">
-              <NavigationMenuTrigger v-if="item.items" class="text-sm font-medium text-foreground">
-                {{ $t(item.labelKey) }}
-              </NavigationMenuTrigger>
+      <NavigationMenu class="hidden md:flex">
+        <NavigationMenuList>
+          <NavigationMenuItem v-for="item in navigationItems" :key="item.labelKey">
+            <NavigationMenuTrigger v-if="item.items" class="text-sm font-medium text-foreground">
+              {{ $t(item.labelKey) }}
+            </NavigationMenuTrigger>
 
-              <NavigationMenuLink v-else :href="item.href" class="text-sm font-medium text-foreground">
-                {{ $t(item.labelKey) }}
-              </NavigationMenuLink>
+            <NavigationMenuLink v-else :href="item.href" class="text-sm font-medium text-foreground">
+              {{ $t(item.labelKey) }}
+            </NavigationMenuLink>
 
-              <NavigationMenuContent v-if="item.items">
-                <ul class="grid w-70 gap-2 p-3">
-                  <li v-for="subItem in item.items" :key="subItem.labelKey">
-                    <NavigationMenuLink :href="subItem.href">
-                      <div class="p-2">
-                        <div class="text-sm font-medium leading-none">
-                          {{ $t(subItem.labelKey) }}
-                        </div>
+            <NavigationMenuContent v-if="item.items">
+              <ul class="grid w-70 gap-2 p-3">
+                <li v-for="subItem in item.items" :key="subItem.labelKey">
+                  <NavigationMenuLink :href="subItem.href">
+                    <div class="p-2">
+                      <div class="text-sm font-medium leading-none">
+                        {{ $t(subItem.labelKey) }}
                       </div>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+                    </div>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
 
-        <div class="max-md:hidden">
-          <LanguageSwitcher />
-        </div>
+      <div class="hidden md:block">
+        <LanguageSwitcherDesktop />
       </div>
 
       <Sheet v-model:open="mobileMenuOpen">
