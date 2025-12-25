@@ -23,5 +23,9 @@ export default {
   common: {
     logoAlt: 'Logo KB Clean',
     backToHome: 'Retour à la page d\'accueil',
+    language: 'Langue',
+    selectLanguage: 'Sélectionner la langue',
+    french: 'Français',
+    english: 'English',
   },
 }
