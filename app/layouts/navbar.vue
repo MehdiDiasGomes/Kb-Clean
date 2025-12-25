@@ -46,9 +46,15 @@
 
         <SheetContent side="right" class="w-[85vw] max-w-sm">
           <SheetHeader class="border-b border-border pb-4">
-            <SheetTitle class="text-left text-lg font-semibold">
+            <SheetTitle class="sr-only">
               {{ $t('nav.menu') }}
             </SheetTitle>
+            <NuxtImg
+              src="/images/kb_clean_logo_v1.webp"
+              :alt="$t('common.logoAlt')"
+              width="150"
+              height="75"
+            />
           </SheetHeader>
 
           <nav class="mt-6 flex flex-col space-y-1" :aria-label="$t('nav.mobileNavAriaLabel')">
