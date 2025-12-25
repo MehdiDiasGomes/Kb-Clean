@@ -8,8 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Component } from 'vue'
 import * as icons from 'lucide-vue-next'
+
+import type { Component } from 'vue'
 
 interface Props {
   name: keyof typeof icons
