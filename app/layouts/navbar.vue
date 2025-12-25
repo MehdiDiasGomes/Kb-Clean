@@ -52,8 +52,8 @@
             <NuxtImg
               src="/images/kb_clean_logo_v1.webp"
               :alt="$t('common.logoAlt')"
-              width="150"
-              height="75"
+              width="120"
+              height="60"
             />
           </SheetHeader>
 
