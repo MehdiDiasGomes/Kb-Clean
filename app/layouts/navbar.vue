@@ -62,11 +62,11 @@
         <LanguageSwitcher class="hidden md:flex" />
       </div>
 
-      <Sheet
-        v-model:open="mobileMenuOpen"
-        class="md:hidden"
-      >
-        <SheetTrigger as-child>
+      <Sheet v-model:open="mobileMenuOpen">
+        <SheetTrigger
+          as-child
+          class="md:hidden"
+        >
           <Button
             variant="ghost"
             size="icon"
