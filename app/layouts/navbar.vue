@@ -12,9 +12,8 @@
         <NuxtImg
           src="/images/kb_clean_logo_v1.webp"
           :alt="$t('common.logoAlt')"
-          class="w-full"
-          width="120"
-          height="70"
+          width="200"
+          height="100"
         />
       </NuxtLink>
 
@@ -63,30 +62,34 @@
         <LanguageSwitcher class="hidden md:flex" />
       </div>
 
-      <div class="flex items-center gap-2 md:hidden">
-        <LanguageSwitcher />
-        <Sheet v-model:open="mobileMenuOpen">
-          <SheetTrigger as-child>
-            <Button
-              variant="ghost"
-              size="icon"
-              :aria-label="$t('nav.openMenu')"
-            >
-              <Icon
-                name="Menu"
-                :size="24"
-              />
-            </Button>
-          </SheetTrigger>
+      <Sheet
+        v-model:open="mobileMenuOpen"
+        class="md:hidden"
+      >
+        <SheetTrigger as-child>
+          <Button
+            variant="ghost"
+            size="icon"
+            :aria-label="$t('nav.openMenu')"
+          >
+            <Icon
+              name="Menu"
+              :size="24"
+            />
+          </Button>
+        </SheetTrigger>
 
         <SheetContent
           side="right"
           class="w-[85vw] max-w-sm"
         >
           <SheetHeader class="border-b border-border pb-4">
-            <SheetTitle class="text-left text-lg font-semibold">
-              {{ $t('nav.menu') }}
-            </SheetTitle>
+            <div class="flex items-center justify-between">
+              <SheetTitle class="text-left text-lg font-semibold">
+                {{ $t('nav.menu') }}
+              </SheetTitle>
+              <LanguageSwitcher />
+            </div>
           </SheetHeader>
 
           <nav
@@ -152,8 +155,7 @@
             </template>
           </nav>
         </SheetContent>
-        </Sheet>
-      </div>
+      </Sheet>
     </nav>
   </header>
 </template>
