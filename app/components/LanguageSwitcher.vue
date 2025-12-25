@@ -19,15 +19,24 @@
         v-for="loc in allLocales"
         :key="loc.code"
         :class="{ 'bg-accent': currentLocale === loc.code }"
+        class="py-3"
         @click="switchLanguage(loc.code)"
       >
-        <span class="flex items-center gap-2">
+        <span class="flex items-center gap-3">
           <Icon
             v-if="currentLocale === loc.code"
             name="Check"
             :size="16"
+            class="shrink-0"
           />
-          <span :class="{ 'ml-6': currentLocale !== loc.code }">
+          <span
+            v-else
+            class="w-4 shrink-0"
+          />
+          <span class="shrink-0 text-lg">
+            {{ loc.code === 'fr' ? '🇫🇷' : '🇬🇧' }}
+          </span>
+          <span>
             {{ $t(`common.${loc.code === 'fr' ? 'french' : 'english'}`) }}
           </span>
         </span>
