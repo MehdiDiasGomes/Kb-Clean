@@ -56,6 +56,36 @@ export default {
       },
     },
   },
+  clients: {
+    sectionTitle: 'Tailored solutions for all urban sanitation stakeholders',
+    intro: {
+      line1: 'KB Clean serves all professionals for whom container hygiene is essential.',
+      line2:
+        'Our mobile expertise and strict protocols guarantee fast, reliable service that meets health standards.',
+    },
+    types: {
+      municipalities: {
+        title: 'Municipalities',
+        description:
+          'Cleaning and disinfection of wheeled bins, bio-waste shelters and containers for local authorities',
+      },
+      businesses: {
+        title: 'Businesses',
+        description: 'Wheeled bin cleaning solutions tailored to private business needs',
+      },
+      manufacturers: {
+        title: 'Manufacturers',
+        description:
+          'Complete installation and maintenance service for bin shelter equipment manufacturers',
+      },
+      collectors: {
+        title: 'Collectors',
+        description: 'Integrated collection and cleaning service for all types of waste containers',
+      },
+    },
+    cta: 'Contact us',
+    ctaLabel: 'Contact us for a personalized quote',
+  },
   footer: {
     copyright: 'All rights reserved.',
   },

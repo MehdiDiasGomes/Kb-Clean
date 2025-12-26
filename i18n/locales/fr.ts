@@ -56,6 +56,39 @@ export default {
       },
     },
   },
+  clients: {
+    sectionTitle: 'Des solutions adaptées à tous les acteurs de la propreté urbaine',
+    intro: {
+      line1:
+        "KB Clean intervient auprès de tous les professionnels pour qui l'hygiène des contenants est essentielle.",
+      line2:
+        'Notre expertise mobile et nos protocoles stricts garantissent un service rapide, fiable et conforme aux normes sanitaires.',
+    },
+    types: {
+      municipalities: {
+        title: 'Collectivités',
+        description:
+          'Nettoyage et désinfection de bacs roulants, abris biodéchets et conteneurs pour les municipalités',
+      },
+      businesses: {
+        title: 'Entreprises',
+        description:
+          'Solutions de nettoyage de bacs roulants adaptées aux besoins des entreprises privées',
+      },
+      manufacturers: {
+        title: 'Fabricants',
+        description:
+          "Service complet d'installation et d'entretien d'abris bacs pour les fabricants d'équipements",
+      },
+      collectors: {
+        title: 'Collecteurs',
+        description:
+          'Service intégré de collecte et de nettoyage pour tous types de contenants à déchets',
+      },
+    },
+    cta: 'Nous contacter',
+    ctaLabel: 'Contactez-nous pour un devis personnalisé',
+  },
   footer: {
     copyright: 'Tous droits réservés.',
   },

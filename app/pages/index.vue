@@ -2,6 +2,7 @@
   <div>
     <HeroSection />
     <ServicesSection />
+    <ClientsSection />
   </div>
 </template>
 
