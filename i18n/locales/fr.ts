@@ -17,6 +17,13 @@ export default {
     openSubmenu: 'Ouvrir le menu',
     closeSubmenu: 'Fermer le menu',
   },
+  hero: {
+    title: 'KB Clean',
+    titleHighlight: 'Votre expert en hygiène des contenants',
+    subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
+    ctaPrimary: 'Nous contacter',
+    imageAlt: 'Services de lavage de contenants à déchets KB Clean',
+  },
   footer: {
     copyright: 'Tous droits réservés.',
   },

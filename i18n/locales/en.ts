@@ -17,6 +17,13 @@ export default {
     openSubmenu: 'Open menu',
     closeSubmenu: 'Close menu',
   },
+  hero: {
+    title: 'KB Clean',
+    titleHighlight: 'Your expert in container hygiene',
+    subtitle: 'Professional solutions for spotless bins',
+    ctaPrimary: 'Contact us',
+    imageAlt: 'KB Clean waste container cleaning services',
+  },
   footer: {
     copyright: 'All rights reserved.',
   },

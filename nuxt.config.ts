@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ['shadcn-nuxt', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/i18n'],
+  modules: ['shadcn-nuxt', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/i18n', '@nuxt/fonts'],
   shadcn: {
     /**
      * Prefix for all the imported component.
@@ -37,5 +37,12 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
+  },
+  fonts: {
+    families: [
+      { name: 'Bangers', provider: 'google' },
+      { name: 'Fredoka', provider: 'google' },
+      { name: 'Quicksand', provider: 'google' },
+    ],
   },
 })
