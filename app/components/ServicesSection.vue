@@ -6,18 +6,18 @@
           <h2
             class="font-subheading text-2xl italic text-foreground sm:text-3xl md:text-4xl lg:text-5xl"
           >
-            {{ $t('services.sectionTitle') }}
+            {{ $t('solutions.sectionTitle') }}
           </h2>
 
           <div class="mx-auto max-w-3xl space-y-4">
             <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('services.intro.line1') }}
+              {{ $t('solutions.intro.line1') }}
             </p>
             <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('services.intro.line2') }}
+              {{ $t('solutions.intro.line2') }}
             </p>
             <p class="text-base font-semibold text-foreground md:text-lg">
-              {{ $t('services.intro.line3') }}
+              {{ $t('solutions.intro.line3') }}
             </p>
           </div>
         </div>

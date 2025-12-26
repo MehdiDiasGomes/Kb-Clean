@@ -10,19 +10,19 @@ export const navigationItems: NavItem[] = [
     href: '/qui-sommes-nous',
   },
   {
-    labelKey: 'nav.services.title',
+    labelKey: 'nav.solutions.title',
     items: [
       {
-        labelKey: 'nav.services.binWashing',
-        href: '/services/lavage-bac-dechets',
+        labelKey: 'nav.solutions.wheeledBins',
+        href: '/solutions/bacs-roulants',
       },
       {
-        labelKey: 'nav.services.windowCleaning',
-        href: '/services/nettoyage-vitres',
+        labelKey: 'nav.solutions.bioWasteShelters',
+        href: '/solutions/abris-bacs-biodechets',
       },
       {
-        labelKey: 'nav.services.facilityMaintenance',
-        href: '/services/entretien-locaux',
+        labelKey: 'nav.solutions.columns',
+        href: '/solutions/colonnes',
       },
     ],
   },

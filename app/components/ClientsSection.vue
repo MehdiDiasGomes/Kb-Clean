@@ -6,15 +6,27 @@
           <h2
             class="font-subheading text-2xl italic text-foreground sm:text-3xl md:text-4xl lg:text-5xl"
           >
-            {{ $t('clients.sectionTitle') }}
+            {{ $t('clients.sectionTitle.prefix') }}
+            <strong>{{ $t('clients.sectionTitle.bold') }}</strong>
+            {{ $t('clients.sectionTitle.suffix') }}
           </h2>
 
           <div class="mx-auto max-w-3xl space-y-4">
             <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('clients.intro.line1') }}
+              {{ $t('clients.intro.line1.prefix') }}
+              <strong>{{ $t('clients.intro.line1.bold1') }}</strong>
+              {{ $t('clients.intro.line1.middle')
+              }}<strong>{{ $t('clients.intro.line1.bold2') }}</strong>
+              {{ $t('clients.intro.line1.suffix') }}
             </p>
             <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('clients.intro.line2') }}
+              {{ $t('clients.intro.line2.prefix') }}
+              <strong>{{ $t('clients.intro.line2.bold1') }}</strong>
+              {{ $t('clients.intro.line2.middle') }}
+              <strong>{{ $t('clients.intro.line2.bold2') }}</strong>
+              {{ $t('clients.intro.line2.middle2') }}
+              <strong>{{ $t('clients.intro.line2.bold3') }}</strong>
+              {{ $t('clients.intro.line2.suffix') }}
             </p>
           </div>
         </div>

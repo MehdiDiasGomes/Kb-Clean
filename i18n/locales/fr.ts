@@ -2,11 +2,11 @@ export default {
   nav: {
     home: 'Accueil',
     about: 'Qui sommes nous ?',
-    services: {
-      title: 'Nos services',
-      binWashing: 'Lavage de bac à déchets',
-      windowCleaning: 'Nettoyage de vitres',
-      facilityMaintenance: 'Entretien de locaux',
+    solutions: {
+      title: 'Nos solutions',
+      wheeledBins: 'Bacs roulants',
+      bioWasteShelters: 'Abris bacs biodéchets',
+      columns: 'Colonnes',
     },
     contact: 'Nous contacter',
     menu: 'Menu',
@@ -24,7 +24,7 @@ export default {
     ctaPrimary: 'Nous contacter',
     imageAlt: 'Services de lavage de contenants à déchets KB Clean',
   },
-  services: {
+  solutions: {
     sectionTitle: 'KB Clean vous accompagne pour un environnement plus propre',
     intro: {
       line1:
@@ -57,12 +57,28 @@ export default {
     },
   },
   clients: {
-    sectionTitle: 'Des solutions adaptées à tous les acteurs de la propreté urbaine',
+    sectionTitle: {
+      prefix: 'Des solutions adaptées à',
+      bold: 'tous les acteurs',
+      suffix: 'de la propreté urbaine',
+    },
     intro: {
-      line1:
-        "KB Clean intervient auprès de tous les professionnels pour qui l'hygiène des contenants est essentielle.",
-      line2:
-        'Notre expertise mobile et nos protocoles stricts garantissent un service rapide, fiable et conforme aux normes sanitaires.',
+      line1: {
+        prefix: 'KB Clean intervient auprès de',
+        bold1: 'tous les professionnels',
+        middle: "pour qui l'",
+        bold2: 'hygiène des contenants',
+        suffix: 'est essentielle.',
+      },
+      line2: {
+        prefix: 'Notre',
+        bold1: 'expertise mobile',
+        middle: 'et nos',
+        bold2: 'protocoles stricts',
+        middle2: 'garantissent un service',
+        bold3: 'rapide, fiable et conforme',
+        suffix: 'aux normes sanitaires.',
+      },
     },
     types: {
       municipalities: {

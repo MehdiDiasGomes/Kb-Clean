@@ -2,11 +2,11 @@ export default {
   nav: {
     home: 'Home',
     about: 'About us',
-    services: {
-      title: 'Our services',
-      binWashing: 'Waste bin washing',
-      windowCleaning: 'Window cleaning',
-      facilityMaintenance: 'Facility maintenance',
+    solutions: {
+      title: 'Our solutions',
+      wheeledBins: 'Wheeled bins',
+      bioWasteShelters: 'Bio-waste shelters',
+      columns: 'Columns',
     },
     contact: 'Contact us',
     menu: 'Menu',
@@ -24,7 +24,7 @@ export default {
     ctaPrimary: 'Contact us',
     imageAlt: 'KB Clean waste container cleaning services',
   },
-  services: {
+  solutions: {
     sectionTitle: 'KB Clean supports you for a cleaner environment',
     intro: {
       line1:
@@ -57,11 +57,28 @@ export default {
     },
   },
   clients: {
-    sectionTitle: 'Tailored solutions for all urban sanitation stakeholders',
+    sectionTitle: {
+      prefix: 'Tailored solutions for',
+      bold: 'all stakeholders',
+      suffix: 'in urban sanitation',
+    },
     intro: {
-      line1: 'KB Clean serves all professionals for whom container hygiene is essential.',
-      line2:
-        'Our mobile expertise and strict protocols guarantee fast, reliable service that meets health standards.',
+      line1: {
+        prefix: 'KB Clean serves',
+        bold1: 'all professionals',
+        middle: 'for whom',
+        bold2: 'container hygiene',
+        suffix: 'is essential.',
+      },
+      line2: {
+        prefix: 'Our',
+        bold1: 'mobile expertise',
+        middle: 'and',
+        bold2: 'strict protocols',
+        middle2: 'guarantee',
+        bold3: 'fast, reliable service',
+        suffix: 'that meets health standards.',
+      },
     },
     types: {
       municipalities: {
