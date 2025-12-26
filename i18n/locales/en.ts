@@ -24,6 +24,38 @@ export default {
     ctaPrimary: 'Contact us',
     imageAlt: 'KB Clean waste container cleaning services',
   },
+  services: {
+    sectionTitle: 'KB Clean supports you for a cleaner environment',
+    intro: {
+      line1:
+        'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
+      line2: 'Clean bins mean better health and a commitment to responsible waste sorting.',
+      line3: 'Our 2027 goal: offering you a 100% eco-friendly cleaning service!',
+    },
+    offerings: {
+      wasteBins: {
+        title: 'Wheeled bins',
+        description:
+          'Interior and exterior cleaning of your wheeled bins with our high-performance washing system.',
+        cta: 'Learn more',
+        ctaLabel: 'Discover our wheeled bin cleaning service',
+      },
+      bioWaste: {
+        title: 'Bio-waste shelters',
+        description:
+          'Hygiene for your bio-waste shelters ensured by an efficient and environmentally friendly process.',
+        cta: 'Learn more',
+        ctaLabel: 'Discover our bio-waste shelter cleaning service',
+      },
+      bulkContainers: {
+        title: 'Bulk containers',
+        description:
+          'All your bulk containers washed with hot water and high pressure to eliminate residue and bacteria.',
+        cta: 'Learn more',
+        ctaLabel: 'Discover our bulk container cleaning service',
+      },
+    },
+  },
   footer: {
     copyright: 'All rights reserved.',
   },
