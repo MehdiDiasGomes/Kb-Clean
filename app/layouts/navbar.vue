@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
+  <header class="sticky top-0 z-50 w-full border-b border-border bg-background backdrop-blur">
     <nav
       class="mx-auto flex items-center justify-between p-4"
       :aria-label="$t('nav.mainNavAriaLabel')"
