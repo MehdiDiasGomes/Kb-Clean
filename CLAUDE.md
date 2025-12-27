@@ -49,10 +49,12 @@ app/
 The project enforces strict code quality standards through ESLint with multiple plugins:
 
 #### Function Style
+
 - **ALWAYS use arrow functions**: `func-style: 'expression'` and `prefer-arrow-callback: 'error'` are enforced
 - Use `arrow-body-style: 'as-needed'` (implicit returns when possible)
 
 #### Vue Component Rules
+
 - **Script blocks must use TypeScript**: `vue/block-lang` enforces `lang="ts"`
 - **Block order**: `<template>` → `<script>` → `<style>`
 - **Component naming**: PascalCase in templates (`vue/component-name-in-template-casing`)
@@ -62,6 +64,7 @@ The project enforces strict code quality standards through ESLint with multiple 
 - Max 3 attributes per line for single-line elements, 1 for multiline
 
 #### TypeScript Standards
+
 - **No `any` types**: `@typescript-eslint/no-explicit-any: 'error'`
 - **Naming conventions**:
   - Variables: camelCase, UPPER_CASE, or PascalCase
@@ -73,9 +76,11 @@ The project enforces strict code quality standards through ESLint with multiple 
 - **Type organization**: Complex reusable types must be defined in `/app/types`
 
 #### Documentation & Comments
+
 - **No inline comments**: Code should be self-explanatory
 - **TSDoc for complex functions only**: Use concise and clear English documentation
 - **Example**:
+
 ```typescript
 /**
  * Validates user authentication token and refreshes if expired.
@@ -88,6 +93,7 @@ const validateToken = (token: string): Promise<string> => {
 ```
 
 #### Code Quality Limits
+
 - Max 350 lines per file (excluding blanks/comments)
 - Max 3 function parameters
 - Max nesting depth: 4
@@ -95,6 +101,7 @@ const validateToken = (token: string): Promise<string> => {
 - Complexity threshold: 15
 
 #### Accessibility (a11y) - CRITICAL REQUIREMENT
+
 - **MANDATORY**: All code must comply with a11y standards - NO EXCEPTIONS
 - Enforces `vuejs-accessibility` plugin rules
 - All interactive elements must have proper ARIA attributes
@@ -107,11 +114,14 @@ const validateToken = (token: string): Promise<string> => {
 - **IMPORTANT**: All a11y text (ARIA labels, alt text, form labels) must use i18n for multi-language support
 
 #### Promises & Async
+
 - Must handle promise rejections
 - Warns on await in loops
 
 #### Import Organization
+
 Auto-sorted in this order:
+
 1. Built-in modules
 2. External dependencies
 3. Internal modules
@@ -123,6 +133,7 @@ Auto-sorted in this order:
 With alphabetical sorting and newlines between groups.
 
 ### Prettier Configuration
+
 - No semicolons
 - Single quotes
 - 2-space indentation
@@ -134,6 +145,7 @@ With alphabetical sorting and newlines between groups.
 ## Styling Architecture
 
 ### Tailwind CSS v4
+
 - Uses `@tailwindcss/vite` plugin
 - Global CSS file: `app/assets/css/tailwind.css`
 - **Custom dark mode variant**: `@custom-variant dark (&:is(.dark *))`
@@ -142,6 +154,7 @@ With alphabetical sorting and newlines between groups.
 - **Animations**: `tw-animate-css` library included
 
 ### shadcn-nuxt Components
+
 - Component directory: `@/components/ui`
 - No prefix (configured as empty string)
 - UI components are **excluded from ESLint** via `ignores: ['app/components/ui/**']`
@@ -150,21 +163,25 @@ With alphabetical sorting and newlines between groups.
 ## Key Technical Details
 
 ### Nuxt Configuration
+
 - Compatibility date: 2025-07-15
 - DevTools enabled
 - Modules: `shadcn-nuxt`, `@nuxt/eslint`
 - Tailwind integrated via Vite plugin (not Nuxt module)
 
 ### Package Manager
+
 - Uses Bun (evidenced by `bun.lock` in git status)
 - When installing packages, use `bun add` or `bun add -d`
 
 ### Internationalization
+
 - **Multi-language support**: Always use i18n for all user-facing text
 - Never hardcode strings in components or pages
 - All text content must be translatable
 
 ### Git Workflow
+
 - Main branch not configured yet (new project)
 - Current branch: `chore/#1-init-linter`
 - Untracked files show linting setup in progress
@@ -172,7 +189,9 @@ With alphabetical sorting and newlines between groups.
 ## Important Patterns
 
 ### Accessibility First (a11y) - CRITICAL
+
 **This is a mandatory requirement - all features must be accessible:**
+
 - Test all interactive elements with keyboard navigation (Tab, Enter, Space, Arrow keys)
 - Verify screen reader compatibility using semantic HTML
 - Ensure proper heading hierarchy (h1 → h2 → h3, no skipping levels)
@@ -187,12 +206,15 @@ With alphabetical sorting and newlines between groups.
 **If accessibility cannot be guaranteed, the feature is not complete.**
 
 ### Utility Functions
+
 - **Create once, reuse everywhere**: All utility functions must be defined in `/app/utils`
 - **Avoid duplication**: Never recreate the same utility function in multiple files
 - **Proper typing**: All utility functions must have explicit type annotations
 
 ### Class Name Merging
+
 Always use the `cn()` utility for conditional classes:
+
 ```typescript
 import { cn } from '@/lib/utils'
 
@@ -200,7 +222,9 @@ cn('base-class', condition && 'conditional-class', className)
 ```
 
 ### Component Structure
+
 Vue SFCs must follow this pattern:
+
 ```vue
 <template>
   <!-- Template content -->
@@ -212,9 +236,10 @@ Vue SFCs must follow this pattern:
 </script>
 
 <style>
-  <!-- Optional styles -->
+<!-- Optional styles -->
 </style>
 ```
 
 ### Auto-imports
+
 Nuxt provides auto-imports for composables, components, and utilities. ESLint is configured to allow unresolved imports for this reason (`import/no-unresolved: 'off'`).

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ['shadcn-nuxt', '@nuxt/eslint'],
+  modules: ['shadcn-nuxt', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/i18n', '@nuxt/fonts'],
   shadcn: {
     /**
      * Prefix for all the imported component.
@@ -23,5 +23,26 @@ export default defineNuxtConfig({
      * @default "@/components/ui"
      */
     componentDir: '@/components/ui',
+  },
+  i18n: {
+    locales: [
+      { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.ts' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.ts' },
+    ],
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default',
+    langDir: 'locales',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
+  },
+  fonts: {
+    families: [
+      { name: 'Bangers', provider: 'google' },
+      { name: 'Fredoka', provider: 'google' },
+      { name: 'Quicksand', provider: 'google' },
+    ],
   },
 })
