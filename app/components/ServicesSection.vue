@@ -1,6 +1,6 @@
 <template>
   <section class="page-padding-x bg-background py-16 md:py-24">
-    <div class="mx-auto max-w-7xl">
+    <div ref="elementRef" :class="['mx-auto max-w-7xl scroll-animate', isVisible && 'is-visible']">
       <div class="space-y-16">
         <div class="space-y-8 text-center">
           <h2
@@ -58,4 +58,19 @@
 
 <script setup lang="ts">
 import { serviceCards } from '@/constants/services'
+
+const { elementRef, isVisible } = useScrollAnimation(0.4)
 </script>
+
+<style scoped>
+.scroll-animate {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+</style>

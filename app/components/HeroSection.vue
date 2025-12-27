@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full">
+  <section class="relative w-full hero-fade-in">
     <div class="relative w-full h-[75vh] md:h-auto">
       <NuxtImg
         src="/images/kb_clean_hero.webp"
@@ -65,3 +65,18 @@
 </template>
 
 <script setup lang="ts"></script>
+
+<style scoped>
+.hero-fade-in {
+  animation: fadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
