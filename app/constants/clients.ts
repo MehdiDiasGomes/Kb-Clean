@@ -11,17 +11,17 @@ export const clientCards: ClientCard[] = [
   {
     titleKey: 'clients.types.municipalities.title',
     descriptionKey: 'clients.types.municipalities.description',
-    image: '/images/services/task_01.webp',
+    image: '/images/clients/task_01.webp',
   },
   {
     titleKey: 'clients.types.businesses.title',
     descriptionKey: 'clients.types.businesses.description',
-    image: '/images/services/task_02.webp',
+    image: '/images/clients/task_02.webp',
   },
   {
     titleKey: 'clients.types.manufacturers.title',
     descriptionKey: 'clients.types.manufacturers.description',
-    icon: 'Warehouse',
+    image: '/images/clients/task_03.webp',
   },
   {
     titleKey: 'clients.types.collectors.title',
