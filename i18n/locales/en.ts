@@ -106,6 +106,67 @@ export default {
   footer: {
     copyright: 'All rights reserved.',
   },
+  contact: {
+    title: 'Contact Us',
+    subtitle: 'Fill out the form below and we will get back to you as soon as possible',
+    form: {
+      lastName: {
+        label: 'Last Name',
+        placeholder: 'Smith',
+      },
+      firstName: {
+        label: 'First Name',
+        placeholder: 'John',
+      },
+      email: {
+        label: 'Email Address',
+        placeholder: "john.smith{'@'}example.com",
+      },
+      phone: {
+        label: 'Phone',
+        optional: '(optional)',
+        placeholder: '+1 234 567 8900',
+      },
+      isBusiness: {
+        label: 'I represent a business',
+      },
+      companyName: {
+        label: 'Company Name',
+        optional: '(optional)',
+        placeholder: 'KB Clean LLC',
+      },
+      requestType: {
+        label: 'Request Type',
+        placeholder: 'Select an option',
+        options: {
+          demo: 'Schedule a demonstration',
+          callback: 'Request a callback for more information',
+          quote: 'Request a quote',
+        },
+      },
+      message: {
+        label: 'Message',
+        placeholder: 'Describe your needs...',
+      },
+      submit: 'Submit',
+      submitting: 'Submitting...',
+      success: 'Your message has been sent successfully!',
+      error: 'An error occurred. Please try again.',
+      validation: {
+        lastNameRequired: 'Last name is required',
+        lastNameMin: 'Last name must be at least 2 characters',
+        firstNameRequired: 'First name is required',
+        firstNameMin: 'First name must be at least 2 characters',
+        emailRequired: 'Email address is required',
+        emailInvalid: 'Email address is invalid',
+        companyNameRequired: 'Company name is required',
+        companyNameMin: 'Company name must be at least 2 characters',
+        requestTypeRequired: 'Please select a request type',
+        messageRequired: 'Message is required',
+        messageMin: 'Message must be at least 10 characters',
+      },
+    },
+  },
   common: {
     logoAlt: 'KB Clean Logo',
     backToHome: 'Back to home page',
@@ -113,5 +174,6 @@ export default {
     selectLanguage: 'Select language',
     french: 'Français',
     english: 'English',
+    required: 'required',
   },
 }

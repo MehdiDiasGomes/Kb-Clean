@@ -108,6 +108,68 @@ export default {
   footer: {
     copyright: 'Tous droits réservés.',
   },
+  contact: {
+    title: 'Contactez-nous',
+    subtitle:
+      'Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais',
+    form: {
+      lastName: {
+        label: 'Nom',
+        placeholder: 'Dupont',
+      },
+      firstName: {
+        label: 'Prénom',
+        placeholder: 'Jean',
+      },
+      email: {
+        label: 'Adresse email',
+        placeholder: "jean.dupont{'@'}exemple.fr",
+      },
+      phone: {
+        label: 'Téléphone',
+        optional: '(optionnel)',
+        placeholder: '+33 6 12 34 56 78',
+      },
+      isBusiness: {
+        label: 'Je représente une entreprise',
+      },
+      companyName: {
+        label: "Nom de l'entreprise",
+        optional: '(optionnel)',
+        placeholder: 'KB Clean SARL',
+      },
+      requestType: {
+        label: 'Type de demande',
+        placeholder: 'Sélectionnez une option',
+        options: {
+          demo: 'Prendre rendez-vous pour une démonstration',
+          callback: "Être rappelé pour plus d'informations",
+          quote: 'Demande de devis',
+        },
+      },
+      message: {
+        label: 'Message',
+        placeholder: 'Décrivez votre besoin...',
+      },
+      submit: 'Envoyer',
+      submitting: 'Envoi en cours...',
+      success: 'Votre message a été envoyé avec succès !',
+      error: 'Une erreur est survenue. Veuillez réessayer.',
+      validation: {
+        lastNameRequired: 'Le nom est obligatoire',
+        lastNameMin: 'Le nom doit contenir au moins 2 caractères',
+        firstNameRequired: 'Le prénom est obligatoire',
+        firstNameMin: 'Le prénom doit contenir au moins 2 caractères',
+        emailRequired: "L'adresse email est obligatoire",
+        emailInvalid: "L'adresse email n'est pas valide",
+        companyNameRequired: "Le nom de l'entreprise est obligatoire",
+        companyNameMin: "Le nom de l'entreprise doit contenir au moins 2 caractères",
+        requestTypeRequired: 'Veuillez sélectionner un type de demande',
+        messageRequired: 'Le message est obligatoire',
+        messageMin: 'Le message doit contenir au moins 10 caractères',
+      },
+    },
+  },
   common: {
     logoAlt: 'Logo KB Clean',
     backToHome: "Retour à la page d'accueil",
@@ -115,5 +177,6 @@ export default {
     selectLanguage: 'Sélectionner la langue',
     french: 'Français',
     english: 'English',
+    required: 'obligatoire',
   },
 }
