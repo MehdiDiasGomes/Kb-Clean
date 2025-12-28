@@ -1,7 +1,7 @@
 <!-- eslint-disable vuejs-accessibility/form-control-has-label -->
 <template>
   <PageContainer>
-    <section class="page-padding-x py-16">
+    <section class="page-padding-x relative py-16">
       <div
         ref="elementRef"
         :class="['mx-auto max-w-5xl scroll-animate', isVisible && 'is-visible']"
@@ -172,6 +172,13 @@
           </div>
         </div>
       </div>
+
+      <NuxtImg
+        src="/images/decorations/leaf-bottom-right.webp"
+        alt=""
+        class="pointer-events-none absolute bottom-0 right-0 -z-10 w-64 opacity-20 sm:w-80 lg:w-96"
+        aria-hidden="true"
+      />
     </section>
   </PageContainer>
 </template>
