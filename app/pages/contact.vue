@@ -15,22 +15,6 @@
 
           <div class="grid gap-8 lg:grid-cols-2">
             <form class="space-y-6" @submit="onSubmit">
-              <div
-                v-if="submitSuccess"
-                class="rounded-lg bg-green-50 p-4 text-green-800 dark:bg-green-900/20 dark:text-green-400"
-                role="alert"
-              >
-                <p class="font-semibold">{{ $t('contact.form.success') }}</p>
-              </div>
-
-              <div
-                v-if="submitError"
-                class="rounded-lg bg-red-50 p-4 text-red-800 dark:bg-red-900/20 dark:text-red-400"
-                role="alert"
-              >
-                <p class="font-semibold">{{ submitError }}</p>
-              </div>
-
               <FormField #default="{ componentField }" name="lastName">
                 <FormItem>
                   <FormLabel>
@@ -208,6 +192,7 @@
 <script setup lang="ts">
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
+import { toast } from 'vue-sonner'
 import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
@@ -250,13 +235,9 @@ const form = useForm({
 })
 
 const isSubmitting = ref(false)
-const submitSuccess = ref(false)
-const submitError = ref('')
 
 const onSubmit = form.handleSubmit(async values => {
   isSubmitting.value = true
-  submitError.value = ''
-  submitSuccess.value = false
 
   try {
     const response = await $fetch('/api/contact', {
@@ -265,11 +246,11 @@ const onSubmit = form.handleSubmit(async values => {
     })
 
     if (response.success) {
-      submitSuccess.value = true
+      toast.success(t('contact.form.success'))
       form.resetForm()
     }
   } catch {
-    submitError.value = t('contact.form.error')
+    toast.error(t('contact.form.error'))
   } finally {
     isSubmitting.value = false
   }
