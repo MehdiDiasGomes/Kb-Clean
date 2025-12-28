@@ -107,7 +107,7 @@ export default {
     copyright: 'All rights reserved.',
   },
   contact: {
-    title: 'Contact Us',
+    title: "We're here to help",
     subtitle: 'Fill out the form below and we will get back to you as soon as possible',
     form: {
       lastName: {
@@ -164,6 +164,28 @@ export default {
         requestTypeRequired: 'Please select a request type',
         messageRequired: 'Message is required',
         messageMin: 'Message must be at least 10 characters',
+      },
+    },
+    info: {
+      title: 'Information',
+      address: {
+        title: 'Address',
+        line1: '123 Clean Street',
+        line2: '75001 Paris, France',
+      },
+      phone: {
+        title: 'Phone',
+        number: '+33123456789',
+        display: '+33 1 23 45 67 89',
+      },
+      email: {
+        title: 'Email',
+        address: "contact{'@'}kbclean.fr",
+      },
+      hours: {
+        title: 'Business Hours',
+        weekdays: 'Mon - Fri: 9:00 AM - 6:00 PM',
+        weekend: 'Sat - Sun: Closed',
       },
     },
   },

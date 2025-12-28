@@ -109,7 +109,7 @@ export default {
     copyright: 'Tous droits réservés.',
   },
   contact: {
-    title: 'Contactez-nous',
+    title: 'Nous sommes là pour vous aider',
     subtitle:
       'Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais',
     form: {
@@ -167,6 +167,28 @@ export default {
         requestTypeRequired: 'Veuillez sélectionner un type de demande',
         messageRequired: 'Le message est obligatoire',
         messageMin: 'Le message doit contenir au moins 10 caractères',
+      },
+    },
+    info: {
+      title: 'Informations',
+      address: {
+        title: 'Adresse',
+        line1: '123 Rue de la Propreté',
+        line2: '75001 Paris, France',
+      },
+      phone: {
+        title: 'Téléphone',
+        number: '+33123456789',
+        display: '+33 1 23 45 67 89',
+      },
+      email: {
+        title: 'Email',
+        address: "contact{'@'}kbclean.fr",
+      },
+      hours: {
+        title: 'Horaires',
+        weekdays: 'Lun - Ven : 9h00 - 18h00',
+        weekend: 'Sam - Dim : Fermé',
       },
     },
   },
