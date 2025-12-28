@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
 
+  runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY,
+    contactEmailTo: process.env.CONTACT_EMAIL_TO,
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
