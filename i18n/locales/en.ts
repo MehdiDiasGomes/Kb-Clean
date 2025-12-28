@@ -107,9 +107,9 @@ export default {
     copyright: 'All rights reserved.',
   },
   contact: {
-    title: "We're here to help",
-    subtitle: 'Fill out the form below and we will get back to you as soon as possible',
+    title: "Let's Get In Touch",
     form: {
+      subtitle: 'Or fill out the form below',
       lastName: {
         label: 'Last Name',
         placeholder: 'Smith',

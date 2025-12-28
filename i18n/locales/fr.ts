@@ -109,10 +109,9 @@ export default {
     copyright: 'Tous droits réservés.',
   },
   contact: {
-    title: 'Nous sommes là pour vous aider',
-    subtitle:
-      'Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais',
+    title: 'Contactez-nous',
     form: {
+      subtitle: 'Ou remplissez le formulaire ci-dessous',
       lastName: {
         label: 'Nom',
         placeholder: 'Dupont',
