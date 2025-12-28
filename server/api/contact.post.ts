@@ -12,7 +12,6 @@ export default defineEventHandler(async event => {
   const config = useRuntimeConfig()
   const body = await readBody<ContactFormData>(event)
 
-  // Validation
   if (!body.lastName || !body.email || !body.requestType || !body.message) {
     throw createError({
       statusCode: 400,
@@ -20,7 +19,6 @@ export default defineEventHandler(async event => {
     })
   }
 
-  // Email validation
   const emailRegex = /^[\w%+.-]+@[\d.A-Za-z-]+\.[A-Za-z]{2,}$/
   if (!emailRegex.test(body.email)) {
     throw createError({
@@ -156,10 +154,10 @@ export default defineEventHandler(async event => {
       messageId: data?.id,
     }
   } catch (err) {
-    console.error('Error sending email:', err)
     throw createError({
       statusCode: 500,
       statusMessage: 'Internal server error',
+      cause: err,
     })
   }
 })

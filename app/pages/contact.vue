@@ -268,8 +268,7 @@ const onSubmit = form.handleSubmit(async values => {
       submitSuccess.value = true
       form.resetForm()
     }
-  } catch (error) {
-    console.error('Contact form submission error:', error)
+  } catch {
     submitError.value = t('contact.form.error')
   } finally {
     isSubmitting.value = false
