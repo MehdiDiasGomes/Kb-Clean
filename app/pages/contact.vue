@@ -7,14 +7,14 @@
         :class="['mx-auto max-w-5xl scroll-animate', isVisible && 'is-visible']"
       >
         <div class="space-y-12">
-          <h1 class="text-center font-heading text-3xl text-foreground sm:text-4xl md:text-5xl">
+          <h1 class="font-heading text-3xl text-foreground sm:text-4xl md:text-5xl">
             {{ $t('contact.title') }}
           </h1>
 
           <div class="grid gap-6 sm:grid-cols-3">
             <div class="flex flex-col items-center space-y-3 text-center">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                <Icon name="Phone" class="h-5 w-5 text-foreground" aria-hidden="true" />
+                <Icon name="Phone" class="h-5 w-5 text-primary" aria-hidden="true" />
               </div>
               <div class="space-y-1">
                 <a
@@ -28,7 +28,7 @@
 
             <div class="flex flex-col items-center space-y-3 text-center">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                <Icon name="Mail" class="h-5 w-5 text-foreground" aria-hidden="true" />
+                <Icon name="Mail" class="h-5 w-5 text-primary" aria-hidden="true" />
               </div>
               <div class="space-y-1">
                 <a
@@ -42,7 +42,7 @@
 
             <div class="flex flex-col items-center space-y-3 text-center">
               <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                <Icon name="MapPin" class="h-5 w-5 text-foreground" aria-hidden="true" />
+                <Icon name="MapPin" class="h-5 w-5 text-primary" aria-hidden="true" />
               </div>
               <div class="space-y-1">
                 <p class="text-sm text-foreground">
@@ -53,8 +53,10 @@
             </div>
           </div>
 
+          <Separator />
+
           <div class="space-y-8">
-            <h2 class="text-center text-2xl font-semibold text-foreground">
+            <h2 class="text-2xl font-semibold text-foreground">
               {{ $t('contact.form.subtitle') }}
             </h2>
 
@@ -190,6 +192,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { Separator } from '@/components/ui/separator'
 import { Textarea } from '@/components/ui/textarea'
 
 definePageMeta({
