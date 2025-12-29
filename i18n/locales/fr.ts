@@ -204,6 +204,34 @@ export default {
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des bacs roulants',
     },
+    features: {
+      title: 'Un système de lavage innovant et des solutions éco-responsables',
+      descriptionLine1: 'Chez KB Clean, innovation et écologie vont de pair.',
+      descriptionLine2:
+        "Nos équipements de lavage sont conçus pour minimiser l'impact environnemental. Sans produits chimiques, avec une consommation d'eau réduite et des émissions de CO₂ limitées, nous allions efficacité et respect de l'environnement.",
+      items: {
+        washer: {
+          title: 'Équipement mobile optimisé',
+          description:
+            'Nos laveuses sont montées sur véhicules légers pour réduire les émissions de CO₂ et faciliter les interventions en milieu urbain.',
+        },
+        pressure: {
+          title: 'Lance haute pression efficace',
+          description:
+            "Un débit d'eau optimisé à 10L/minute réduit la consommation tout en garantissant une efficacité de lavage maximale.",
+        },
+        recycling: {
+          title: 'Système de recyclage intégré',
+          description:
+            "Les eaux de lavage sont filtrées et recyclées, divisant par 5 notre consommation d'eau. Toutes les eaux sont récupérées dans le système de traitement.",
+        },
+        training: {
+          title: 'Personnel qualifié',
+          description:
+            'Nos techniciens sont formés et certifiés aux méthodes de lavage éco-responsables les plus récentes.',
+        },
+      },
+    },
   },
   common: {
     logoAlt: 'Logo KB Clean',
