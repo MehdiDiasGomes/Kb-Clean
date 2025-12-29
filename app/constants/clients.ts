@@ -1,7 +1,12 @@
+import type * as icons from 'lucide-vue-next'
+
+export type LucideIconName = keyof typeof icons
+
 export type ClientCard = {
   titleKey: string
   descriptionKey: string
   image?: string
+  icon?: LucideIconName
 }
 
 export const clientCards: ClientCard[] = [
