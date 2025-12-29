@@ -1,10 +1,10 @@
 <template>
-  <section class="hero-fade-in relative bg-linear-to-br from-background to-muted">
+  <section class="relative bg-linear-to-br from-background to-muted">
     <PageContainer>
       <div class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div class="grid items-center gap-8 lg:grid-cols-12 lg:gap-16">
-            <div class="space-y-6 lg:col-span-5 lg:space-y-8">
+            <div class="fade-in-left space-y-6 lg:col-span-5 lg:space-y-8">
               <h1 class="font-heading text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl">
                 <slot name="title">
                   {{ title }}
@@ -28,7 +28,7 @@
               </div>
             </div>
 
-            <div class="lg:col-span-7">
+            <div class="fade-in-right lg:col-span-7">
               <NuxtImg
                 v-if="imageSrc"
                 :src="imageSrc"
@@ -87,16 +87,33 @@ withDefaults(defineProps<SolutionHeroProps>(), {
 </script>
 
 <style scoped>
-.hero-fade-in {
-  animation: fadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+.fade-in-left {
+  animation: fadeInLeft 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@keyframes fadeIn {
+.fade-in-right {
+  animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+@keyframes fadeInLeft {
   from {
     opacity: 0;
+    transform: translateX(-40px);
   }
   to {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>
