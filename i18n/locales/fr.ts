@@ -193,12 +193,16 @@ export default {
   },
   rollingBins: {
     hero: {
-      title: 'Service de lavage professionnel de bacs roulants',
+      titleBefore: 'Lavage professionnel de vos',
+      titleHighlight: 'bacs roulants',
+      stats: 'Un service régulier et fiable sur tout le territoire français',
       subtitle:
-        '4 500 bacs roulants nettoyés chaque semaine partout en France. Un service de qualité pour des contenants propres et hygiéniques.',
-      cta: 'Nous contacter',
-      ctaLabel: 'Contactez-nous pour en savoir plus sur notre service de bacs roulants',
-      imageAlt: 'Service de nettoyage professionnel de bacs roulants KB Clean',
+        'KB Clean assure la propreté et la désinfection complète de vos bacs grâce à notre technologie de lavage haute performance.',
+      cta: 'Demander un devis',
+      ctaLabel: 'Demander un devis pour le lavage de vos bacs roulants',
+      imageAlt: 'Technologie de lavage haute performance KB Clean pour bacs roulants',
+      imagePlaceholder: 'Image requise',
+      imageDescription: 'Illustration montrant le processus de lavage des bacs roulants',
     },
   },
   common: {

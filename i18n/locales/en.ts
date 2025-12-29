@@ -191,12 +191,16 @@ export default {
   },
   rollingBins: {
     hero: {
-      title: 'Professional wheeled bin cleaning service',
+      titleBefore: 'Professional washing service for your',
+      titleHighlight: 'wheeled bins',
+      stats: 'A reliable and regular service across the entire French territory',
       subtitle:
-        '4,500 wheeled bins cleaned every week across France. A quality service for clean and hygienic containers.',
-      cta: 'Contact us',
-      ctaLabel: 'Contact us to learn more about our wheeled bin service',
-      imageAlt: 'KB Clean professional wheeled bin cleaning service',
+        'KB Clean ensures thorough cleaning and disinfection of your wheeled bins using our high-performance washing technology.',
+      cta: 'Request a quote',
+      ctaLabel: 'Request a quote for wheeled bin washing service',
+      imageAlt: 'KB Clean high-performance washing technology for wheeled bins',
+      imagePlaceholder: 'Image required',
+      imageDescription: 'Illustration showing the wheeled bin cleaning process',
     },
   },
   common: {

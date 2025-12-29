@@ -14,7 +14,7 @@ export const navigationItems: NavItem[] = [
     items: [
       {
         labelKey: 'nav.solutions.wheeledBins',
-        href: '/solutions/bacs-roulants',
+        href: '/solutions/rolling-bins',
       },
       {
         labelKey: 'nav.solutions.bioWasteShelters',
