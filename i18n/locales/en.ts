@@ -189,6 +189,16 @@ export default {
       },
     },
   },
+  rollingBins: {
+    hero: {
+      title: 'Professional wheeled bin cleaning service',
+      subtitle:
+        '4,500 wheeled bins cleaned every week across France. A quality service for clean and hygienic containers.',
+      cta: 'Contact us',
+      ctaLabel: 'Contact us to learn more about our wheeled bin service',
+      imageAlt: 'KB Clean professional wheeled bin cleaning service',
+    },
+  },
   common: {
     logoAlt: 'KB Clean Logo',
     backToHome: 'Back to home page',
