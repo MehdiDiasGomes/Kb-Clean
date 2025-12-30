@@ -22,7 +22,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         labelKey: 'nav.solutions.columns',
-        href: '/solutions/colonnes',
+        href: '/solutions/columns',
       },
     ],
   },
