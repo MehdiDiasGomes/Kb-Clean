@@ -72,19 +72,19 @@ const steps = computed((): ProcessStep[] => [
     number: 1,
     title: t('rollingBins.steps.interior.title'),
     description: t('rollingBins.steps.interior.description'),
-    icon: 'Droplets',
+    icon: '/images/rolling_bins/icons/interior-washing.webp',
   },
   {
     number: 2,
     title: t('rollingBins.steps.exterior.title'),
     description: t('rollingBins.steps.exterior.description'),
-    icon: 'Sparkles',
+    icon: '/images/rolling_bins/icons/exterior-washing.webp',
   },
   {
     number: 3,
     title: t('rollingBins.steps.finishing.title'),
     description: t('rollingBins.steps.finishing.description'),
-    icon: 'HandMetal',
+    icon: '/images/rolling_bins/icons/finishing-touches.webp',
   },
 ])
 </script>

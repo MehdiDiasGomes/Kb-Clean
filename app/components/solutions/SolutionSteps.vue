@@ -16,9 +16,12 @@
               <div
                 class="flex aspect-square w-full items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 transition-all duration-500 hover:from-primary/20 hover:to-primary/10"
               >
-                <Icon
-                  :name="step.icon"
-                  class="h-24 w-24 text-primary transition-transform duration-500 hover:scale-110"
+                <NuxtImg
+                  :src="step.icon"
+                  :alt="step.title"
+                  class="h-32 w-32 transition-transform duration-500 hover:scale-110"
+                  width="128"
+                  height="128"
                 />
               </div>
 
@@ -46,13 +49,11 @@
 </template>
 
 <script setup lang="ts">
-import type { LucideIconName } from '@/constants/clients'
-
 export interface ProcessStep {
   number: number
   title: string
   description: string
-  icon: LucideIconName
+  icon: string
 }
 
 export interface SolutionStepsProps {
