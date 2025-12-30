@@ -56,8 +56,13 @@
 
       <Sheet v-model:open="mobileMenuOpen">
         <SheetTrigger as-child class="md:hidden">
-          <Button variant="ghost" size="icon" :aria-label="$t('nav.openMenu')">
-            <Icon name="Menu" :size="24" />
+          <Button
+            variant="ghost"
+            size="icon"
+            :aria-label="mobileMenuOpen ? $t('nav.closeMenu') : $t('nav.openMenu')"
+            :aria-expanded="mobileMenuOpen"
+          >
+            <Icon name="Menu" :size="24" aria-hidden="true" />
           </Button>
         </SheetTrigger>
 
@@ -91,6 +96,7 @@
                   type="button"
                   class="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-medium transition-colors hover:bg-muted active:bg-muted/80"
                   :aria-expanded="expandedItem === item.labelKey"
+                  :aria-controls="`submenu-${item.labelKey}`"
                   :aria-label="getSubmenuAriaLabel(item.labelKey)"
                   @click="toggleSubmenu(item.labelKey)"
                 >
@@ -99,6 +105,7 @@
                     :name="expandedItem === item.labelKey ? 'ChevronUp' : 'ChevronDown'"
                     :size="18"
                     class="transition-transform duration-200"
+                    aria-hidden="true"
                   />
                 </button>
 
@@ -110,7 +117,11 @@
                   leave-from-class="max-h-96 opacity-100"
                   leave-to-class="max-h-0 opacity-0"
                 >
-                  <div v-if="expandedItem === item.labelKey" class="overflow-hidden bg-muted/50">
+                  <div
+                    v-if="expandedItem === item.labelKey"
+                    :id="`submenu-${item.labelKey}`"
+                    class="overflow-hidden bg-muted/50"
+                  >
                     <NuxtLink
                       v-for="subItem in item.items"
                       :key="subItem.labelKey"

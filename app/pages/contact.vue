@@ -1,3 +1,7 @@
+<!--
+  Form controls are accessible via shadcn-ui's FormField pattern:
+  FormLabel components are programmatically associated with inputs through FormField wrapper
+-->
 <!-- eslint-disable vuejs-accessibility/form-control-has-label -->
 <template>
   <div>
@@ -64,7 +68,7 @@
                     <FormItem>
                       <FormLabel>
                         {{ $t('contact.form.requestType.label') }}
-                        <span class="text-destructive" :aria-label="$t('common.required')">*</span>
+                        <span class="text-destructive" aria-hidden="true">*</span>
                       </FormLabel>
                       <Select v-bind="componentField">
                         <FormControl>
@@ -115,7 +119,7 @@
                     <FormItem>
                       <FormLabel>
                         {{ $t('contact.form.lastName.label') }}
-                        <span class="text-destructive" :aria-label="$t('common.required')">*</span>
+                        <span class="text-destructive" aria-hidden="true">*</span>
                       </FormLabel>
                       <FormControl>
                         <Input
@@ -132,7 +136,7 @@
                     <FormItem>
                       <FormLabel>
                         {{ $t('contact.form.email.label') }}
-                        <span class="text-destructive" :aria-label="$t('common.required')">*</span>
+                        <span class="text-destructive" aria-hidden="true">*</span>
                       </FormLabel>
                       <FormControl>
                         <Input
@@ -150,7 +154,7 @@
                   <FormItem>
                     <FormLabel>
                       {{ $t('contact.form.message.label') }}
-                      <span class="text-destructive" :aria-label="$t('common.required')">*</span>
+                      <span class="text-destructive" aria-hidden="true">*</span>
                     </FormLabel>
                     <FormControl>
                       <Textarea
