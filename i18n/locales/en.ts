@@ -230,6 +230,30 @@ export default {
         },
       },
     },
+    process: {
+      title: 'The KB Clean operating method',
+      descriptionLine1:
+        'At KB Clean, we combine innovation, rigor and field expertise to guarantee impeccable bins.',
+      descriptionLine2:
+        'Thanks to high-performance washing equipment, digitized monitoring of our interventions and precise intervention protocols, we ensure cleaning adapted to each site. For each visit, before/after photos are sent to you, concrete proof of our requirements and the quality of service provided.',
+    },
+    steps: {
+      interior: {
+        title: 'Inside the wheeled bin',
+        description:
+          'After lifting the container, our technician starts the washing cycle adapted to the degree of dirt.',
+      },
+      exterior: {
+        title: 'Outside the wheeled bin',
+        description:
+          'During the washing cycle, the technician uses the high-pressure lance to wash the outside of the container.',
+      },
+      finishing: {
+        title: 'Wheeled bin washing finishing touches',
+        description:
+          'The technician uses a damp cloth to clean the last impurities on the container.',
+      },
+    },
   },
   common: {
     logoAlt: 'KB Clean Logo',

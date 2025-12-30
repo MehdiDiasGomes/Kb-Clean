@@ -232,6 +232,30 @@ export default {
         },
       },
     },
+    process: {
+      title: 'Le mode opératoire KB Clean',
+      descriptionLine1:
+        'Chez KB Clean, nous allions innovation, rigueur et expertise terrain pour garantir des bacs impeccables.',
+      descriptionLine2:
+        "Grâce à des équipements de lavage performants, un suivi digitalisé de nos interventions et des protocoles d'intervention précis, nous assurons un nettoyage adapté à chaque site. Pour chaque passage, des photos avant/après vous sont transmises, preuve concrète de notre exigence et de la qualité du service rendu.",
+    },
+    steps: {
+      interior: {
+        title: "L'intérieur du bac roulant",
+        description:
+          'Après avoir relevé le conteneur, notre technicien lance le cycle de lavage adapté au degré de saleté.',
+      },
+      exterior: {
+        title: "L'extérieur du bac roulant",
+        description:
+          "Pendant le cycle de lavage, le technicien se munit de la lance haute pression pour laver l'extérieur du conteneur.",
+      },
+      finishing: {
+        title: 'Finitions de lavage du bac roulant',
+        description:
+          "Le technicien se munit d'un chiffon humide pour nettoyer les dernières impuretés sur le contenant.",
+      },
+    },
   },
   common: {
     logoAlt: 'Logo KB Clean',

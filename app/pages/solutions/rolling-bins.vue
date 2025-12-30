@@ -23,11 +23,20 @@
       :description-line2="$t('rollingBins.features.descriptionLine2')"
       :features="features"
     />
+
+    <SolutionsSolutionTextBlock
+      :title="$t('rollingBins.process.title')"
+      :description-line1="$t('rollingBins.process.descriptionLine1')"
+      :description-line2="$t('rollingBins.process.descriptionLine2')"
+    />
+
+    <SolutionsSolutionSteps :steps="steps" />
   </div>
 </template>
 
 <script setup lang="ts">
 import type { Feature } from '@/components/solutions/SolutionFeatures.vue'
+import type { ProcessStep } from '@/components/solutions/SolutionSteps.vue'
 
 definePageMeta({
   layout: 'default',
@@ -55,6 +64,27 @@ const features = computed((): Feature[] => [
     title: t('rollingBins.features.items.training.title'),
     description: t('rollingBins.features.items.training.description'),
     icon: 'GraduationCap',
+  },
+])
+
+const steps = computed((): ProcessStep[] => [
+  {
+    number: 1,
+    title: t('rollingBins.steps.interior.title'),
+    description: t('rollingBins.steps.interior.description'),
+    icon: 'Droplets',
+  },
+  {
+    number: 2,
+    title: t('rollingBins.steps.exterior.title'),
+    description: t('rollingBins.steps.exterior.description'),
+    icon: 'Sparkles',
+  },
+  {
+    number: 3,
+    title: t('rollingBins.steps.finishing.title'),
+    description: t('rollingBins.steps.finishing.description'),
+    icon: 'HandMetal',
   },
 ])
 </script>
