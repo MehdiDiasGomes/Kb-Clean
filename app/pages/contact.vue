@@ -9,12 +9,27 @@
       <section class="page-padding-x py-16">
         <div class="mx-auto max-w-5xl">
           <div class="space-y-12">
-            <h1 class="font-heading text-3xl text-foreground sm:text-4xl md:text-5xl">
+            <h1
+              ref="titleRef"
+              :class="[
+                'font-heading text-3xl text-foreground sm:text-4xl md:text-5xl scroll-animate',
+                isTitleVisible && 'is-visible',
+              ]"
+            >
               {{ $t('contact.title') }}
             </h1>
 
-            <div class="grid gap-6 sm:grid-cols-3">
-              <div class="flex flex-col items-center space-y-3 text-center">
+            <div
+              ref="contactInfoRef"
+              :class="[
+                'grid gap-6 sm:grid-cols-3 scroll-animate',
+                isContactInfoVisible && 'is-visible',
+              ]"
+            >
+              <div
+                class="contact-info-item flex flex-col items-center space-y-3 text-center"
+                :style="{ transitionDelay: '0.1s' }"
+              >
                 <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
                   <Icon name="Phone" class="h-5 w-5 text-primary" aria-hidden="true" />
                 </div>
@@ -28,7 +43,10 @@
                 </div>
               </div>
 
-              <div class="flex flex-col items-center space-y-3 text-center">
+              <div
+                class="contact-info-item flex flex-col items-center space-y-3 text-center"
+                :style="{ transitionDelay: '0.2s' }"
+              >
                 <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
                   <Icon name="Mail" class="h-5 w-5 text-primary" aria-hidden="true" />
                 </div>
@@ -42,7 +60,10 @@
                 </div>
               </div>
 
-              <div class="flex flex-col items-center space-y-3 text-center">
+              <div
+                class="contact-info-item flex flex-col items-center space-y-3 text-center"
+                :style="{ transitionDelay: '0.3s' }"
+              >
                 <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
                   <Icon name="MapPin" class="h-5 w-5 text-primary" aria-hidden="true" />
                 </div>
@@ -55,9 +76,12 @@
               </div>
             </div>
 
-            <Separator />
+            <Separator
+              ref="separatorRef"
+              :class="['scroll-animate', isSeparatorVisible && 'is-visible']"
+            />
 
-            <div class="space-y-8">
+            <div ref="formRef" :class="['space-y-8 scroll-animate', isFormVisible && 'is-visible']">
               <h2 class="text-2xl font-semibold text-foreground">
                 {{ $t('contact.form.subtitle') }}
               </h2>
@@ -206,6 +230,11 @@ definePageMeta({
 
 const { t } = useI18n()
 
+const { elementRef: titleRef, isVisible: isTitleVisible } = useScrollAnimation(0.2)
+const { elementRef: contactInfoRef, isVisible: isContactInfoVisible } = useScrollAnimation(0.2)
+const { elementRef: separatorRef, isVisible: isSeparatorVisible } = useScrollAnimation(0.2)
+const { elementRef: formRef, isVisible: isFormVisible } = useScrollAnimation(0.2)
+
 const formSchema = toTypedSchema(
   z.object({
     lastName: z.string().min(2, t('contact.form.validation.lastNameMin')),
@@ -260,6 +289,17 @@ const onSubmit = form.handleSubmit(async values => {
 .scroll-animate.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.scroll-animate .contact-info-item {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-animate.is-visible .contact-info-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 :deep([data-slot='form-message']) {
