@@ -1,3 +1,4 @@
+import about from './fr/about'
 import solutions from './fr/solutions'
 
 export default {
@@ -193,6 +194,7 @@ export default {
       },
     },
   },
+  about,
   ...solutions,
   common: {
     logoAlt: 'Logo KB Clean',
