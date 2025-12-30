@@ -18,7 +18,7 @@ export const navigationItems: NavItem[] = [
       },
       {
         labelKey: 'nav.solutions.bioWasteShelters',
-        href: '/solutions/abris-bacs-biodechets',
+        href: '/solutions/bio-waste-shelters',
       },
       {
         labelKey: 'nav.solutions.columns',

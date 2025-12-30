@@ -255,6 +255,72 @@ export default {
       },
     },
   },
+  bioWasteShelters: {
+    hero: {
+      titleBefore: 'Our bio-waste shelter',
+      titleHighlight: 'washing service',
+      stats: 'Regular maintenance service for your bio-waste shelters across France',
+      subtitle:
+        'KB Clean ensures hygiene and disinfection of your bio-waste shelters using our efficient and environmentally friendly process.',
+      cta: "Let's meet",
+      ctaLabel: 'Request an appointment for bio-waste shelter washing service',
+      imageAlt: 'KB Clean professional washing service for bio-waste shelters',
+      imagePlaceholder: 'Image required',
+      imageDescription: 'Illustration showing the bio-waste shelter cleaning process',
+    },
+    features: {
+      title: 'An innovative washing system and eco-responsible solutions',
+      descriptionLine1: 'At KB Clean, innovation and ecology go hand in hand.',
+      descriptionLine2:
+        'Our washing equipment is designed to minimize environmental impact. Chemical-free, with reduced water consumption and limited CO₂ emissions, we combine efficiency with environmental respect.',
+      items: {
+        washer: {
+          title: 'Optimized mobile equipment',
+          description:
+            'Our washers are mounted on light vehicles to reduce CO₂ emissions and facilitate urban interventions.',
+        },
+        pressure: {
+          title: 'Efficient high-pressure lance',
+          description:
+            'An optimized water flow of 10L/minute reduces consumption while ensuring maximum washing efficiency.',
+        },
+        recycling: {
+          title: 'Integrated recycling system',
+          description:
+            'Washing water is filtered and recycled, dividing our water consumption by 5. All water is recovered in the treatment system.',
+        },
+        training: {
+          title: 'Qualified personnel',
+          description:
+            'Our technicians are trained and certified in the latest eco-responsible washing methods.',
+        },
+      },
+    },
+    process: {
+      title: 'The KB Clean operating method',
+      descriptionLine1:
+        'Our recipe for cleanliness? Washing technology, a monitoring platform, and methodical expertise.',
+      descriptionLine2:
+        'The cleanliness of your bio-waste shelters is our priority. This is why we have implemented a customized washing method for your shelters. We guarantee impeccable cleanliness with before and after photos of each cleaning service.',
+    },
+    steps: {
+      interior: {
+        title: 'Bio-waste shelter interior',
+        description:
+          'Our technicians remove debris and perform high-pressure cleaning of the shelter interior.',
+      },
+      exterior: {
+        title: 'Bio-waste shelter exterior',
+        description:
+          'High-pressure washing is applied to all exterior walls of the bio-waste shelter.',
+      },
+      hatch: {
+        title: 'Access hatch and lid',
+        description:
+          'Thorough cleaning of the hatch, lid and opening is performed with appropriate cleaning materials.',
+      },
+    },
+  },
   common: {
     logoAlt: 'KB Clean Logo',
     backToHome: 'Back to home page',
