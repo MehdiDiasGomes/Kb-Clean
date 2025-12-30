@@ -14,7 +14,7 @@
               :style="{ transitionDelay: `${index * 0.2}s` }"
             >
               <div
-                class="flex aspect-square w-full items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 transition-all duration-500 hover:from-primary/20 hover:to-primary/10"
+                class="flex aspect-square w-full items-center justify-center rounded-xl bg-linear-to-br from-primary/10 to-primary/5 transition-all duration-500 hover:from-primary/20 hover:to-primary/10"
               >
                 <NuxtImg
                   :src="step.icon"
@@ -27,7 +27,7 @@
 
               <div class="flex items-start gap-4">
                 <div
-                  class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground"
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground"
                 >
                   {{ step.number }}
                 </div>
