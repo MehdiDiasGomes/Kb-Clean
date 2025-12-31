@@ -1,3 +1,6 @@
+import about from './en/about'
+import solutions from './en/solutions'
+
 export default {
   nav: {
     home: 'Home',
@@ -106,6 +109,91 @@ export default {
   footer: {
     copyright: 'All rights reserved.',
   },
+  contact: {
+    title: "Let's Get In Touch",
+    form: {
+      subtitle: 'Or fill out the form below',
+      lastName: {
+        label: 'Last Name',
+        placeholder: 'Smith',
+      },
+      firstName: {
+        label: 'First Name',
+        placeholder: 'John',
+      },
+      email: {
+        label: 'Email Address',
+        placeholder: "john.smith{'@'}example.com",
+      },
+      phone: {
+        label: 'Phone',
+        optional: '(optional)',
+        placeholder: '+1 234 567 8900',
+      },
+      isBusiness: {
+        label: 'I represent a business',
+      },
+      companyName: {
+        label: 'Company Name',
+        optional: '(optional)',
+        placeholder: 'KB Clean LLC',
+      },
+      requestType: {
+        label: 'Request Type',
+        placeholder: 'Select an option',
+        options: {
+          demo: 'Schedule a demonstration',
+          callback: 'Request a callback for more information',
+          quote: 'Request a quote',
+        },
+      },
+      message: {
+        label: 'Message',
+        placeholder: 'Describe your needs...',
+      },
+      submit: 'Submit',
+      submitting: 'Submitting...',
+      success: 'Your message has been sent successfully!',
+      error: 'An error occurred. Please try again.',
+      validation: {
+        lastNameRequired: 'Last name is required',
+        lastNameMin: 'Last name must be at least 2 characters',
+        firstNameRequired: 'First name is required',
+        firstNameMin: 'First name must be at least 2 characters',
+        emailRequired: 'Email address is required',
+        emailInvalid: 'Email address is invalid',
+        companyNameRequired: 'Company name is required',
+        companyNameMin: 'Company name must be at least 2 characters',
+        requestTypeRequired: 'Please select a request type',
+        messageRequired: 'Message is required',
+        messageMin: 'Message must be at least 10 characters',
+      },
+    },
+    info: {
+      title: 'Information',
+      address: {
+        title: 'Address',
+        line1: '123 Clean Street',
+        line2: '75001 Paris, France',
+      },
+      phone: {
+        title: 'Phone',
+        number: '+33123456789',
+        display: '+33 1 23 45 67 89',
+      },
+      email: {
+        title: 'Email',
+        address: "contact{'@'}kbclean.fr",
+      },
+      hours: {
+        title: 'Business Hours',
+        weekdays: 'Mon - Fri: 9:00 AM - 6:00 PM',
+        weekend: 'Sat - Sun: Closed',
+      },
+    },
+  },
+  about,
+  ...solutions,
   common: {
     logoAlt: 'KB Clean Logo',
     backToHome: 'Back to home page',
@@ -113,5 +201,7 @@ export default {
     selectLanguage: 'Select language',
     french: 'Français',
     english: 'English',
+    required: 'required',
+    skipToContent: 'Skip to main content',
   },
 }

@@ -4,7 +4,11 @@
       class="mx-auto flex items-center justify-between p-4"
       :aria-label="$t('nav.mainNavAriaLabel')"
     >
-      <NuxtLink to="/" class="flex items-center space-x-2" :aria-label="$t('common.backToHome')">
+      <NuxtLink
+        :to="localePath('/')"
+        class="flex items-center space-x-2"
+        :aria-label="$t('common.backToHome')"
+      >
         <NuxtImg
           src="/images/kb_clean_logo_v1.webp"
           :alt="$t('common.logoAlt')"
@@ -21,23 +25,23 @@
               {{ $t(item.labelKey) }}
             </NavigationMenuTrigger>
 
-            <NavigationMenuLink
-              v-else
-              :href="item.href"
-              class="text-sm font-medium text-foreground"
-            >
-              {{ $t(item.labelKey) }}
+            <NavigationMenuLink v-else as-child>
+              <NuxtLink :to="localePath(item.href!)" class="text-sm font-medium text-foreground">
+                {{ $t(item.labelKey) }}
+              </NuxtLink>
             </NavigationMenuLink>
 
             <NavigationMenuContent v-if="item.items">
               <ul class="grid w-70 gap-2 p-3">
                 <li v-for="subItem in item.items" :key="subItem.labelKey">
-                  <NavigationMenuLink :href="subItem.href">
-                    <div class="p-2">
-                      <div class="text-sm font-medium leading-none">
-                        {{ $t(subItem.labelKey) }}
+                  <NavigationMenuLink as-child>
+                    <NuxtLink :to="localePath(subItem.href!)">
+                      <div class="p-2">
+                        <div class="text-sm font-medium leading-none">
+                          {{ $t(subItem.labelKey) }}
+                        </div>
                       </div>
-                    </div>
+                    </NuxtLink>
                   </NavigationMenuLink>
                 </li>
               </ul>
@@ -52,8 +56,13 @@
 
       <Sheet v-model:open="mobileMenuOpen">
         <SheetTrigger as-child class="md:hidden">
-          <Button variant="ghost" size="icon" :aria-label="$t('nav.openMenu')">
-            <Icon name="Menu" :size="24" />
+          <Button
+            variant="ghost"
+            size="icon"
+            :aria-label="mobileMenuOpen ? $t('nav.closeMenu') : $t('nav.openMenu')"
+            :aria-expanded="mobileMenuOpen"
+          >
+            <Icon name="Menu" :size="24" aria-hidden="true" />
           </Button>
         </SheetTrigger>
 
@@ -75,7 +84,7 @@
             <template v-for="item in navigationItems" :key="item.labelKey">
               <NuxtLink
                 v-if="!item.items"
-                :to="item.href"
+                :to="localePath(item.href!)"
                 class="rounded-lg px-4 py-3 text-base font-medium transition-colors hover:bg-muted active:bg-muted/80"
                 @click="mobileMenuOpen = false"
               >
@@ -87,6 +96,7 @@
                   type="button"
                   class="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-medium transition-colors hover:bg-muted active:bg-muted/80"
                   :aria-expanded="expandedItem === item.labelKey"
+                  :aria-controls="`submenu-${item.labelKey}`"
                   :aria-label="getSubmenuAriaLabel(item.labelKey)"
                   @click="toggleSubmenu(item.labelKey)"
                 >
@@ -95,6 +105,7 @@
                     :name="expandedItem === item.labelKey ? 'ChevronUp' : 'ChevronDown'"
                     :size="18"
                     class="transition-transform duration-200"
+                    aria-hidden="true"
                   />
                 </button>
 
@@ -106,11 +117,15 @@
                   leave-from-class="max-h-96 opacity-100"
                   leave-to-class="max-h-0 opacity-0"
                 >
-                  <div v-if="expandedItem === item.labelKey" class="overflow-hidden bg-muted/50">
+                  <div
+                    v-if="expandedItem === item.labelKey"
+                    :id="`submenu-${item.labelKey}`"
+                    class="overflow-hidden bg-muted/50"
+                  >
                     <NuxtLink
                       v-for="subItem in item.items"
                       :key="subItem.labelKey"
-                      :to="subItem.href"
+                      :to="localePath(subItem.href!)"
                       class="block border-l-2 border-border py-2.5 pl-8 pr-4 text-sm transition-colors hover:border-primary hover:bg-muted hover:text-foreground active:bg-muted/80"
                       @click="mobileMenuOpen = false"
                     >
@@ -143,6 +158,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 import { navigationItems } from '@/constants/navbar'
 
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const mobileMenuOpen = ref<boolean>(false)
 const expandedItem = ref<string | null>(null)

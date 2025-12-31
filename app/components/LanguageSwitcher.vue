@@ -17,7 +17,7 @@
         <span class="flex items-center gap-3">
           <Icon v-if="currentLocale === loc.code" name="Check" :size="16" class="shrink-0" />
           <span v-else class="w-4 shrink-0" />
-          <span class="shrink-0 text-lg">
+          <span class="shrink-0 text-lg" aria-hidden="true">
             {{ loc.code === 'fr' ? '🇫🇷' : '🇬🇧' }}
           </span>
           <span>

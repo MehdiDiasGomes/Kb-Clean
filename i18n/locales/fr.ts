@@ -1,3 +1,6 @@
+import about from './fr/about'
+import solutions from './fr/solutions'
+
 export default {
   nav: {
     home: 'Accueil',
@@ -108,6 +111,91 @@ export default {
   footer: {
     copyright: 'Tous droits réservés.',
   },
+  contact: {
+    title: 'Contactez-nous',
+    form: {
+      subtitle: 'Ou remplissez le formulaire ci-dessous',
+      lastName: {
+        label: 'Nom',
+        placeholder: 'Dupont',
+      },
+      firstName: {
+        label: 'Prénom',
+        placeholder: 'Jean',
+      },
+      email: {
+        label: 'Adresse email',
+        placeholder: "jean.dupont{'@'}exemple.fr",
+      },
+      phone: {
+        label: 'Téléphone',
+        optional: '(optionnel)',
+        placeholder: '+33 6 12 34 56 78',
+      },
+      isBusiness: {
+        label: 'Je représente une entreprise',
+      },
+      companyName: {
+        label: "Nom de l'entreprise",
+        optional: '(optionnel)',
+        placeholder: 'KB Clean SARL',
+      },
+      requestType: {
+        label: 'Type de demande',
+        placeholder: 'Sélectionnez une option',
+        options: {
+          demo: 'Prendre rendez-vous pour une démonstration',
+          callback: "Être rappelé pour plus d'informations",
+          quote: 'Demande de devis',
+        },
+      },
+      message: {
+        label: 'Message',
+        placeholder: 'Décrivez votre besoin...',
+      },
+      submit: 'Envoyer',
+      submitting: 'Envoi en cours...',
+      success: 'Votre message a été envoyé avec succès !',
+      error: 'Une erreur est survenue. Veuillez réessayer.',
+      validation: {
+        lastNameRequired: 'Le nom est obligatoire',
+        lastNameMin: 'Le nom doit contenir au moins 2 caractères',
+        firstNameRequired: 'Le prénom est obligatoire',
+        firstNameMin: 'Le prénom doit contenir au moins 2 caractères',
+        emailRequired: "L'adresse email est obligatoire",
+        emailInvalid: "L'adresse email n'est pas valide",
+        companyNameRequired: "Le nom de l'entreprise est obligatoire",
+        companyNameMin: "Le nom de l'entreprise doit contenir au moins 2 caractères",
+        requestTypeRequired: 'Veuillez sélectionner un type de demande',
+        messageRequired: 'Le message est obligatoire',
+        messageMin: 'Le message doit contenir au moins 10 caractères',
+      },
+    },
+    info: {
+      title: 'Informations',
+      address: {
+        title: 'Adresse',
+        line1: '123 Rue de la Propreté',
+        line2: '75001 Paris, France',
+      },
+      phone: {
+        title: 'Téléphone',
+        number: '+33123456789',
+        display: '+33 1 23 45 67 89',
+      },
+      email: {
+        title: 'Email',
+        address: "contact{'@'}kbclean.fr",
+      },
+      hours: {
+        title: 'Horaires',
+        weekdays: 'Lun - Ven : 9h00 - 18h00',
+        weekend: 'Sam - Dim : Fermé',
+      },
+    },
+  },
+  about,
+  ...solutions,
   common: {
     logoAlt: 'Logo KB Clean',
     backToHome: "Retour à la page d'accueil",
@@ -115,5 +203,7 @@ export default {
     selectLanguage: 'Sélectionner la langue',
     french: 'Français',
     english: 'English',
+    required: 'obligatoire',
+    skipToContent: 'Aller au contenu principal',
   },
 }

@@ -7,22 +7,22 @@ export type NavItem = {
 export const navigationItems: NavItem[] = [
   {
     labelKey: 'nav.about',
-    href: '/qui-sommes-nous',
+    href: '/about',
   },
   {
     labelKey: 'nav.solutions.title',
     items: [
       {
         labelKey: 'nav.solutions.wheeledBins',
-        href: '/solutions/bacs-roulants',
+        href: '/solutions/rolling-bins',
       },
       {
         labelKey: 'nav.solutions.bioWasteShelters',
-        href: '/solutions/abris-bacs-biodechets',
+        href: '/solutions/bio-waste-shelters',
       },
       {
         labelKey: 'nav.solutions.columns',
-        href: '/solutions/colonnes',
+        href: '/solutions/columns',
       },
     ],
   },

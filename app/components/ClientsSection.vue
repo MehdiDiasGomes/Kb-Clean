@@ -46,7 +46,12 @@
                 width="40"
                 height="40"
               />
-              <Icon v-else :name="client.icon!" class="h-8 w-8 text-primary" aria-hidden="true" />
+              <Icon
+                v-else
+                :name="client.icon ?? 'Building2'"
+                class="h-8 w-8 text-primary"
+                aria-hidden="true"
+              />
             </div>
             <h3 class="text-xl font-bold text-card-foreground">
               {{ $t(client.titleKey) }}
@@ -58,18 +63,9 @@
         </div>
 
         <div class="flex justify-center">
-          <NuxtLink
-            to="/contact"
-            class="group inline-flex items-center gap-2 rounded-full border-2 border-secondary bg-secondary px-8 py-4 text-lg font-bold text-secondary-foreground transition-all hover:bg-transparent hover:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            :aria-label="$t('clients.ctaLabel')"
-          >
+          <ButtonCta to="/contact" :aria-label="$t('clients.ctaLabel')">
             {{ $t('clients.cta') }}
-            <Icon
-              name="ArrowRight"
-              class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-              aria-hidden="true"
-            />
-          </NuxtLink>
+          </ButtonCta>
         </div>
       </div>
     </div>

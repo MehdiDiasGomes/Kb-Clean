@@ -15,7 +15,7 @@ export const serviceCards: ServiceCard[] = [
     descriptionKey: 'solutions.offerings.wasteBins.description',
     ctaKey: 'solutions.offerings.wasteBins.cta',
     ctaLabelKey: 'solutions.offerings.wasteBins.ctaLabel',
-    href: '/services/waste-bins',
+    href: '/solutions/rolling-bins',
     icon: 'Trash2',
   },
   {
@@ -23,7 +23,7 @@ export const serviceCards: ServiceCard[] = [
     descriptionKey: 'solutions.offerings.bioWaste.description',
     ctaKey: 'solutions.offerings.bioWaste.cta',
     ctaLabelKey: 'solutions.offerings.bioWaste.ctaLabel',
-    href: '/services/bio-waste',
+    href: '/solutions/bio-waste-shelters',
     icon: 'Recycle',
   },
   {
@@ -31,7 +31,39 @@ export const serviceCards: ServiceCard[] = [
     descriptionKey: 'solutions.offerings.bulkContainers.description',
     ctaKey: 'solutions.offerings.bulkContainers.cta',
     ctaLabelKey: 'solutions.offerings.bulkContainers.ctaLabel',
-    href: '/services/bulk-containers',
+    href: '/solutions/columns',
     icon: 'Building2',
+  },
+]
+
+export type AboutService = {
+  title: string
+  description: string
+  icon: keyof typeof icons
+  link: string
+  ariaLabel: string
+}
+
+export const getAboutServices = (t: (key: string) => string): AboutService[] => [
+  {
+    title: t('about.expertise.services.wheeledBins.title'),
+    description: t('about.expertise.services.wheeledBins.description'),
+    icon: 'Trash2',
+    link: '/solutions/rolling-bins',
+    ariaLabel: t('about.expertise.services.wheeledBins.ariaLabel'),
+  },
+  {
+    title: t('about.expertise.services.bioWasteShelters.title'),
+    description: t('about.expertise.services.bioWasteShelters.description'),
+    icon: 'Recycle',
+    link: '/solutions/bio-waste-shelters',
+    ariaLabel: t('about.expertise.services.bioWasteShelters.ariaLabel'),
+  },
+  {
+    title: t('about.expertise.services.columns.title'),
+    description: t('about.expertise.services.columns.description'),
+    icon: 'Archive',
+    link: '/solutions/columns',
+    ariaLabel: t('about.expertise.services.columns.ariaLabel'),
   },
 ]

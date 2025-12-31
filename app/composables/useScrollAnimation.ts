@@ -9,7 +9,11 @@ export const useScrollAnimation = (
   const isVisible: Ref<boolean> = ref(false)
   const elementRef: Ref<HTMLElement | null> = ref(null)
 
-  onMounted(() => {
+  const setupObserver = (): void => {
+    if (!elementRef.value || !(elementRef.value instanceof Element)) {
+      return
+    }
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -25,15 +29,17 @@ export const useScrollAnimation = (
       },
     )
 
-    if (elementRef.value) {
-      observer.observe(elementRef.value)
-    }
+    observer.observe(elementRef.value)
 
     onUnmounted(() => {
-      if (elementRef.value) {
+      if (elementRef.value && elementRef.value instanceof Element) {
         observer.unobserve(elementRef.value)
       }
     })
+  }
+
+  onMounted(() => {
+    nextTick(setupObserver)
   })
 
   return {

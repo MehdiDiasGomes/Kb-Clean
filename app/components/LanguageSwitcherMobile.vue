@@ -8,7 +8,7 @@
       <SelectTrigger class="w-full" :aria-label="$t('common.selectLanguage')">
         <SelectValue>
           <span class="flex items-center gap-3">
-            <span class="shrink-0 text-lg">
+            <span class="shrink-0 text-lg" aria-hidden="true">
               {{ currentLocale === 'fr' ? '🇫🇷' : '🇬🇧' }}
             </span>
             <span>
@@ -20,7 +20,7 @@
       <SelectContent>
         <SelectItem v-for="loc in allLocales" :key="loc.code" :value="loc.code">
           <span class="flex items-center gap-3">
-            <span class="shrink-0 text-lg">
+            <span class="shrink-0 text-lg" aria-hidden="true">
               {{ loc.code === 'fr' ? '🇫🇷' : '🇬🇧' }}
             </span>
             <span>
