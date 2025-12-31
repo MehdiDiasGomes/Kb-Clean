@@ -10,7 +10,7 @@
         :aria-label="$t('common.backToHome')"
       >
         <NuxtImg
-          src="/images/kb_clean_logo_v1.webp"
+          src="/images/brand/logo.webp"
           :alt="$t('common.logoAlt')"
           class="h-16 w-auto object-contain object-left max-md:h-12"
           width="200"
