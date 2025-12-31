@@ -21,7 +21,7 @@
       <div
         :class="[
           'relative page-padding-x py-16 lg:py-24',
-          backgroundImage ? 'min-h-[70vh] flex items-center' : '',
+          backgroundImage ? 'min-h-screen flex items-center' : '',
         ]"
       >
         <div class="mx-auto max-w-7xl">
