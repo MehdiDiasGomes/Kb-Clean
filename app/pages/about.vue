@@ -1,7 +1,6 @@
 <template>
   <div>
     <PageContainer>
-      <!-- Hero Section -->
       <section class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div class="space-y-12">
@@ -11,7 +10,7 @@
             >
               <h1 class="font-heading text-4xl text-foreground sm:text-5xl md:text-6xl">
                 {{ $t('about.hero.titleBefore') }}
-                <UnderlinedText>{{ $t('about.hero.titleHighlight') }}</UnderlinedText>
+                {{ $t('about.hero.titleHighlight') }}
               </h1>
               <p class="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground">
                 {{ $t('about.hero.subtitle') }}
@@ -21,7 +20,6 @@
         </div>
       </section>
 
-      <!-- Mission Section -->
       <section class="bg-muted/30 page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div
@@ -66,7 +64,6 @@
         </div>
       </section>
 
-      <!-- Expertise Section -->
       <section class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div
@@ -91,6 +88,7 @@
                 :key="key"
                 :to="localePath(service.link)"
                 class="group space-y-4 rounded-xl border border-border bg-background p-6 transition-all hover:border-primary hover:shadow-md"
+                :aria-label="service.ariaLabel"
               >
                 <Icon
                   :name="service.icon"
@@ -114,7 +112,6 @@
         </div>
       </section>
 
-      <!-- Commitment Section -->
       <section class="bg-muted/30 page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div
@@ -166,7 +163,6 @@
         </div>
       </section>
 
-      <!-- Team Section -->
       <section class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div ref="teamRef" :class="['space-y-12 scroll-animate', isTeamVisible && 'is-visible']">
@@ -206,13 +202,12 @@
         </div>
       </section>
 
-      <!-- CTA Section -->
       <section class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-4xl">
           <div
             ref="ctaRef"
             :class="[
-              'rounded-2xl bg-linear-to-br from-primary/10 to-primary/5 p-8 text-center scroll-animate lg:p-12',
+              'rounded-2xl bg-linear-to-br from-primary/10 to-primary/5 p-12 text-center scroll-animate lg:p-20',
               isCtaVisible && 'is-visible',
             ]"
           >
@@ -222,14 +217,12 @@
             <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
               {{ $t('about.cta.description') }}
             </p>
-            <NuxtLink
+            <ButtonCta
               :to="localePath('/contact')"
-              class="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-all hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              :text="$t('about.cta.button')"
               :aria-label="$t('about.cta.buttonLabel')"
-            >
-              {{ $t('about.cta.button') }}
-              <Icon name="ArrowRight" :size="20" aria-hidden="true" />
-            </NuxtLink>
+              class="mt-8"
+            />
           </div>
         </div>
       </section>
@@ -238,6 +231,10 @@
 </template>
 
 <script setup lang="ts">
+import type * as icons from 'lucide-vue-next'
+
+import { getAboutServices } from '@/constants/services'
+
 definePageMeta({
   layout: 'default',
 })
@@ -252,45 +249,26 @@ const { elementRef: commitmentRef, isVisible: isCommitmentVisible } = useScrollA
 const { elementRef: teamRef, isVisible: isTeamVisible } = useScrollAnimation(0.2)
 const { elementRef: ctaRef, isVisible: isCtaVisible } = useScrollAnimation(0.2)
 
-const services = computed(() => [
-  {
-    title: t('about.expertise.services.wheeledBins.title'),
-    description: t('about.expertise.services.wheeledBins.description'),
-    icon: 'Trash2',
-    link: '/solutions/rolling-bins',
-  },
-  {
-    title: t('about.expertise.services.bioWasteShelters.title'),
-    description: t('about.expertise.services.bioWasteShelters.description'),
-    icon: 'Recycle',
-    link: '/solutions/bio-waste-shelters',
-  },
-  {
-    title: t('about.expertise.services.columns.title'),
-    description: t('about.expertise.services.columns.description'),
-    icon: 'Archive',
-    link: '/solutions/columns',
-  },
-])
+const services = computed(() => getAboutServices(t))
 
-const getValueIcon = (key: string): string => {
-  const icons: Record<string, string> = {
+const getValueIcon = (key: string): keyof typeof icons => {
+  const iconMap: Record<string, keyof typeof icons> = {
     innovation: 'Lightbulb',
     ecology: 'Leaf',
     quality: 'Award',
     reliability: 'Shield',
   }
-  return icons[key] || 'Circle'
+  return iconMap[key] || 'Circle'
 }
 
-const getCommitmentIcon = (key: string): string => {
-  const icons: Record<string, string> = {
+const getCommitmentIcon = (key: string): keyof typeof icons => {
+  const iconMap: Record<string, keyof typeof icons> = {
     water: 'Droplets',
     chemicals: 'Ban',
     emissions: 'Wind',
     goal: 'Target',
   }
-  return icons[key] || 'Circle'
+  return iconMap[key] || 'Circle'
 }
 </script>
 

@@ -2,18 +2,16 @@
   <div>
     <SolutionsSolutionHero
       :subtitle="$t('columns.hero.subtitle')"
-      :stats="$t('columns.hero.stats')"
       :cta-text="$t('columns.hero.cta')"
       cta-link="/contact"
       :cta-aria-label="$t('columns.hero.ctaLabel')"
-      image-src="/images/columns/hero.webp"
-      :image-alt="$t('columns.hero.imageAlt')"
-      :image-placeholder="$t('columns.hero.imagePlaceholder')"
-      :image-description="$t('columns.hero.imageDescription')"
+      background-image="/images/columns/hero-bg.webp"
+      :background-image-alt="$t('columns.hero.backgroundImageAlt')"
+      image-alt=""
     >
       <template #title>
         {{ $t('columns.hero.titleBefore') }}
-        <UnderlinedText>{{ $t('columns.hero.titleHighlight') }}</UnderlinedText>
+        <UnderlinedText class="pb-2">{{ $t('columns.hero.titleHighlight') }}</UnderlinedText>
       </template>
     </SolutionsSolutionHero>
 

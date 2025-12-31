@@ -2,18 +2,18 @@
   <div>
     <SolutionsSolutionHero
       :subtitle="$t('bioWasteShelters.hero.subtitle')"
-      :stats="$t('bioWasteShelters.hero.stats')"
       :cta-text="$t('bioWasteShelters.hero.cta')"
       cta-link="/contact"
       :cta-aria-label="$t('bioWasteShelters.hero.ctaLabel')"
-      image-src="/images/bio_waste_shelters/hero.webp"
-      :image-alt="$t('bioWasteShelters.hero.imageAlt')"
-      :image-placeholder="$t('bioWasteShelters.hero.imagePlaceholder')"
-      :image-description="$t('bioWasteShelters.hero.imageDescription')"
+      background-image="/images/bio_waste_shelters/hero-bg.webp"
+      :background-image-alt="$t('bioWasteShelters.hero.backgroundImageAlt')"
+      image-alt=""
     >
       <template #title>
         {{ $t('bioWasteShelters.hero.titleBefore') }}
-        <UnderlinedText>{{ $t('bioWasteShelters.hero.titleHighlight') }}</UnderlinedText>
+        <UnderlinedText class="pb-2">{{
+          $t('bioWasteShelters.hero.titleHighlight')
+        }}</UnderlinedText>
       </template>
     </SolutionsSolutionHero>
 

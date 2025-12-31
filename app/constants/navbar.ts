@@ -7,7 +7,7 @@ export type NavItem = {
 export const navigationItems: NavItem[] = [
   {
     labelKey: 'nav.about',
-    href: '/qui-sommes-nous',
+    href: '/about',
   },
   {
     labelKey: 'nav.solutions.title',
