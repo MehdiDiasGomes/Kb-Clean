@@ -1,12 +1,11 @@
 <template>
   <section class="relative w-full hero-fade-in">
-    <div class="relative w-full h-screen md:h-auto">
+    <div class="relative w-full h-screen">
       <NuxtImg
         src="/images/kb_clean_hero.webp"
         :alt="$t('hero.imageAlt')"
-        class="w-full h-full md:h-auto object-cover md:object-contain"
+        class="w-full h-screen object-cover"
         width="1920"
-        height="1080"
         loading="eager"
         fetchpriority="high"
       />
