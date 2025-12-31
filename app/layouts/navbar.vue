@@ -12,9 +12,7 @@
         <NuxtImg
           src="/images/brand/logo.webp"
           :alt="$t('common.logoAlt')"
-          class="h-16 w-auto object-contain object-left max-md:h-12"
-          width="200"
-          height="100"
+          class="w-36 object-contain object-left max-md:w-40"
         />
       </NuxtLink>
 
@@ -72,11 +70,9 @@
               {{ $t('nav.menu') }}
             </SheetTitle>
             <NuxtImg
-              src="/images/kb_clean_logo_v1.webp"
+              src="/images/brand/logo.webp"
               :alt="$t('common.logoAlt')"
-              class="h-12 w-auto object-contain object-left"
-              width="120"
-              height="60"
+              class="h-auto w-32 object-contain object-left"
             />
           </SheetHeader>
 
