@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+
+# Nuxt
+.nuxt
+.output
+dist
+
+# Build
+build
+.vercel
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
+
+# IDE
+.idea
+.vscode
+
+# OS
+.DS_Store
+
+# Shadcnui
+app/components/ui
