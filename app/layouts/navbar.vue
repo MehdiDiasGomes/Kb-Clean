@@ -1,7 +1,7 @@
 <template>
   <header class="sticky top-0 z-50 w-full border-b border-border bg-background backdrop-blur">
     <nav
-      class="mx-auto flex items-center justify-between p-4"
+      class="mx-auto flex items-center justify-between px-4 py-6"
       :aria-label="$t('nav.mainNavAriaLabel')"
     >
       <NuxtLink
@@ -12,7 +12,7 @@
         <NuxtImg
           src="/images/kb_clean_logo_v1.webp"
           :alt="$t('common.logoAlt')"
-          class="max-md:w-24"
+          class="h-16 w-auto object-contain object-left max-md:h-12"
           width="200"
           height="100"
         />
@@ -74,7 +74,7 @@
             <NuxtImg
               src="/images/kb_clean_logo_v1.webp"
               :alt="$t('common.logoAlt')"
-              class="max-md:w-24"
+              class="h-12 w-auto object-contain object-left"
               width="120"
               height="60"
             />

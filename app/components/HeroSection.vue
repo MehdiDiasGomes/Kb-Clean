@@ -1,6 +1,6 @@
 <template>
   <section class="relative w-full hero-fade-in">
-    <div class="relative w-full h-[75vh] md:h-auto">
+    <div class="relative w-full h-screen md:h-auto">
       <NuxtImg
         src="/images/kb_clean_hero.webp"
         :alt="$t('hero.imageAlt')"
