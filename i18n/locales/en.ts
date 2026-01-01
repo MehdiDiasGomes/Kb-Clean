@@ -93,14 +93,10 @@ export default {
         title: 'Businesses',
         description: 'Wheeled bin cleaning solutions tailored to private business needs',
       },
-      manufacturers: {
-        title: 'Manufacturers',
+      individuals: {
+        title: 'Homeowners',
         description:
-          'Complete installation and maintenance service for bin shelter equipment manufacturers',
-      },
-      collectors: {
-        title: 'Collectors',
-        description: 'Integrated collection and cleaning service for all types of waste containers',
+          'Waste bins are one of the main sources of bacteria and bad odors around the home. KB Clean cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
       },
     },
     cta: 'Contact us',

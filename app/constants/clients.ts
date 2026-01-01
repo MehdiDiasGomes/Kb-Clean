@@ -21,13 +21,8 @@ export const clientCards: ClientCard[] = [
     image: '/images/clients/task_02.webp',
   },
   {
-    titleKey: 'clients.types.manufacturers.title',
-    descriptionKey: 'clients.types.manufacturers.description',
+    titleKey: 'clients.types.individuals.title',
+    descriptionKey: 'clients.types.individuals.description',
     image: '/images/clients/task_03.webp',
-  },
-  {
-    titleKey: 'clients.types.collectors.title',
-    descriptionKey: 'clients.types.collectors.description',
-    image: '/images/clients/task_04.webp',
   },
 ]

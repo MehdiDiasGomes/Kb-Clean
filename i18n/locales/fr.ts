@@ -94,15 +94,10 @@ export default {
         description:
           'Solutions de nettoyage de bacs roulants adaptées aux besoins des entreprises privées',
       },
-      manufacturers: {
-        title: 'Fabricants',
+      individuals: {
+        title: 'Particulier',
         description:
-          "Service complet d'installation et d'entretien d'abris bacs pour les fabricants d'équipements",
-      },
-      collectors: {
-        title: 'Collecteurs',
-        description:
-          'Service intégré de collecte et de nettoyage pour tous types de contenants à déchets',
+          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. KB Clean nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
       },
     },
     cta: 'Nous contacter',

@@ -31,11 +31,11 @@
           </div>
         </div>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-wrap justify-center gap-8">
           <div
             v-for="client in clientCards"
             :key="client.titleKey"
-            class="flex flex-col items-center space-y-4 rounded-2xl bg-card p-6 text-center transition-shadow hover:shadow-lg"
+            class="flex w-full flex-col items-center space-y-6 rounded-2xl bg-card p-8 text-center transition-shadow hover:shadow-lg md:w-[calc(50%-1rem)] nth-3:md:w-full"
           >
             <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
               <NuxtImg
