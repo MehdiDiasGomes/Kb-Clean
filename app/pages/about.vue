@@ -1,7 +1,6 @@
 <template>
   <div>
-    <PageContainer>
-      <section class="page-padding-x py-16 lg:py-24">
+    <section class="page-padding-x py-16 lg:py-24">
         <div class="mx-auto max-w-7xl">
           <div class="space-y-12">
             <div
@@ -20,10 +19,11 @@
         </div>
       </section>
 
-      <section class="bg-muted/30 page-padding-x py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl">
-          <div
-            ref="missionRef"
+      <section class="w-full bg-muted/30 py-16 lg:py-24">
+        <div class="page-padding-x">
+          <div class="mx-auto max-w-7xl">
+            <div
+              ref="missionRef"
             :class="['space-y-12 scroll-animate', isMissionVisible && 'is-visible']"
           >
             <div class="text-center">
@@ -62,6 +62,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <section class="page-padding-x py-16 lg:py-24">
@@ -112,10 +113,11 @@
         </div>
       </section>
 
-      <section class="bg-muted/30 page-padding-x py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl">
-          <div
-            ref="commitmentRef"
+      <section class="w-full bg-muted/30 py-16 lg:py-24">
+        <div class="page-padding-x">
+          <div class="mx-auto max-w-7xl">
+            <div
+              ref="commitmentRef"
             :class="['space-y-12 scroll-animate', isCommitmentVisible && 'is-visible']"
           >
             <div class="text-center">
@@ -161,6 +163,7 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <section class="page-padding-x py-16 lg:py-24">
@@ -178,23 +181,27 @@
               </p>
             </div>
 
-            <div class="rounded-xl bg-muted/30 p-8">
-              <h3 class="mb-6 text-center font-heading text-xl font-bold text-foreground">
-                {{ $t('about.team.certifications.title') }}
-              </h3>
-              <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-                <div
-                  v-for="(cert, key) in $tm('about.team.certifications.items')"
-                  :key="key"
-                  class="flex items-center gap-3 rounded-lg bg-background p-4"
-                >
-                  <Icon
-                    name="CheckCircle"
-                    :size="20"
-                    class="shrink-0 text-primary"
-                    aria-hidden="true"
-                  />
-                  <span class="text-sm font-medium text-foreground">{{ cert }}</span>
+            <div class="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-muted/30 py-8">
+              <div class="page-padding-x">
+                <div class="mx-auto max-w-7xl">
+                  <h3 class="mb-6 text-center font-heading text-xl font-bold text-foreground">
+                    {{ $t('about.team.certifications.title') }}
+                  </h3>
+                  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+                    <div
+                      v-for="(cert, key) in $tm('about.team.certifications.items')"
+                      :key="key"
+                      class="flex items-center gap-3 rounded-lg bg-background p-4"
+                    >
+                      <Icon
+                        name="CheckCircle"
+                        :size="20"
+                        class="shrink-0 text-primary"
+                        aria-hidden="true"
+                      />
+                      <span class="text-sm font-medium text-foreground">{{ cert }}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,7 +233,6 @@
           </div>
         </div>
       </section>
-    </PageContainer>
   </div>
 </template>
 
