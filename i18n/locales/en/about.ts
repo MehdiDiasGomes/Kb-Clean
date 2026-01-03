@@ -19,7 +19,7 @@ export default {
       ecology: {
         title: 'Ecology',
         description:
-          'Chemical-free processes, water recycling, and reduced CO₂ emissions. Our 2027 goal: 100% eco-friendly service.',
+          'Our innovative bin cleaning system, mounted on 100% electric vehicles, enables effective cleaning without harsh chemicals, with water recycling and low carbon impact.',
       },
       quality: {
         title: 'Quality',
@@ -77,12 +77,6 @@ export default {
         description:
           'Light mobile equipment to minimize our carbon footprint during interventions.',
         impact: '-50% CO₂ emissions',
-      },
-      goal: {
-        title: '2027 Objective',
-        description:
-          'Transition to fully electric vehicle fleet for 100% eco-friendly cleaning service.',
-        impact: '100% green by 2027',
       },
     },
   },
