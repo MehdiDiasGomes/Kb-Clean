@@ -19,7 +19,7 @@ export default {
       ecology: {
         title: 'Écologie',
         description:
-          "Procédés sans produits chimiques, recyclage de l'eau et réduction des émissions de CO₂. Notre objectif 2027 : un service 100% écologique.",
+          "Notre système innovant de nettoyage de bacs, embarqué sur des utilitaires 100 % électriques, permet un nettoyage efficace sans produits chimiques agressifs, avec recyclage de l'eau et faible impact carbone.",
       },
       quality: {
         title: 'Qualité',
@@ -77,12 +77,6 @@ export default {
         description:
           'Équipements mobiles légers pour minimiser notre empreinte carbone lors des interventions.',
         impact: "-50% d'émissions CO₂",
-      },
-      goal: {
-        title: 'Objectif 2027',
-        description:
-          'Transition vers une flotte 100% électrique pour un service de nettoyage totalement écologique.',
-        impact: '100% vert en 2027',
       },
     },
   },

@@ -22,7 +22,7 @@ export default {
   },
   hero: {
     title: 'KB Clean',
-    titleHighlight: 'Votre expert en hygiène des contenants',
+    titleHighlight: 'La référence du nettoyage et de la désinfection de vos bacs et contenants',
     subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
     ctaPrimary: 'Nous contacter',
     imageAlt: 'Services de lavage de contenants à déchets KB Clean',
@@ -33,7 +33,7 @@ export default {
       line1:
         'Un nettoyage régulier de vos conteneurs élimine les mauvaises odeurs et limite la prolifération bactérienne.',
       line2: "Des bacs propres, c'est un geste santé et un engagement pour le tri responsable.",
-      line3: 'Notre objectif 2027 : vous offrir un service de nettoyage 100% écologique !',
+      line3: 'Notre objectif : Vous garantir un nettoyage performant et 100 % écologique pensé pour votre hygiène et pour la planète',
     },
     offerings: {
       wasteBins: {

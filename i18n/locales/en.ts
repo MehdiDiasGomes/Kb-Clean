@@ -22,7 +22,7 @@ export default {
   },
   hero: {
     title: 'KB Clean',
-    titleHighlight: 'Your expert in container hygiene',
+    titleHighlight: 'The reference for cleaning and disinfecting your bins and containers',
     subtitle: 'Professional solutions for spotless bins',
     ctaPrimary: 'Contact us',
     imageAlt: 'KB Clean waste container cleaning services',
@@ -33,7 +33,7 @@ export default {
       line1:
         'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
       line2: 'Clean bins mean better health and a commitment to responsible waste sorting.',
-      line3: 'Our 2027 goal: offering you a 100% eco-friendly cleaning service!',
+      line3: 'Our goal: To guarantee you efficient and 100% eco-friendly cleaning designed for your hygiene and the planet',
     },
     offerings: {
       wasteBins: {

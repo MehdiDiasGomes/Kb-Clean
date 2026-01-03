@@ -1,23 +1,30 @@
 <template>
   <div>
-    <section class="page-padding-x py-16 lg:py-24">
+    <section class="relative h-screen w-full bg-cover bg-center bg-no-repeat" style="background-image: url('/images/about/hero-bg.webp')">
+      <div
+        class="absolute inset-0 bg-linear-to-br from-primary/50 to-primary/90"
+        aria-hidden="true"
+      />
+
+      <div class="absolute inset-0 flex items-center justify-center page-padding-x">
         <div class="mx-auto max-w-7xl">
           <div class="space-y-12">
             <div
               ref="heroRef"
               :class="['text-center scroll-animate', isHeroVisible && 'is-visible']"
             >
-              <h1 class="font-heading text-4xl text-foreground sm:text-5xl md:text-6xl">
+              <h1 class="font-heading text-4xl text-white sm:text-5xl md:text-6xl">
                 {{ $t('about.hero.titleBefore') }}
                 {{ $t('about.hero.titleHighlight') }}
               </h1>
-              <p class="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground">
+              <p class="mx-auto mt-6 max-w-3xl text-lg text-white/90">
                 {{ $t('about.hero.subtitle') }}
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section class="w-full bg-muted/30 py-16 lg:py-24">
         <div class="page-padding-x">
@@ -132,11 +139,11 @@
               </p>
             </div>
 
-            <div class="grid gap-8 sm:grid-cols-2">
+            <div class="flex flex-col gap-8 md:flex-row">
               <div
                 v-for="(action, key) in $tm('about.commitment.actions')"
                 :key="key"
-                class="commitment-card space-y-4 rounded-xl bg-background p-6 shadow-sm"
+                class="commitment-card flex-1 space-y-4 rounded-xl bg-background p-6 shadow-sm"
               >
                 <div class="flex items-start justify-between">
                   <Icon
