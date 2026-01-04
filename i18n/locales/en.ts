@@ -1,4 +1,6 @@
 import about from './en/about'
+import legal from './en/legal'
+import privacy from './en/privacy'
 import solutions from './en/solutions'
 
 export default {
@@ -162,7 +164,11 @@ export default {
   },
   footer: {
     copyright: 'All rights reserved.',
+    privacy: 'Privacy Policy',
+    legal: 'Legal Notice',
   },
+  privacy,
+  legal,
   contact: {
     title: "Let's Get In Touch",
     form: {
@@ -232,8 +238,8 @@ export default {
       },
       phone: {
         title: 'Phone',
-        number: '+33123456789',
-        display: '+33 1 23 45 67 89',
+        number: '0000000',
+        display: '00 00 00 00 00',
       },
       email: {
         title: 'Email',

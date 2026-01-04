@@ -1,4 +1,6 @@
 import about from './fr/about'
+import legal from './fr/legal'
+import privacy from './fr/privacy'
 import solutions from './fr/solutions'
 
 export default {
@@ -163,7 +165,11 @@ export default {
   },
   footer: {
     copyright: 'Tous droits réservés.',
+    privacy: 'Politique de confidentialité',
+    legal: 'Mentions légales',
   },
+  privacy,
+  legal,
   contact: {
     title: 'Contactez-nous',
     form: {
@@ -233,8 +239,8 @@ export default {
       },
       phone: {
         title: 'Téléphone',
-        number: '+33123456789',
-        display: '+33 1 23 45 67 89',
+        number: '0000000',
+        display: '00 00 00 00 00',
       },
       email: {
         title: 'Email',
