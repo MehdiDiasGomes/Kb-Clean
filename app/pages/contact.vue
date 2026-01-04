@@ -14,7 +14,7 @@
             {{ $t('contact.title') }}
           </h1>
 
-          <div class="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1fr]">
+          <div class="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_1fr]">
             <div ref="formRef" :class="['scroll-animate-left', isFormVisible && 'is-visible']">
               <form class="space-y-6" @submit="onSubmit">
                 <div class="grid gap-6 sm:grid-cols-2">
@@ -29,10 +29,11 @@
                           <SelectTrigger class="w-full">
                             <SelectValue
                               :placeholder="$t('contact.form.requestType.placeholder')"
+                              class="truncate"
                             />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent>
+                        <SelectContent position="popper" :side-offset="5">
                           <SelectItem value="demo">
                             {{ $t('contact.form.requestType.options.demo') }}
                           </SelectItem>
@@ -142,45 +143,45 @@
                 class="h-auto w-full max-w-sm"
               />
 
-              <div class="flex justify-center max-md:flex-col w-full gap-6">
-                <div class="flex flex-col items-center space-y-3 text-center">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+              <div class="flex w-full max-md:flex-col max-lg:justify-between lg:flex-col items-start gap-6">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-muted"
+                  >
                     <Icon name="Phone" class="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
-                  <div class="space-y-1">
-                    <a
-                      :href="`tel:${$t('contact.info.phone.number')}`"
-                      class="block text-sm text-foreground hover:text-primary"
-                    >
-                      {{ $t('contact.info.phone.display') }}
-                    </a>
-                  </div>
+                  <a
+                    :href="`tel:${$t('contact.info.phone.number')}`"
+                    class="text-sm text-foreground hover:text-primary"
+                  >
+                    {{ $t('contact.info.phone.display') }}
+                  </a>
                 </div>
 
-                <div class="flex flex-col items-center space-y-3 text-center">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-muted"
+                  >
                     <Icon name="Mail" class="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
-                  <div class="space-y-1">
-                    <a
-                      :href="`mailto:${$t('contact.info.email.address')}`"
-                      class="block text-sm text-foreground hover:text-primary"
-                    >
-                      {{ $t('contact.info.email.address') }}
-                    </a>
-                  </div>
+                  <a
+                    :href="`mailto:${$t('contact.info.email.address')}`"
+                    class="text-sm text-foreground hover:text-primary"
+                  >
+                    {{ $t('contact.info.email.address') }}
+                  </a>
                 </div>
 
-                <div class="flex flex-col items-center space-y-3 text-center">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-muted"
+                  >
                     <Icon name="MapPin" class="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
-                  <div class="space-y-1">
-                    <p class="text-sm text-foreground">
-                      {{ $t('contact.info.address.line1') }}<br />
-                      {{ $t('contact.info.address.line2') }}
-                    </p>
-                  </div>
+                  <p class="text-sm text-foreground">
+                    {{ $t('contact.info.address.line1') }}<br />
+                    {{ $t('contact.info.address.line2') }}
+                  </p>
                 </div>
               </div>
             </div>
