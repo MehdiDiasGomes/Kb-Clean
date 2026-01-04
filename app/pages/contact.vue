@@ -7,85 +7,15 @@
   <div>
     <PageContainer>
       <section class="page-padding-x py-16">
-        <div class="mx-auto max-w-5xl">
-          <div class="space-y-12">
-            <h1
-              ref="titleRef"
-              :class="[
-                'font-heading text-3xl text-foreground sm:text-4xl md:text-5xl scroll-animate',
-                isTitleVisible && 'is-visible',
-              ]"
-            >
-              {{ $t('contact.title') }}
-            </h1>
+        <div class="mx-auto max-w-7xl">
+          <h1
+            class="mb-12 text-center font-heading text-3xl text-foreground sm:text-4xl md:text-5xl"
+          >
+            {{ $t('contact.title') }}
+          </h1>
 
-            <div
-              ref="contactInfoRef"
-              :class="[
-                'grid gap-6 sm:grid-cols-3 scroll-animate',
-                isContactInfoVisible && 'is-visible',
-              ]"
-            >
-              <div
-                class="contact-info-item flex flex-col items-center space-y-3 text-center"
-                :style="{ transitionDelay: '0.1s' }"
-              >
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                  <Icon name="Phone" class="h-5 w-5 text-primary" aria-hidden="true" />
-                </div>
-                <div class="space-y-1">
-                  <a
-                    :href="`tel:${$t('contact.info.phone.number')}`"
-                    class="block text-sm text-foreground hover:text-primary"
-                  >
-                    {{ $t('contact.info.phone.display') }}
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="contact-info-item flex flex-col items-center space-y-3 text-center"
-                :style="{ transitionDelay: '0.2s' }"
-              >
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                  <Icon name="Mail" class="h-5 w-5 text-primary" aria-hidden="true" />
-                </div>
-                <div class="space-y-1">
-                  <a
-                    :href="`mailto:${$t('contact.info.email.address')}`"
-                    class="block text-sm text-foreground hover:text-primary"
-                  >
-                    {{ $t('contact.info.email.address') }}
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="contact-info-item flex flex-col items-center space-y-3 text-center"
-                :style="{ transitionDelay: '0.3s' }"
-              >
-                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-                  <Icon name="MapPin" class="h-5 w-5 text-primary" aria-hidden="true" />
-                </div>
-                <div class="space-y-1">
-                  <p class="text-sm text-foreground">
-                    {{ $t('contact.info.address.line1') }}<br />
-                    {{ $t('contact.info.address.line2') }}
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <Separator
-              ref="separatorRef"
-              :class="['scroll-animate', isSeparatorVisible && 'is-visible']"
-            />
-
-            <div ref="formRef" :class="['space-y-8 scroll-animate', isFormVisible && 'is-visible']">
-              <h2 class="text-2xl font-semibold text-foreground">
-                {{ $t('contact.form.subtitle') }}
-              </h2>
-
+          <div class="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1fr]">
+            <div ref="formRef" :class="['scroll-animate-left', isFormVisible && 'is-visible']">
               <form class="space-y-6" @submit="onSubmit">
                 <div class="grid gap-6 sm:grid-cols-2">
                   <FormField #default="{ componentField }" name="requestType">
@@ -198,6 +128,62 @@
                 </div>
               </form>
             </div>
+
+            <div
+              ref="sidebarRef"
+              :class="[
+                'flex flex-col items-center space-y-8 scroll-animate-right',
+                isSidebarVisible && 'is-visible',
+              ]"
+            >
+              <NuxtImg
+                src="/images/illustrations/contact.svg"
+                alt="Contact illustration"
+                class="h-auto w-full max-w-sm"
+              />
+
+              <div class="flex justify-center max-md:flex-col w-full gap-6">
+                <div class="flex flex-col items-center space-y-3 text-center">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+                    <Icon name="Phone" class="h-5 w-5 text-primary" aria-hidden="true" />
+                  </div>
+                  <div class="space-y-1">
+                    <a
+                      :href="`tel:${$t('contact.info.phone.number')}`"
+                      class="block text-sm text-foreground hover:text-primary"
+                    >
+                      {{ $t('contact.info.phone.display') }}
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-center space-y-3 text-center">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+                    <Icon name="Mail" class="h-5 w-5 text-primary" aria-hidden="true" />
+                  </div>
+                  <div class="space-y-1">
+                    <a
+                      :href="`mailto:${$t('contact.info.email.address')}`"
+                      class="block text-sm text-foreground hover:text-primary"
+                    >
+                      {{ $t('contact.info.email.address') }}
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex flex-col items-center space-y-3 text-center">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+                    <Icon name="MapPin" class="h-5 w-5 text-primary" aria-hidden="true" />
+                  </div>
+                  <div class="space-y-1">
+                    <p class="text-sm text-foreground">
+                      {{ $t('contact.info.address.line1') }}<br />
+                      {{ $t('contact.info.address.line2') }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -221,7 +207,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Separator } from '@/components/ui/separator'
 import { Textarea } from '@/components/ui/textarea'
 
 definePageMeta({
@@ -230,10 +215,8 @@ definePageMeta({
 
 const { t } = useI18n()
 
-const { elementRef: titleRef, isVisible: isTitleVisible } = useScrollAnimation(0.2)
-const { elementRef: contactInfoRef, isVisible: isContactInfoVisible } = useScrollAnimation(0.2)
-const { elementRef: separatorRef, isVisible: isSeparatorVisible } = useScrollAnimation(0.2)
-const { elementRef: formRef, isVisible: isFormVisible } = useScrollAnimation(0.2)
+const { elementRef: formRef, isVisible: isFormVisible } = useScrollAnimation(0.1)
+const { elementRef: sidebarRef, isVisible: isSidebarVisible } = useScrollAnimation(0.1)
 
 const formSchema = toTypedSchema(
   z.object({
@@ -280,26 +263,26 @@ const onSubmit = form.handleSubmit(async values => {
 </script>
 
 <style scoped>
-.scroll-animate {
+.scroll-animate-left {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.scroll-animate.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.scroll-animate .contact-info-item {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.scroll-animate.is-visible .contact-info-item {
-  opacity: 1;
-  transform: translateY(0);
+  transform: translateX(-40px);
   transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-animate-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-animate-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+.scroll-animate-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 :deep([data-slot='form-message']) {
