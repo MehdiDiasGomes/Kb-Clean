@@ -11,6 +11,7 @@ export default {
       bioWasteShelters: 'Bio-waste shelters',
       columns: 'Columns',
     },
+    formulas: 'Our Plans',
     contact: 'Contact us',
     menu: 'Menu',
     mainNavAriaLabel: 'Main navigation',
@@ -33,7 +34,8 @@ export default {
       line1:
         'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
       line2: 'Clean bins mean better health and a commitment to responsible waste sorting.',
-      line3: 'Our goal: To guarantee you efficient and 100% eco-friendly cleaning designed for your hygiene and the planet',
+      line3:
+        'Our goal: To guarantee you efficient and 100% eco-friendly cleaning designed for your hygiene and the planet',
     },
     offerings: {
       wasteBins: {
@@ -57,6 +59,62 @@ export default {
         cta: 'Learn more',
         ctaLabel: 'Discover our bulk container cleaning service',
       },
+    },
+  },
+  formulas: {
+    sectionTitle: 'Our Plans',
+    intro: 'Discover our different plans adapted to all needs',
+    viewAll: 'View all our plans',
+    viewAllLabel: 'Discover all available plans',
+    oneTime: {
+      title: 'One-Time Service',
+      description:
+        'Complete cleaning and disinfection of your waste bins, with no commitment. Ideal for occasional needs or a thorough renewal cleaning.',
+    },
+    monthly: {
+      title: 'Monthly Plan',
+      description:
+        'Regular monthly cleaning to ensure clean, healthy, odor-free bins all year round. Convenient and hassle-free solution.',
+    },
+    quarterly: {
+      title: 'Quarterly Plan',
+      description:
+        'Scheduled maintenance every three months. Perfect for maintaining good hygiene while managing your budget.',
+    },
+    biannual: {
+      title: 'Biannual Plan',
+      description:
+        'Two interventions per year to keep bins clean and limit nuisances. Simple and economical plan.',
+    },
+    annual: {
+      title: 'Annual Plan',
+      description:
+        'An annual maintenance program planned in advance. Ideal for individuals looking for a turnkey solution.',
+    },
+    subscriptionIndividual: {
+      title: 'Individual Subscription',
+      description:
+        'A recurring service adapted to your household rhythm. Automatic scheduling and guaranteed peace of mind.',
+    },
+    condominium: {
+      title: 'Condominium Plan',
+      description:
+        'Regular cleaning of shared bins and containers. A solution adapted to the needs of residences and property managers.',
+    },
+    professional: {
+      title: 'Professional Plan',
+      description:
+        'Designed for shops, restaurants and businesses. Interventions scheduled according to business activity and professional constraints.',
+    },
+    municipality: {
+      title: 'Municipality Plan',
+      description:
+        'Maintenance of waste bins and columns in compliance with hygiene standards. Sustainable and eco-friendly solution adapted to local authorities.',
+    },
+    custom: {
+      title: 'Custom Plan',
+      description:
+        'A personalized plan according to your specific needs. Frequency, number of bins and type of intervention adapted to your situation.',
     },
   },
   clients: {

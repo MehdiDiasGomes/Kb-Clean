@@ -27,6 +27,10 @@ export const navigationItems: NavItem[] = [
     ],
   },
   {
+    labelKey: 'nav.formulas',
+    href: '/formulas',
+  },
+  {
     labelKey: 'nav.contact',
     href: '/contact',
   },
