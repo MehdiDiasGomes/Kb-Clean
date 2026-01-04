@@ -1,4 +1,5 @@
 import about from './en/about'
+import faq from './en/faq'
 import legal from './en/legal'
 import privacy from './en/privacy'
 import solutions from './en/solutions'
@@ -166,9 +167,11 @@ export default {
     copyright: 'All rights reserved.',
     privacy: 'Privacy Policy',
     legal: 'Legal Notice',
+    faq: 'FAQ',
   },
   privacy,
   legal,
+  faq,
   contact: {
     title: "Let's Get In Touch",
     form: {

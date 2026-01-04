@@ -16,6 +16,13 @@
           >
             {{ $t('footer.legal') }}
           </NuxtLink>
+          <span class="text-muted-foreground">•</span>
+          <NuxtLink
+            :to="localePath('/faq')"
+            class="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            {{ $t('footer.faq') }}
+          </NuxtLink>
         </nav>
         <p class="text-center text-sm text-muted-foreground">
           © {{ currentYear }} KB Clean. {{ $t('footer.copyright') }}

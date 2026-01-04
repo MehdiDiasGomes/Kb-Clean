@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: 'Bangers', cursive;
+  --font-heading: 'Fredoka', sans-serif;
   --font-subheading: 'Fredoka', sans-serif;
   --font-body: 'Quicksand', sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
