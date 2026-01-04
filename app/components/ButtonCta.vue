@@ -3,9 +3,7 @@
     :to="props.to"
     :class="[
       'group inline-flex items-center gap-2 rounded-full border-2 border-secondary bg-secondary px-8 py-4 text-lg font-bold text-secondary-foreground transition-all hover:bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
-      props.variant === 'hero'
-        ? 'hover:border-white hover:text-white'
-        : 'hover:text-secondary',
+      props.variant === 'hero' ? 'hover:border-white hover:text-white' : 'hover:text-secondary',
     ]"
     :aria-label="props.ariaLabel"
   >
