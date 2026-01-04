@@ -3,9 +3,7 @@
     <div ref="elementRef" :class="['mx-auto max-w-7xl scroll-animate', isVisible && 'is-visible']">
       <div class="space-y-16">
         <div class="space-y-8 text-center">
-          <h1
-            class="font-heading text-3xl text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
-          >
+          <h1 class="font-heading text-3xl text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             {{ $t('formulas.sectionTitle') }}
           </h1>
 
@@ -45,7 +43,7 @@
 <script setup lang="ts">
 import { formulaCards } from '@/constants/formulas'
 
-const { elementRef, isVisible } = useScrollAnimation(0.4)
+const { elementRef, isVisible } = useScrollAnimation(0.1)
 
 definePageMeta({
   layout: 'default',
