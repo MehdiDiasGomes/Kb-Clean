@@ -268,4 +268,58 @@ export default {
     required: 'obligatoire',
     skipToContent: 'Aller au contenu principal',
   },
+  seo: {
+    home: {
+      title: 'KB Clean - Nettoyage et désinfection de bacs à déchets',
+      description:
+        "KB Clean, spécialiste du nettoyage écologique de bacs roulants, abris biodéchets et conteneurs. Service professionnel, rapide et 100% respectueux de l'environnement.",
+    },
+    about: {
+      title: 'Qui sommes-nous ? - KB Clean',
+      description:
+        "Découvrez KB Clean, votre partenaire pour le nettoyage et la désinfection écologique de bacs à déchets. Expertise, qualité et respect de l'environnement.",
+    },
+    contact: {
+      title: 'Contactez-nous - KB Clean',
+      description:
+        "Besoin d'un devis ou d'informations ? Contactez KB Clean pour le nettoyage professionnel de vos bacs à déchets. Réponse rapide garantie.",
+    },
+    faq: {
+      title: 'FAQ - KB Clean',
+      description:
+        'Questions fréquentes sur nos services de nettoyage de bacs à déchets. Efficacité, écologie, fréquence, durée des interventions.',
+    },
+    formulas: {
+      title: 'Nos formules - KB Clean',
+      description:
+        'Découvrez nos formules de nettoyage adaptées à tous les besoins : ponctuelle, mensuelle, trimestrielle, professionnels, collectivités et sur mesure.',
+    },
+    privacy: {
+      title: 'Politique de confidentialité - KB Clean',
+      description:
+        'Politique de confidentialité de KB Clean. Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée.',
+    },
+    legal: {
+      title: 'Mentions légales - KB Clean',
+      description:
+        "Mentions légales de KB Clean. Informations sur notre entreprise et nos conditions d'utilisation.",
+    },
+    solutions: {
+      rollingBins: {
+        title: 'Nettoyage de bacs roulants - KB Clean',
+        description:
+          'Service de nettoyage professionnel pour bacs roulants. Intérieur et extérieur, haute performance, 100% écologique. Devis gratuit.',
+      },
+      bioWasteShelters: {
+        title: "Nettoyage d'abris biodéchets - KB Clean",
+        description:
+          "Nettoyage et désinfection d'abris à biodéchets. Procédé efficace et respectueux de l'environnement pour une hygiène parfaite.",
+      },
+      columns: {
+        title: 'Nettoyage de colonnes à déchets - KB Clean',
+        description:
+          'Service de nettoyage professionnel pour colonnes et conteneurs collectifs. Eau chaude haute pression, écologique et efficace.',
+      },
+    },
+  },
 }

@@ -267,4 +267,57 @@ export default {
     required: 'required',
     skipToContent: 'Skip to main content',
   },
+  seo: {
+    home: {
+      title: 'KB Clean - Waste Bin Cleaning and Disinfection',
+      description:
+        'KB Clean, specialist in eco-friendly cleaning of wheeled bins, bio-waste shelters and containers. Professional, fast and 100% environmentally friendly service.',
+    },
+    about: {
+      title: 'About Us - KB Clean',
+      description:
+        'Discover KB Clean, your partner for eco-friendly cleaning and disinfection of waste bins. Expertise, quality and environmental respect.',
+    },
+    contact: {
+      title: 'Contact Us - KB Clean',
+      description:
+        'Need a quote or information? Contact KB Clean for professional cleaning of your waste bins. Fast response guaranteed.',
+    },
+    faq: {
+      title: 'FAQ - KB Clean',
+      description:
+        'Frequently asked questions about our waste bin cleaning services. Effectiveness, ecology, frequency, service duration.',
+    },
+    formulas: {
+      title: 'Our Plans - KB Clean',
+      description:
+        'Discover our cleaning plans tailored to all needs: one-time, monthly, quarterly, professional, municipal and custom.',
+    },
+    privacy: {
+      title: 'Privacy Policy - KB Clean',
+      description:
+        'KB Clean privacy policy. Learn how we protect your personal data and respect your privacy.',
+    },
+    legal: {
+      title: 'Legal Notice - KB Clean',
+      description: 'KB Clean legal notice. Information about our company and terms of use.',
+    },
+    solutions: {
+      rollingBins: {
+        title: 'Wheeled Bin Cleaning - KB Clean',
+        description:
+          'Professional cleaning service for wheeled bins. Interior and exterior, high performance, 100% eco-friendly. Free quote.',
+      },
+      bioWasteShelters: {
+        title: 'Bio-Waste Shelter Cleaning - KB Clean',
+        description:
+          'Cleaning and disinfection of bio-waste shelters. Efficient and environmentally friendly process for perfect hygiene.',
+      },
+      columns: {
+        title: 'Waste Column Cleaning - KB Clean',
+        description:
+          'Professional cleaning service for columns and bulk containers. Hot water high pressure, eco-friendly and efficient.',
+      },
+    },
+  },
 }

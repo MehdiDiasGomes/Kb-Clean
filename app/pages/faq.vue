@@ -81,6 +81,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 
+const { t } = useI18n()
 const { elementRef: accordionRef, isVisible: isAccordionVisible } = useScrollAnimation(0.1)
 const { elementRef: sidebarRef, isVisible: isSidebarVisible } = useScrollAnimation(0.1)
 
@@ -89,9 +90,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'FAQ - KB Clean',
-  description:
-    'Questions fréquentes sur nos services de nettoyage de bacs à déchets. Efficacité, écologie, fréquence, durée des interventions.',
+  title: () => t('seo.faq.title'),
+  description: () => t('seo.faq.description'),
+  ogTitle: () => t('seo.faq.title'),
+  ogDescription: () => t('seo.faq.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 </script>
 

@@ -44,6 +44,15 @@ definePageMeta({
 
 const { t } = useI18n()
 
+useSeoMeta({
+  title: () => t('seo.solutions.bioWasteShelters.title'),
+  description: () => t('seo.solutions.bioWasteShelters.description'),
+  ogTitle: () => t('seo.solutions.bioWasteShelters.title'),
+  ogDescription: () => t('seo.solutions.bioWasteShelters.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+
 const features = computed((): Feature[] => [
   {
     title: t('bioWasteShelters.features.items.washer.title'),

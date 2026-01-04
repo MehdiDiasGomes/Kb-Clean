@@ -42,6 +42,15 @@ definePageMeta({
 
 const { t } = useI18n()
 
+useSeoMeta({
+  title: () => t('seo.solutions.columns.title'),
+  description: () => t('seo.solutions.columns.description'),
+  ogTitle: () => t('seo.solutions.columns.title'),
+  ogDescription: () => t('seo.solutions.columns.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+
 const features = computed((): Feature[] => [
   {
     title: t('columns.features.items.washer.title'),
