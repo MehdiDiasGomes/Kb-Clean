@@ -19,14 +19,10 @@
         <div class="w-full px-4 sm:px-6 lg:px-8 mx-auto max-w-5xl py-12 sm:py-16 md:py-20">
           <div class="flex flex-col items-start space-y-6 sm:space-y-8">
             <div class="space-y-3 sm:space-y-4">
-              <h1
-                class="text-4xl font-heading tracking-wide text-white sm:text-5xl md:text-6xl"
-              >
+              <h1 class="text-4xl font-heading tracking-wide text-white sm:text-5xl md:text-6xl">
                 {{ $t('hero.title') }}
               </h1>
-              <p
-                class="text-4xl font-heading tracking-wide text-white sm:text-5xl md:text-5xl"
-              >
+              <p class="text-4xl font-heading tracking-wide text-white sm:text-5xl md:text-5xl">
                 {{ $t('hero.titleHighlight') }}
               </p>
             </div>

@@ -3,6 +3,7 @@
     <HeroSection />
     <ServicesSection />
     <ClientsSection />
+    <FormulasSection />
   </div>
 </template>
 

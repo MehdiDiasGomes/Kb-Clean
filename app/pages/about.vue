@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section class="relative h-screen w-full bg-cover bg-center bg-no-repeat" style="background-image: url('/images/about/hero-bg.webp')">
+    <section
+      class="relative h-screen w-full bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/images/about/hero-bg.webp')"
+    >
       <div
         class="absolute inset-0 bg-linear-to-br from-primary/50 to-primary/90"
         aria-hidden="true"
@@ -26,11 +29,11 @@
       </div>
     </section>
 
-      <section class="w-full bg-muted/30 py-16 lg:py-24">
-        <div class="page-padding-x">
-          <div class="mx-auto max-w-7xl">
-            <div
-              ref="missionRef"
+    <section class="w-full bg-muted/30 py-16 lg:py-24">
+      <div class="page-padding-x">
+        <div class="mx-auto max-w-7xl">
+          <div
+            ref="missionRef"
             :class="['space-y-12 scroll-animate', isMissionVisible && 'is-visible']"
           >
             <div class="text-center">
@@ -70,61 +73,61 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
-      <section class="page-padding-x py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl">
-          <div
-            ref="expertiseRef"
-            :class="['space-y-12 scroll-animate', isExpertiseVisible && 'is-visible']"
-          >
-            <div class="text-center">
-              <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
-                {{ $t('about.expertise.title') }}
-              </h2>
-              <p class="mx-auto mt-4 max-w-3xl text-lg text-primary">
-                {{ $t('about.expertise.subtitle') }}
-              </p>
-              <p class="mx-auto mt-4 max-w-3xl text-muted-foreground">
-                {{ $t('about.expertise.description') }}
-              </p>
-            </div>
+    <section class="page-padding-x py-16 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div
+          ref="expertiseRef"
+          :class="['space-y-12 scroll-animate', isExpertiseVisible && 'is-visible']"
+        >
+          <div class="text-center">
+            <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
+              {{ $t('about.expertise.title') }}
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-lg text-primary">
+              {{ $t('about.expertise.subtitle') }}
+            </p>
+            <p class="mx-auto mt-4 max-w-3xl text-muted-foreground">
+              {{ $t('about.expertise.description') }}
+            </p>
+          </div>
 
-            <div class="grid gap-8 md:grid-cols-3">
-              <NuxtLink
-                v-for="(service, key) in services"
-                :key="key"
-                :to="localePath(service.link)"
-                class="group space-y-4 rounded-xl border border-border bg-background p-6 transition-all hover:border-primary hover:shadow-md"
-                :aria-label="service.ariaLabel"
-              >
-                <Icon
-                  :name="service.icon"
-                  :size="40"
-                  class="text-primary transition-transform group-hover:scale-110"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h3
-                    class="font-heading text-xl font-bold text-foreground transition-colors group-hover:text-primary"
-                  >
-                    {{ service.title }}
-                  </h3>
-                  <p class="mt-2 text-sm text-muted-foreground">
-                    {{ service.description }}
-                  </p>
-                </div>
-              </NuxtLink>
-            </div>
+          <div class="grid gap-8 md:grid-cols-3">
+            <NuxtLink
+              v-for="(service, key) in services"
+              :key="key"
+              :to="localePath(service.link)"
+              class="group space-y-4 rounded-xl border border-border bg-background p-6 transition-all hover:border-primary hover:shadow-md"
+              :aria-label="service.ariaLabel"
+            >
+              <Icon
+                :name="service.icon"
+                :size="40"
+                class="text-primary transition-transform group-hover:scale-110"
+                aria-hidden="true"
+              />
+              <div>
+                <h3
+                  class="font-heading text-xl font-bold text-foreground transition-colors group-hover:text-primary"
+                >
+                  {{ service.title }}
+                </h3>
+                <p class="mt-2 text-sm text-muted-foreground">
+                  {{ service.description }}
+                </p>
+              </div>
+            </NuxtLink>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="w-full bg-muted/30 py-16 lg:py-24">
-        <div class="page-padding-x">
-          <div class="mx-auto max-w-7xl">
-            <div
-              ref="commitmentRef"
+    <section class="w-full bg-muted/30 py-16 lg:py-24">
+      <div class="page-padding-x">
+        <div class="mx-auto max-w-7xl">
+          <div
+            ref="commitmentRef"
             :class="['space-y-12 scroll-animate', isCommitmentVisible && 'is-visible']"
           >
             <div class="text-center">
@@ -171,75 +174,75 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
-      <section class="page-padding-x py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl">
-          <div ref="teamRef" :class="['space-y-12 scroll-animate', isTeamVisible && 'is-visible']">
-            <div class="text-center">
-              <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
-                {{ $t('about.team.title') }}
-              </h2>
-              <p class="mx-auto mt-4 max-w-3xl text-lg text-primary">
-                {{ $t('about.team.subtitle') }}
-              </p>
-              <p class="mx-auto mt-4 max-w-3xl text-muted-foreground">
-                {{ $t('about.team.description') }}
-              </p>
-            </div>
+    <section class="page-padding-x py-16 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div ref="teamRef" :class="['space-y-12 scroll-animate', isTeamVisible && 'is-visible']">
+          <div class="text-center">
+            <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
+              {{ $t('about.team.title') }}
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-lg text-primary">
+              {{ $t('about.team.subtitle') }}
+            </p>
+            <p class="mx-auto mt-4 max-w-3xl text-muted-foreground">
+              {{ $t('about.team.description') }}
+            </p>
+          </div>
 
-            <div class="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-muted/30 py-8">
-              <div class="page-padding-x">
-                <div class="mx-auto max-w-7xl">
-                  <h3 class="mb-6 text-center font-heading text-xl font-bold text-foreground">
-                    {{ $t('about.team.certifications.title') }}
-                  </h3>
-                  <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-                    <div
-                      v-for="(cert, key) in $tm('about.team.certifications.items')"
-                      :key="key"
-                      class="flex items-center gap-3 rounded-lg bg-background p-4"
-                    >
-                      <Icon
-                        name="CheckCircle"
-                        :size="20"
-                        class="shrink-0 text-primary"
-                        aria-hidden="true"
-                      />
-                      <span class="text-sm font-medium text-foreground">{{ cert }}</span>
-                    </div>
+          <div class="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-muted/30 py-8">
+            <div class="page-padding-x">
+              <div class="mx-auto max-w-7xl">
+                <h3 class="mb-6 text-center font-heading text-xl font-bold text-foreground">
+                  {{ $t('about.team.certifications.title') }}
+                </h3>
+                <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+                  <div
+                    v-for="(cert, key) in $tm('about.team.certifications.items')"
+                    :key="key"
+                    class="flex items-center gap-3 rounded-lg bg-background p-4"
+                  >
+                    <Icon
+                      name="CheckCircle"
+                      :size="20"
+                      class="shrink-0 text-primary"
+                      aria-hidden="true"
+                    />
+                    <span class="text-sm font-medium text-foreground">{{ cert }}</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="page-padding-x py-16 lg:py-24">
-        <div class="mx-auto max-w-4xl">
-          <div
-            ref="ctaRef"
-            :class="[
-              'rounded-2xl bg-linear-to-br from-primary/10 to-primary/5 p-12 text-center scroll-animate lg:p-20',
-              isCtaVisible && 'is-visible',
-            ]"
-          >
-            <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
-              {{ $t('about.cta.title') }}
-            </h2>
-            <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              {{ $t('about.cta.description') }}
-            </p>
-            <ButtonCta
-              :to="localePath('/contact')"
-              :text="$t('about.cta.button')"
-              :aria-label="$t('about.cta.buttonLabel')"
-              class="mt-8"
-            />
-          </div>
+    <section class="page-padding-x py-16 lg:py-24">
+      <div class="mx-auto max-w-4xl">
+        <div
+          ref="ctaRef"
+          :class="[
+            'rounded-2xl bg-linear-to-br from-primary/10 to-primary/5 p-12 text-center scroll-animate lg:p-20',
+            isCtaVisible && 'is-visible',
+          ]"
+        >
+          <h2 class="font-heading text-3xl font-bold text-foreground sm:text-4xl">
+            {{ $t('about.cta.title') }}
+          </h2>
+          <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            {{ $t('about.cta.description') }}
+          </p>
+          <ButtonCta
+            :to="localePath('/contact')"
+            :text="$t('about.cta.button')"
+            :aria-label="$t('about.cta.buttonLabel')"
+            class="mt-8"
+          />
         </div>
-      </section>
+      </div>
+    </section>
   </div>
 </template>
 

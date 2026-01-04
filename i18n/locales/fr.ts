@@ -1,4 +1,6 @@
 import about from './fr/about'
+import legal from './fr/legal'
+import privacy from './fr/privacy'
 import solutions from './fr/solutions'
 
 export default {
@@ -11,6 +13,7 @@ export default {
       bioWasteShelters: 'Abris bacs biodéchets',
       columns: 'Colonnes',
     },
+    formulas: 'Nos formules',
     contact: 'Nous contacter',
     menu: 'Menu',
     mainNavAriaLabel: 'Navigation principale',
@@ -33,7 +36,8 @@ export default {
       line1:
         'Un nettoyage régulier de vos conteneurs élimine les mauvaises odeurs et limite la prolifération bactérienne.',
       line2: "Des bacs propres, c'est un geste santé et un engagement pour le tri responsable.",
-      line3: 'Notre objectif : Vous garantir un nettoyage performant et 100 % écologique pensé pour votre hygiène et pour la planète',
+      line3:
+        'Notre objectif : Vous garantir un nettoyage performant et 100 % écologique pensé pour votre hygiène et pour la planète',
     },
     offerings: {
       wasteBins: {
@@ -57,6 +61,62 @@ export default {
         cta: 'En savoir plus',
         ctaLabel: 'Découvrir le service de nettoyage des conteneurs collectifs',
       },
+    },
+  },
+  formulas: {
+    sectionTitle: 'Nos formules',
+    intro: 'Découvrez nos différentes formules adaptées à tous les besoins',
+    viewAll: 'Voir toutes nos formules',
+    viewAllLabel: 'Découvrir toutes les formules disponibles',
+    oneTime: {
+      title: 'Formule Ponctuelle',
+      description:
+        'Nettoyage et désinfection complète de vos bacs à déchets, sans engagement. Idéal pour un besoin occasionnel ou un nettoyage de remise à neuf.',
+    },
+    monthly: {
+      title: 'Formule Mensuelle',
+      description:
+        "Un nettoyage régulier chaque mois pour garantir des bacs propres, sains et sans odeur toute l'année. Solution confortable et sans contrainte.",
+    },
+    quarterly: {
+      title: 'Formule Trimestrielle',
+      description:
+        'Un entretien programmé tous les trois mois. Parfait pour maintenir une bonne hygiène tout en maîtrisant son budget.',
+    },
+    biannual: {
+      title: 'Formule Semestrielle',
+      description:
+        'Deux interventions par an pour conserver des bacs propres et limiter les nuisances. Formule simple et économique.',
+    },
+    annual: {
+      title: 'Formule Annuelle',
+      description:
+        "Un programme d'entretien annuel planifié à l'avance. Idéal pour les particuliers souhaitant une solution clé en main.",
+    },
+    subscriptionIndividual: {
+      title: 'Formule Abonnement Particulier',
+      description:
+        'Un service récurrent adapté au rythme de votre foyer. Planification automatique et tranquillité assurée.',
+    },
+    condominium: {
+      title: 'Formule Copropriété',
+      description:
+        'Nettoyage régulier des bacs communs et conteneurs partagés. Une solution adaptée aux besoins des résidences et syndics.',
+    },
+    professional: {
+      title: 'Formule Professionnels',
+      description:
+        "Conçue pour les commerces, restaurants et entreprises. Interventions planifiées selon l'activité et les contraintes professionnelles.",
+    },
+    municipality: {
+      title: 'Formule Collectivités',
+      description:
+        "Entretien des bacs et colonnes à déchets dans le respect des normes d'hygiène. Solution durable et écologique adaptée aux collectivités.",
+    },
+    custom: {
+      title: 'Formule Sur Mesure',
+      description:
+        "Une formule personnalisée selon vos besoins spécifiques. Fréquence, nombre de bacs et type d'intervention adaptés à votre situation.",
     },
   },
   clients: {
@@ -105,7 +165,11 @@ export default {
   },
   footer: {
     copyright: 'Tous droits réservés.',
+    privacy: 'Politique de confidentialité',
+    legal: 'Mentions légales',
   },
+  privacy,
+  legal,
   contact: {
     title: 'Contactez-nous',
     form: {
@@ -175,8 +239,8 @@ export default {
       },
       phone: {
         title: 'Téléphone',
-        number: '+33123456789',
-        display: '+33 1 23 45 67 89',
+        number: '0000000',
+        display: '00 00 00 00 00',
       },
       email: {
         title: 'Email',
