@@ -96,6 +96,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const { elementRef, isVisible } = useScrollAnimation(0.1)
 
 const lastUpdateDate = computed((): string => '04/01/2025')
@@ -105,9 +106,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Mentions légales - KB Clean',
-  description:
-    "Mentions légales de KB Clean. Informations sur l'éditeur, l'hébergeur et les conditions d'utilisation du site.",
+  title: () => t('seo.legal.title'),
+  description: () => t('seo.legal.description'),
+  ogTitle: () => t('seo.legal.title'),
+  ogDescription: () => t('seo.legal.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 </script>
 

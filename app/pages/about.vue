@@ -258,6 +258,15 @@ definePageMeta({
 const { t } = useI18n()
 const localePath = useLocalePath()
 
+useSeoMeta({
+  title: () => t('seo.about.title'),
+  description: () => t('seo.about.description'),
+  ogTitle: () => t('seo.about.title'),
+  ogDescription: () => t('seo.about.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
+
 const { elementRef: heroRef, isVisible: isHeroVisible } = useScrollAnimation(0.2)
 const { elementRef: missionRef, isVisible: isMissionVisible } = useScrollAnimation(0.2)
 const { elementRef: expertiseRef, isVisible: isExpertiseVisible } = useScrollAnimation(0.2)

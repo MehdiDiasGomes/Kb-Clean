@@ -118,6 +118,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const { elementRef, isVisible } = useScrollAnimation(0.1)
 
 const lastUpdateDate = computed((): string => '04/01/2025')
@@ -127,9 +128,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Politique de confidentialité - KB Clean',
-  description:
-    'Politique de confidentialité de KB Clean. Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.',
+  title: () => t('seo.privacy.title'),
+  description: () => t('seo.privacy.description'),
+  ogTitle: () => t('seo.privacy.title'),
+  ogDescription: () => t('seo.privacy.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 </script>
 

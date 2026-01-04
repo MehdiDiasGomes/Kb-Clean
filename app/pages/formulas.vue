@@ -43,6 +43,7 @@
 <script setup lang="ts">
 import { formulaCards } from '@/constants/formulas'
 
+const { t } = useI18n()
 const { elementRef, isVisible } = useScrollAnimation(0.1)
 
 definePageMeta({
@@ -50,9 +51,12 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Nos formules - KB Clean',
-  description:
-    'Découvrez toutes nos formules de nettoyage et désinfection de bacs à déchets : ponctuelle, mensuelle, trimestrielle, semestrielle, annuelle et sur mesure.',
+  title: () => t('seo.formulas.title'),
+  description: () => t('seo.formulas.description'),
+  ogTitle: () => t('seo.formulas.title'),
+  ogDescription: () => t('seo.formulas.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 })
 </script>
 

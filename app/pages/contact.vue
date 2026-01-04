@@ -143,7 +143,9 @@
                 class="h-auto w-full max-w-sm"
               />
 
-              <div class="flex w-full max-md:flex-col max-lg:justify-between lg:flex-col items-start gap-6">
+              <div
+                class="flex w-full max-md:flex-col max-lg:justify-between lg:flex-col items-start gap-6"
+              >
                 <div class="flex items-center gap-4">
                   <div
                     class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-muted"
@@ -215,6 +217,15 @@ definePageMeta({
 })
 
 const { t } = useI18n()
+
+useSeoMeta({
+  title: () => t('seo.contact.title'),
+  description: () => t('seo.contact.description'),
+  ogTitle: () => t('seo.contact.title'),
+  ogDescription: () => t('seo.contact.description'),
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+})
 
 const { elementRef: formRef, isVisible: isFormVisible } = useScrollAnimation(0.1)
 const { elementRef: sidebarRef, isVisible: isSidebarVisible } = useScrollAnimation(0.1)
