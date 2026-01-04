@@ -28,10 +28,10 @@ export default {
       },
     },
   ],
-  contactSection: {
-    title: 'Have another question?',
-    description: 'Our team is here to help. Contact us for more information.',
+  sidebar: {
+    title: 'Have a question?',
+    subtitle: 'Our team responds quickly',
     cta: 'Contact us',
-    ctaLabel: 'Contact us for any additional questions',
+    ctaLabel: 'Contact us for help',
   },
 }

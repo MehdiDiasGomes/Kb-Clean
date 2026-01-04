@@ -31,10 +31,10 @@ export default {
       },
     },
   ],
-  contactSection: {
-    title: 'Vous avez une autre question ?',
-    description: "Notre équipe est là pour vous aider. Contactez-nous pour plus d'informations.",
+  sidebar: {
+    title: 'Une question ?',
+    subtitle: 'Notre équipe vous répond rapidement',
     cta: 'Nous contacter',
-    ctaLabel: 'Contactez-nous pour toute question supplémentaire',
+    ctaLabel: "Contactez-nous pour obtenir de l'aide",
   },
 }
