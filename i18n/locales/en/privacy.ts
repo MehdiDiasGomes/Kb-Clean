@@ -4,7 +4,7 @@ export default {
   introduction: {
     title: 'Introduction',
     content:
-      'KB Clean is committed to protecting the privacy of your personal data. This privacy policy explains how we collect, use, and protect the information you provide to us when using our website.',
+      'KleanBac is committed to protecting the privacy of your personal data. This privacy policy explains how we collect, use, and protect the information you provide to us when using our website.',
   },
   dataCollected: {
     title: 'Data Collected',

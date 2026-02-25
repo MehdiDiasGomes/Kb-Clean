@@ -25,14 +25,14 @@ export default {
     closeSubmenu: 'Close menu',
   },
   hero: {
-    title: 'KB Clean',
+    title: 'KleanBac',
     titleHighlight: 'The reference for cleaning and disinfecting your bins and containers',
     subtitle: 'Professional solutions for spotless bins',
     ctaPrimary: 'Contact us',
-    imageAlt: 'KB Clean waste container cleaning services',
+    imageAlt: 'KleanBac waste container cleaning services',
   },
   solutions: {
-    sectionTitle: 'KB Clean supports you for a cleaner environment',
+    sectionTitle: 'KleanBac supports you for a cleaner environment',
     intro: {
       line1:
         'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
@@ -128,7 +128,7 @@ export default {
     },
     intro: {
       line1: {
-        prefix: 'KB Clean serves',
+        prefix: 'KleanBac serves',
         bold1: 'all professionals',
         middle: 'for whom',
         bold2: 'container hygiene',
@@ -157,7 +157,7 @@ export default {
       individuals: {
         title: 'Homeowners',
         description:
-          'Waste bins are one of the main sources of bacteria and bad odors around the home. KB Clean cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
+          'Waste bins are one of the main sources of bacteria and bad odors around the home. KleanBac cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
       },
     },
     cta: 'Contact us',
@@ -199,7 +199,7 @@ export default {
       companyName: {
         label: 'Company Name',
         optional: '(optional)',
-        placeholder: 'KB Clean LLC',
+        placeholder: 'KleanBac LLC',
       },
       requestType: {
         label: 'Request Type',
@@ -258,7 +258,7 @@ export default {
   about,
   ...solutions,
   common: {
-    logoAlt: 'KB Clean Logo',
+    logoAlt: 'KleanBac Logo',
     backToHome: 'Back to home page',
     language: 'Language',
     selectLanguage: 'Select language',
@@ -269,52 +269,52 @@ export default {
   },
   seo: {
     home: {
-      title: 'KB Clean - Waste Bin Cleaning and Disinfection',
+      title: 'KleanBac - Waste Bin Cleaning and Disinfection',
       description:
-        'KB Clean, specialist in eco-friendly cleaning of wheeled bins, bio-waste shelters and containers. Professional, fast and 100% environmentally friendly service.',
+        'KleanBac, specialist in eco-friendly cleaning of wheeled bins, bio-waste shelters and containers. Professional, fast and 100% environmentally friendly service.',
     },
     about: {
-      title: 'About Us - KB Clean',
+      title: 'About Us - KleanBac',
       description:
-        'Discover KB Clean, your partner for eco-friendly cleaning and disinfection of waste bins. Expertise, quality and environmental respect.',
+        'Discover KleanBac, your partner for eco-friendly cleaning and disinfection of waste bins. Expertise, quality and environmental respect.',
     },
     contact: {
-      title: 'Contact Us - KB Clean',
+      title: 'Contact Us - KleanBac',
       description:
-        'Need a quote or information? Contact KB Clean for professional cleaning of your waste bins. Fast response guaranteed.',
+        'Need a quote or information? Contact KleanBac for professional cleaning of your waste bins. Fast response guaranteed.',
     },
     faq: {
-      title: 'FAQ - KB Clean',
+      title: 'FAQ - KleanBac',
       description:
         'Frequently asked questions about our waste bin cleaning services. Effectiveness, ecology, frequency, service duration.',
     },
     formulas: {
-      title: 'Our Plans - KB Clean',
+      title: 'Our Plans - KleanBac',
       description:
         'Discover our cleaning plans tailored to all needs: one-time, monthly, quarterly, professional, municipal and custom.',
     },
     privacy: {
-      title: 'Privacy Policy - KB Clean',
+      title: 'Privacy Policy - KleanBac',
       description:
-        'KB Clean privacy policy. Learn how we protect your personal data and respect your privacy.',
+        'KleanBac privacy policy. Learn how we protect your personal data and respect your privacy.',
     },
     legal: {
-      title: 'Legal Notice - KB Clean',
-      description: 'KB Clean legal notice. Information about our company and terms of use.',
+      title: 'Legal Notice - KleanBac',
+      description: 'KleanBac legal notice. Information about our company and terms of use.',
     },
     solutions: {
       rollingBins: {
-        title: 'Wheeled Bin Cleaning - KB Clean',
+        title: 'Wheeled Bin Cleaning - KleanBac',
         description:
           'Professional cleaning service for wheeled bins. Interior and exterior, high performance, 100% eco-friendly. Free quote.',
       },
       bioWasteShelters: {
-        title: 'Bio-Waste Shelter Cleaning - KB Clean',
+        title: 'Bio-Waste Shelter Cleaning - KleanBac',
         description:
           'Cleaning and disinfection of bio-waste shelters. Efficient and environmentally friendly process for perfect hygiene.',
       },
       columns: {
-        title: 'Waste Column Cleaning - KB Clean',
+        title: 'Waste Column Cleaning - KleanBac',
         description:
           'Professional cleaning service for columns and bulk containers. Hot water high pressure, eco-friendly and efficient.',
       },

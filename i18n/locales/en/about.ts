@@ -3,13 +3,13 @@ export default {
     titleBefore: 'Your partner for',
     titleHighlight: 'impeccable container hygiene',
     subtitle:
-      'KB Clean is committed to offering professional and eco-responsible cleaning solutions for all your waste containers. An innovative approach that combines performance with environmental respect.',
+      'KleanBac is committed to offering professional and eco-responsible cleaning solutions for all your waste containers. An innovative approach that combines performance with environmental respect.',
   },
   mission: {
     title: 'Our mission',
     subtitle: 'Making urban cleanliness more sustainable',
     description:
-      'At KB Clean, we believe that container hygiene is essential for public health and environmental respect. Our mission is to provide high-performance cleaning services while minimizing our ecological footprint.',
+      'At KleanBac, we believe that container hygiene is essential for public health and environmental respect. Our mission is to provide high-performance cleaning services while minimizing our ecological footprint.',
     values: {
       innovation: {
         title: 'Innovation',

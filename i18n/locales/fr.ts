@@ -25,14 +25,14 @@ export default {
     closeSubmenu: 'Fermer le menu',
   },
   hero: {
-    title: 'KB Clean',
+    title: 'KleanBac',
     titleHighlight: 'La référence du nettoyage et de la désinfection de vos bacs et contenants',
     subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
     ctaPrimary: 'Nous contacter',
-    imageAlt: 'Services de lavage de contenants à déchets KB Clean',
+    imageAlt: 'Services de lavage de contenants à déchets KleanBac',
   },
   solutions: {
-    sectionTitle: 'KB Clean vous accompagne pour un environnement plus propre',
+    sectionTitle: 'KleanBac vous accompagne pour un environnement plus propre',
     intro: {
       line1:
         'Un nettoyage régulier de vos conteneurs élimine les mauvaises odeurs et limite la prolifération bactérienne.',
@@ -128,7 +128,7 @@ export default {
     },
     intro: {
       line1: {
-        prefix: 'KB Clean intervient auprès de',
+        prefix: 'KleanBac intervient auprès de',
         bold1: 'tous les professionnels',
         middle: "pour qui l'",
         bold2: 'hygiène des contenants',
@@ -158,7 +158,7 @@ export default {
       individuals: {
         title: 'Particulier',
         description:
-          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. KB Clean nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
+          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. KleanBac nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
       },
     },
     cta: 'Nous contacter',
@@ -200,7 +200,7 @@ export default {
       companyName: {
         label: "Nom de l'entreprise",
         optional: '(optionnel)',
-        placeholder: 'KB Clean SARL',
+        placeholder: 'KleanBac SARL',
       },
       requestType: {
         label: 'Type de demande',
@@ -259,7 +259,7 @@ export default {
   about,
   ...solutions,
   common: {
-    logoAlt: 'Logo KB Clean',
+    logoAlt: 'Logo KleanBac',
     backToHome: "Retour à la page d'accueil",
     language: 'Langue',
     selectLanguage: 'Sélectionner la langue',
@@ -270,53 +270,53 @@ export default {
   },
   seo: {
     home: {
-      title: 'KB Clean - Nettoyage et désinfection de bacs à déchets',
+      title: 'KleanBac - Nettoyage et désinfection de bacs à déchets',
       description:
-        "KB Clean, spécialiste du nettoyage écologique de bacs roulants, abris biodéchets et conteneurs. Service professionnel, rapide et 100% respectueux de l'environnement.",
+        "KleanBac, spécialiste du nettoyage écologique de bacs roulants, abris biodéchets et conteneurs. Service professionnel, rapide et 100% respectueux de l'environnement.",
     },
     about: {
-      title: 'Qui sommes-nous ? - KB Clean',
+      title: 'Qui sommes-nous ? - KleanBac',
       description:
-        "Découvrez KB Clean, votre partenaire pour le nettoyage et la désinfection écologique de bacs à déchets. Expertise, qualité et respect de l'environnement.",
+        "Découvrez KleanBac, votre partenaire pour le nettoyage et la désinfection écologique de bacs à déchets. Expertise, qualité et respect de l'environnement.",
     },
     contact: {
-      title: 'Contactez-nous - KB Clean',
+      title: 'Contactez-nous - KleanBac',
       description:
-        "Besoin d'un devis ou d'informations ? Contactez KB Clean pour le nettoyage professionnel de vos bacs à déchets. Réponse rapide garantie.",
+        "Besoin d'un devis ou d'informations ? Contactez KleanBac pour le nettoyage professionnel de vos bacs à déchets. Réponse rapide garantie.",
     },
     faq: {
-      title: 'FAQ - KB Clean',
+      title: 'FAQ - KleanBac',
       description:
         'Questions fréquentes sur nos services de nettoyage de bacs à déchets. Efficacité, écologie, fréquence, durée des interventions.',
     },
     formulas: {
-      title: 'Nos formules - KB Clean',
+      title: 'Nos formules - KleanBac',
       description:
         'Découvrez nos formules de nettoyage adaptées à tous les besoins : ponctuelle, mensuelle, trimestrielle, professionnels, collectivités et sur mesure.',
     },
     privacy: {
-      title: 'Politique de confidentialité - KB Clean',
+      title: 'Politique de confidentialité - KleanBac',
       description:
-        'Politique de confidentialité de KB Clean. Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée.',
+        'Politique de confidentialité de KleanBac. Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée.',
     },
     legal: {
-      title: 'Mentions légales - KB Clean',
+      title: 'Mentions légales - KleanBac',
       description:
-        "Mentions légales de KB Clean. Informations sur notre entreprise et nos conditions d'utilisation.",
+        "Mentions légales de KleanBac. Informations sur notre entreprise et nos conditions d'utilisation.",
     },
     solutions: {
       rollingBins: {
-        title: 'Nettoyage de bacs roulants - KB Clean',
+        title: 'Nettoyage de bacs roulants - KleanBac',
         description:
           'Service de nettoyage professionnel pour bacs roulants. Intérieur et extérieur, haute performance, 100% écologique. Devis gratuit.',
       },
       bioWasteShelters: {
-        title: "Nettoyage d'abris biodéchets - KB Clean",
+        title: "Nettoyage d'abris biodéchets - KleanBac",
         description:
           "Nettoyage et désinfection d'abris à biodéchets. Procédé efficace et respectueux de l'environnement pour une hygiène parfaite.",
       },
       columns: {
-        title: 'Nettoyage de colonnes à déchets - KB Clean',
+        title: 'Nettoyage de colonnes à déchets - KleanBac',
         description:
           'Service de nettoyage professionnel pour colonnes et conteneurs collectifs. Eau chaude haute pression, écologique et efficace.',
       },
