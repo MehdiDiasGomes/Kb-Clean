@@ -11,7 +11,7 @@
       />
 
       <div
-        class="absolute inset-0 bg-linear-to-br from-primary/50 to-primary/90"
+        class="absolute inset-0 bg-linear-to-br from-black/50 to-black/90"
         aria-hidden="true"
       />
 
