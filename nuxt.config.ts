@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
   fonts: {
     families: [
-      { name: 'Fredoka', provider: 'google' },
+      { name: 'Montserrat', provider: 'google' },
       { name: 'Quicksand', provider: 'google' },
     ],
   },

@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: 'Fredoka', sans-serif;
-  --font-subheading: 'Fredoka', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-subheading: 'Montserrat', sans-serif;
   --font-body: 'Quicksand', sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
