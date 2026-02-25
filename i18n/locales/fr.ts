@@ -247,7 +247,7 @@ export default {
       },
       email: {
         title: 'Email',
-        address: "contact{'@'}kbclean.fr",
+        address: "contact{'@'}kleanbac.fr",
       },
       hours: {
         title: 'Horaires',
