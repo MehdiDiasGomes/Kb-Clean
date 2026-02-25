@@ -28,8 +28,27 @@ export default {
     title: 'KleanBac',
     titleHighlight: 'La référence du nettoyage et de la désinfection de vos bacs et contenants',
     subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
-    ctaPrimary: 'Nous contacter',
+    ctaPrimary: 'Demander un devis',
+    ctaSecondary: 'Découvrir nos services',
+    ctaPrimaryAriaLabel: 'Demander un devis gratuit pour le nettoyage de vos bacs',
+    ctaSecondaryAriaLabel: 'Découvrir nos services de nettoyage',
     imageAlt: 'Services de lavage de contenants à déchets KleanBac',
+    badge: '100% Écologique',
+    scrollIndicator: 'Défiler vers le bas',
+    stats: {
+      water: {
+        value: '-80%',
+        label: "Consommation d'eau",
+      },
+      chemical: {
+        value: '0%',
+        label: 'Produits chimiques',
+      },
+      co2: {
+        value: '-50%',
+        label: 'Émissions CO₂',
+      },
+    },
   },
   solutions: {
     sectionTitle: 'KleanBac vous accompagne pour un environnement plus propre',

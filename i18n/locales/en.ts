@@ -28,8 +28,27 @@ export default {
     title: 'KleanBac',
     titleHighlight: 'The reference for cleaning and disinfecting your bins and containers',
     subtitle: 'Professional solutions for spotless bins',
-    ctaPrimary: 'Contact us',
+    ctaPrimary: 'Get a quote',
+    ctaSecondary: 'Discover our services',
+    ctaPrimaryAriaLabel: 'Request a free quote for bin cleaning',
+    ctaSecondaryAriaLabel: 'Discover our cleaning services',
     imageAlt: 'KleanBac waste container cleaning services',
+    badge: '100% Eco-Friendly',
+    scrollIndicator: 'Scroll down',
+    stats: {
+      water: {
+        value: '-80%',
+        label: 'Water consumption',
+      },
+      chemical: {
+        value: '0%',
+        label: 'Chemical products',
+      },
+      co2: {
+        value: '-50%',
+        label: 'CO₂ emissions',
+      },
+    },
   },
   solutions: {
     sectionTitle: 'KleanBac supports you for a cleaner environment',
