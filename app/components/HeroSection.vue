@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-screen overflow-hidden">
+  <section class="relative w-full min-h-dvh overflow-hidden">
     <div class="absolute inset-0">
       <NuxtImg
         src="/images/kb_clean_hero.webp"
@@ -28,27 +28,27 @@
       <div class="floating-shape-delayed h-48 w-48 rounded-full bg-secondary/10 blur-3xl" />
     </div>
 
-    <div class="relative z-10 flex h-full flex-col px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto w-full max-w-7xl flex-1 flex items-center py-20 lg:py-24">
-        <div class="grid gap-6 lg:grid-cols-2 lg:gap-10 items-center w-full">
-          <div class="space-y-4 sm:space-y-6">
-            <div class="hero-badge inline-flex items-center gap-2 rounded-full bg-primary/20 px-4 py-2 backdrop-blur-sm border border-primary/30">
+    <div class="relative z-10 flex h-full min-h-dvh flex-col page-padding-x">
+      <div class="mx-auto w-full max-w-7xl flex-1 flex items-center pt-24 pb-8 sm:pt-28 sm:pb-12 md:py-24 lg:py-28">
+        <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center w-full">
+          <div class="space-y-4 sm:space-y-5 md:space-y-6">
+            <div class="hero-badge inline-flex items-center gap-2 rounded-full bg-primary/20 px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-sm border border-primary/30">
               <span class="relative flex h-2 w-2">
                 <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span class="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              <span class="text-sm font-medium text-white">
+              <span class="text-xs sm:text-sm font-medium text-white">
                 {{ $t('hero.badge') }}
               </span>
             </div>
 
             <div class="space-y-2 sm:space-y-3">
               <h1 class="hero-title">
-                <span class="block text-4xl font-heading font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                <span class="block text-3xl font-heading font-bold tracking-tight text-white xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl">
                   {{ $t('hero.title') }}
                 </span>
               </h1>
-              <p class="hero-highlight text-lg font-heading text-white/90 sm:text-xl lg:text-2xl leading-tight max-w-2xl">
+              <p class="hero-highlight text-base font-heading text-white/90 xs:text-lg sm:text-xl md:text-xl lg:text-2xl leading-snug max-w-2xl">
                 {{ $t('hero.titleHighlight') }}
               </p>
             </div>
@@ -57,32 +57,39 @@
               {{ $t('hero.subtitle') }}
             </p>
 
-            <div class="hero-cta flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div class="hero-cta flex flex-col gap-3 sm:flex-row sm:items-center pt-2">
               <NuxtLink
                 :to="localePath('/contact')"
-                class="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                class="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 :aria-label="$t('hero.ctaPrimaryAriaLabel')"
               >
                 {{ $t('hero.ctaPrimary') }}
                 <Icon
                   name="ArrowRight"
-                  class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                  class="h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1"
                   aria-hidden="true"
                 />
               </NuxtLink>
+            </div>
 
-              <!-- <NuxtLink
-                :to="localePath('/about')"
-                class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                :aria-label="$t('hero.ctaSecondaryAriaLabel')"
+            <div class="hero-stats-mobile pt-4 grid grid-cols-3 gap-2 sm:gap-3 lg:hidden">
+              <div
+                v-for="stat in stats"
+                :key="stat.key"
+                class="flex flex-col items-center rounded-xl bg-white/5 p-2.5 sm:p-3 backdrop-blur-sm border border-white/10"
               >
-                {{ $t('hero.ctaSecondary') }}
                 <Icon
-                  name="Play"
-                  class="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
+                  :name="stat.icon"
+                  class="h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1"
                   aria-hidden="true"
                 />
-              </NuxtLink> -->
+                <p class="text-base font-heading font-bold text-white sm:text-lg md:text-xl">
+                  {{ stat.value }}
+                </p>
+                <p class="text-[9px] sm:text-[10px] md:text-xs text-white/60 text-center leading-tight mt-0.5">
+                  {{ stat.label }}
+                </p>
+              </div>
             </div>
           </div>
 
@@ -115,24 +122,9 @@
             </div>
           </div>
         </div>
-
-        <div class="hero-stats-mobile mt-6 grid grid-cols-3 gap-2 lg:hidden">
-          <div
-            v-for="stat in stats"
-            :key="stat.key"
-            class="flex flex-col items-center rounded-lg bg-white/5 p-2 backdrop-blur-sm border border-white/10"
-          >
-            <p class="text-lg font-heading font-bold text-primary sm:text-xl">
-              {{ stat.value }}
-            </p>
-            <p class="text-[10px] text-white/60 text-center leading-tight">
-              {{ stat.label }}
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div class="scroll-indicator pb-6 flex justify-center">
+      <div class="scroll-indicator pb-4 sm:pb-6 flex justify-center">
         <button
           type="button"
           class="flex flex-col items-center gap-1 text-white/60 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-full p-2"
@@ -142,8 +134,8 @@
           <span class="text-[10px] font-medium uppercase tracking-widest hidden sm:block">
             {{ $t('hero.scrollIndicator') }}
           </span>
-          <div class="flex h-8 w-5 items-start justify-center rounded-full border-2 border-white/30 p-1">
-            <div class="scroll-dot h-1.5 w-1 rounded-full bg-white" />
+          <div class="flex h-7 w-4 sm:h-8 sm:w-5 items-start justify-center rounded-full border-2 border-white/30 p-1">
+            <div class="scroll-dot h-1 w-1 sm:h-1.5 sm:w-1 rounded-full bg-white" />
           </div>
         </button>
       </div>
@@ -179,7 +171,7 @@ const stats = computed((): StatItem[] => [
     key: 'co2',
     value: t('hero.stats.co2.value'),
     label: t('hero.stats.co2.label'),
-    icon: 'Wind',
+    icon: 'Zap',
   },
 ])
 
