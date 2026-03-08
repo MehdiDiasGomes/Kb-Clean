@@ -105,7 +105,7 @@
               {{ $t('privacy.contact.content') }}
             </p>
             <div class="mt-4 rounded-lg bg-muted/50 p-6">
-              <p class="font-medium text-foreground">KB Clean</p>
+              <p class="font-medium text-foreground">KleanBac</p>
               <p class="text-sm text-muted-foreground">
                 {{ $t('contact.info.email.address') }}
               </p>

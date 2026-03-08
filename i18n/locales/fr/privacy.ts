@@ -4,7 +4,7 @@ export default {
   introduction: {
     title: 'Introduction',
     content:
-      "KB Clean s'engage à protéger la confidentialité de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons les informations que vous nous fournissez lors de l'utilisation de notre site web.",
+      "KleanBac s'engage à protéger la confidentialité de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons les informations que vous nous fournissez lors de l'utilisation de notre site web.",
   },
   dataCollected: {
     title: 'Données collectées',

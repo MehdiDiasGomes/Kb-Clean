@@ -26,7 +26,7 @@
           <div
             v-for="service in serviceCards"
             :key="service.href"
-            class="flex flex-col items-center space-y-6 rounded-3xl bg-primary px-6 py-10 text-center shadow-lg transition-transform hover:scale-105"
+            class="flex flex-col items-center space-y-6 rounded-3xl bg-primary px-6 py-10 text-center shadow-lg transition-transform"
           >
             <div class="flex h-24 w-24 items-center justify-center">
               <Icon :name="service.icon" class="h-20 w-20 text-card" aria-hidden="true" />

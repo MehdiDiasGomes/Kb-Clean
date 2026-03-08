@@ -3,13 +3,13 @@ export default {
     titleBefore: 'Votre partenaire pour une',
     titleHighlight: 'hygiène des contenants irréprochable',
     subtitle:
-      "KB Clean s'engage à offrir des solutions de nettoyage professionnelles et éco-responsables pour tous vos contenants à déchets. Une approche innovante qui allie performance et respect de l'environnement.",
+      "KleanBac s'engage à offrir des solutions de nettoyage professionnelles et éco-responsables pour tous vos contenants à déchets. Une approche innovante qui allie performance et respect de l'environnement.",
   },
   mission: {
     title: 'Notre mission',
     subtitle: 'Rendre la propreté urbaine plus durable',
     description:
-      "Chez KB Clean, nous pensons que l'hygiène des contenants est essentielle pour la santé publique et le respect de l'environnement. Notre mission est d'offrir des services de nettoyage performants tout en minimisant notre empreinte écologique.",
+      "Chez KleanBac, nous pensons que l'hygiène des contenants est essentielle pour la santé publique et le respect de l'environnement. Notre mission est d'offrir des services de nettoyage performants tout en minimisant notre empreinte écologique.",
     values: {
       innovation: {
         title: 'Innovation',

@@ -5,16 +5,16 @@ export default {
       titleHighlight: 'bacs roulants',
       stats: 'Un service régulier et fiable sur tout le territoire français',
       subtitle:
-        'KB Clean assure la propreté et la désinfection complète de vos bacs grâce à notre technologie de lavage haute performance.',
-      cta: 'Demander un devis',
-      ctaLabel: 'Demander un devis pour le lavage de vos bacs roulants',
-      imageAlt: 'Technologie de lavage haute performance KB Clean pour bacs roulants',
+        'KleanBac assure la propreté et la désinfection complète de vos bacs grâce à notre technologie de lavage haute performance.',
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage de bacs roulants',
+      imageAlt: 'Technologie de lavage haute performance KleanBac pour bacs roulants',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des bacs roulants',
     },
     features: {
       title: 'Un système de lavage innovant et des solutions éco-responsables',
-      descriptionLine1: 'Chez KB Clean, innovation et écologie vont de pair.',
+      descriptionLine1: 'Chez KleanBac, innovation et écologie vont de pair.',
       descriptionLine2:
         "Nos équipements de lavage sont conçus pour minimiser l'impact environnemental. Sans produits chimiques, avec une consommation d'eau réduite et des émissions de CO₂ limitées, nous allions efficacité et respect de l'environnement.",
       items: {
@@ -41,9 +41,9 @@ export default {
       },
     },
     process: {
-      title: 'Le mode opératoire KB Clean',
+      title: 'Le mode opératoire KleanBac',
       descriptionLine1:
-        'Chez KB Clean, nous allions innovation, rigueur et expertise terrain pour garantir des bacs impeccables.',
+        'Chez KleanBac, nous allions innovation, rigueur et expertise terrain pour garantir des bacs impeccables.',
       descriptionLine2:
         "Grâce à des équipements de lavage performants, un suivi digitalisé de nos interventions et des protocoles d'intervention précis, nous assurons un nettoyage adapté à chaque site. Pour chaque passage, des photos avant/après vous sont transmises, preuve concrète de notre exigence et de la qualité du service rendu.",
     },
@@ -71,16 +71,16 @@ export default {
       titleHighlight: 'colonnes à déchets',
       stats: 'Service de lavage pour PAV aériens, enterrés et semi-enterrés partout en France',
       subtitle:
-        'KB Clean assure le nettoyage complet de vos colonnes à déchets avec notre procédé professionnel adapté à tous types de PAV.',
-      cta: 'Rencontrons-nous',
-      ctaLabel: 'Demander un rendez-vous pour le lavage de colonnes à déchets',
-      imageAlt: 'Service de lavage professionnel KB Clean pour colonnes à déchets',
+        'KleanBac assure le nettoyage complet de vos colonnes à déchets avec notre procédé professionnel adapté à tous types de PAV.',
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage de colonnes',
+      imageAlt: 'Service de lavage professionnel KleanBac pour colonnes à déchets',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des colonnes',
     },
     features: {
       title: 'Un système de lavage innovant et des solutions éco-responsables',
-      descriptionLine1: 'Chez KB Clean, innovation et écologie vont de pair.',
+      descriptionLine1: 'Chez KleanBac, innovation et écologie vont de pair.',
       descriptionLine2:
         "Nos équipements de lavage sont conçus pour minimiser l'impact environnemental. Sans produits chimiques, avec une consommation d'eau réduite et des émissions de CO₂ limitées, nous allions efficacité et respect de l'environnement.",
       items: {
@@ -107,7 +107,7 @@ export default {
       },
     },
     process: {
-      title: 'Le mode opératoire KB Clean',
+      title: 'Le mode opératoire KleanBac',
       descriptionLine1:
         'Un nettoyage méthodique pour des colonnes impeccables, quel que soit le type de PAV.',
       descriptionLine2:
@@ -137,16 +137,16 @@ export default {
       titleHighlight: "d'abris bacs biodéchets",
       stats: "Un service d'entretien régulier de vos abris biodéchets partout en France",
       subtitle:
-        "KB Clean assure l'hygiène et la désinfection de vos abris biodéchets grâce à notre procédé efficace et respectueux de l'environnement.",
-      cta: 'Rencontrons-nous',
-      ctaLabel: 'Demander un rendez-vous pour le lavage de vos abris bacs biodéchets',
-      imageAlt: 'Service de lavage professionnel KB Clean pour abris bacs biodéchets',
+        "KleanBac assure l'hygiène et la désinfection de vos abris biodéchets grâce à notre procédé efficace et respectueux de l'environnement.",
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage d\'abris biodéchets',
+      imageAlt: 'Service de lavage professionnel KleanBac pour abris bacs biodéchets',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des abris biodéchets',
     },
     features: {
       title: 'Un système de lavage innovant et des solutions éco-responsables',
-      descriptionLine1: 'Chez KB Clean, innovation et écologie vont de pair.',
+      descriptionLine1: 'Chez KleanBac, innovation et écologie vont de pair.',
       descriptionLine2:
         "Nos équipements de lavage sont conçus pour minimiser l'impact environnemental. Sans produits chimiques, avec une consommation d'eau réduite et des émissions de CO₂ limitées, nous allions efficacité et respect de l'environnement.",
       items: {
@@ -173,7 +173,7 @@ export default {
       },
     },
     process: {
-      title: 'Le mode opératoire KB Clean',
+      title: 'Le mode opératoire KleanBac',
       descriptionLine1:
         'Notre recette de la propreté ? Une technologie de lavage, une plateforme de suivi et un savoir-faire méthodique.',
       descriptionLine2:

@@ -14,21 +14,36 @@
           </p>
         </div>
 
-        <div class="grid gap-8 md:grid-cols-3">
+        <div class="grid gap-6 md:grid-cols-3">
           <div
-            v-for="formula in displayedFormulas"
+            v-for="(formula, index) in displayedFormulas"
             :key="formula.id"
-            class="flex flex-col items-center space-y-6 rounded-3xl bg-card px-6 py-10 text-center shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+            :class="[
+              'group relative overflow-hidden rounded-3xl border border-border/50 bg-card p-8 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-xl',
+              getCardDelay(index),
+            ]"
           >
-            <div class="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-              <Icon :name="formula.icon" class="h-10 w-10 text-primary" aria-hidden="true" />
+            <div
+              class="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150"
+              aria-hidden="true"
+            />
+
+            <div class="relative flex flex-col items-center space-y-6 text-center">
+              <div
+                class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/70 shadow-lg transition-transform duration-300 group-hover:scale-110"
+              >
+                <Icon :name="formula.icon" class="h-7 w-7 text-white" aria-hidden="true" />
+              </div>
+
+              <div class="space-y-3">
+                <h3 class="text-xl font-bold text-card-foreground">
+                  {{ $t(formula.titleKey) }}
+                </h3>
+                <p class="text-sm leading-relaxed text-muted-foreground">
+                  {{ $t(formula.descriptionKey) }}
+                </p>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-card-foreground">
-              {{ $t(formula.titleKey) }}
-            </h3>
-            <p class="flex-1 text-sm leading-relaxed text-muted-foreground">
-              {{ $t(formula.descriptionKey) }}
-            </p>
           </div>
         </div>
 
@@ -58,6 +73,11 @@ const { elementRef, isVisible } = useScrollAnimation(0.4)
 const localePath = useLocalePath()
 
 const displayedFormulas = formulaCards.slice(0, 3)
+
+const getCardDelay = (index: number): string => {
+  const delays = ['delay-0', 'delay-100', 'delay-200']
+  return delays[index] ?? 'delay-0'
+}
 </script>
 
 <style scoped>
@@ -70,5 +90,17 @@ const displayedFormulas = formulaCards.slice(0, 3)
 .scroll-animate.is-visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+.delay-0 {
+  transition-delay: 0ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
 }
 </style>

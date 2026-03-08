@@ -49,7 +49,7 @@ export default defineEventHandler(async event => {
     })
 
     const { data, error } = await resend.emails.send({
-      from: 'KB Clean Contact <onboarding@resend.dev>',
+      from: 'KleanBac Contact <onboarding@resend.dev>',
       to: [config.contactEmailTo],
       subject: `Nouveau contact: ${requestTypeLabel} - ${body.lastName}`,
       html: emailHtml,
