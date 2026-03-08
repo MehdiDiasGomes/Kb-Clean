@@ -6,8 +6,8 @@ export default {
       stats: 'A reliable and regular service across the entire French territory',
       subtitle:
         'KleanBac ensures thorough cleaning and disinfection of your wheeled bins using our high-performance washing technology.',
-      cta: 'Request a quote',
-      ctaLabel: 'Request a quote for wheeled bin washing service',
+      cta: 'Request a pre-booking',
+      ctaLabel: 'Request a pre-booking for wheeled bin cleaning',
       imageAlt: 'KleanBac high-performance washing technology for wheeled bins',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the wheeled bin cleaning process',
@@ -73,8 +73,8 @@ export default {
         'Washing service for above-ground, underground and semi-underground columns across France',
       subtitle:
         'KleanBac ensures complete cleaning of your waste columns with our professional process adapted to all types of waste collection points.',
-      cta: "Let's meet",
-      ctaLabel: 'Request an appointment for waste column washing service',
+      cta: 'Request a pre-booking',
+      ctaLabel: 'Request a pre-booking for waste column cleaning',
       imageAlt: 'KleanBac professional washing service for waste columns',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the waste column cleaning process',
@@ -139,8 +139,8 @@ export default {
       stats: 'Regular maintenance service for your bio-waste shelters across France',
       subtitle:
         'KleanBac ensures hygiene and disinfection of your bio-waste shelters using our efficient and environmentally friendly process.',
-      cta: "Let's meet",
-      ctaLabel: 'Request an appointment for bio-waste shelter washing service',
+      cta: 'Request a pre-booking',
+      ctaLabel: 'Request a pre-booking for bio-waste shelter cleaning',
       imageAlt: 'KleanBac professional washing service for bio-waste shelters',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the bio-waste shelter cleaning process',

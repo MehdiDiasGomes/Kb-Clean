@@ -6,8 +6,8 @@ export default {
       stats: 'Un service régulier et fiable sur tout le territoire français',
       subtitle:
         'KleanBac assure la propreté et la désinfection complète de vos bacs grâce à notre technologie de lavage haute performance.',
-      cta: 'Demander un devis',
-      ctaLabel: 'Demander un devis pour le lavage de vos bacs roulants',
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage de bacs roulants',
       imageAlt: 'Technologie de lavage haute performance KleanBac pour bacs roulants',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des bacs roulants',
@@ -72,8 +72,8 @@ export default {
       stats: 'Service de lavage pour PAV aériens, enterrés et semi-enterrés partout en France',
       subtitle:
         'KleanBac assure le nettoyage complet de vos colonnes à déchets avec notre procédé professionnel adapté à tous types de PAV.',
-      cta: 'Rencontrons-nous',
-      ctaLabel: 'Demander un rendez-vous pour le lavage de colonnes à déchets',
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage de colonnes',
       imageAlt: 'Service de lavage professionnel KleanBac pour colonnes à déchets',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des colonnes',
@@ -138,8 +138,8 @@ export default {
       stats: "Un service d'entretien régulier de vos abris biodéchets partout en France",
       subtitle:
         "KleanBac assure l'hygiène et la désinfection de vos abris biodéchets grâce à notre procédé efficace et respectueux de l'environnement.",
-      cta: 'Rencontrons-nous',
-      ctaLabel: 'Demander un rendez-vous pour le lavage de vos abris bacs biodéchets',
+      cta: 'Demander une pré réservation',
+      ctaLabel: 'Demander une pré réservation pour le nettoyage d\'abris biodéchets',
       imageAlt: 'Service de lavage professionnel KleanBac pour abris bacs biodéchets',
       imagePlaceholder: 'Image requise',
       imageDescription: 'Illustration montrant le processus de lavage des abris biodéchets',
