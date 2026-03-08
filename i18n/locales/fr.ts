@@ -26,11 +26,12 @@ export default {
   },
   hero: {
     title: 'KleanBac',
-    titleHighlight: 'La référence du nettoyage et de la désinfection de vos bacs et contenants',
+    titleHighlight:
+      'Le lavage écologique de bacs à déchets arrive prochainement dans votre secteur',
     subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
-    ctaPrimary: 'Demander un devis',
+    ctaPrimary: 'Je suis intéressé par le lancement',
     ctaSecondary: 'Découvrir nos services',
-    ctaPrimaryAriaLabel: 'Demander un devis gratuit pour le nettoyage de vos bacs',
+    ctaPrimaryAriaLabel: 'Manifester votre intérêt pour le lancement de KleanBac',
     ctaSecondaryAriaLabel: 'Découvrir nos services de nettoyage',
     imageAlt: 'Services de lavage de contenants à déchets KleanBac',
     badge: '100% Écologique',
@@ -41,12 +42,12 @@ export default {
         label: "Consommation d'eau",
       },
       chemical: {
-        value: '0%',
-        label: 'Produits chimiques',
+        value: '100%',
+        label: 'Produits biodégradables',
       },
       co2: {
-        value: '-50%',
-        label: 'Émissions CO₂',
+        value: '100%',
+        label: 'Électrique',
       },
     },
   },
@@ -65,27 +66,30 @@ export default {
         description:
           'Nettoyage intérieur et extérieur de vos bacs roulants grâce à notre système de lavage haute performance.',
         cta: 'En savoir plus',
-        ctaLabel: 'Découvrir le service de nettoyage des bacs roulants',
+        ctaLabel: 'En savoir plus sur le nettoyage de bacs roulants',
       },
       bioWaste: {
         title: 'Abris biodéchets',
         description:
           "L'hygiène de vos abris biodéchets assurée par un procédé efficace et respectueux de l'environnement.",
         cta: 'En savoir plus',
-        ctaLabel: 'Découvrir le service de nettoyage des abris biodéchets',
+        ctaLabel: 'En savoir plus sur le nettoyage d\'abris biodéchets',
       },
       bulkContainers: {
         title: 'Conteneurs collectifs',
         description:
           "Tous vos conteneurs collectifs lavés à l'eau chaude et haute pression pour éliminer résidus et bactéries.",
         cta: 'En savoir plus',
-        ctaLabel: 'Découvrir le service de nettoyage des conteneurs collectifs',
+        ctaLabel: 'En savoir plus sur le nettoyage de conteneurs collectifs',
       },
     },
   },
   formulas: {
     sectionTitle: 'Nos formules',
     intro: 'Découvrez nos différentes formules adaptées à tous les besoins',
+    badge: 'Formules flexibles',
+    learnMore: 'En savoir plus',
+    ctaIntro: 'Vous ne savez pas quelle formule choisir ? Contactez-nous pour une démonstration personnalisée.',
     viewAll: 'Voir toutes nos formules',
     viewAllLabel: 'Découvrir toutes les formules disponibles',
     oneTime: {
@@ -180,8 +184,9 @@ export default {
           "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. KleanBac nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
       },
     },
-    cta: 'Nous contacter',
-    ctaLabel: 'Contactez-nous pour un devis personnalisé',
+    cta: 'Demander une démonstration gratuite',
+    ctaSubtext: 'Sur site ou à domicile',
+    ctaLabel: 'Demander une démonstration gratuite sur site ou à domicile',
   },
   footer: {
     copyright: 'Tous droits réservés.',
@@ -225,7 +230,7 @@ export default {
         label: 'Type de demande',
         placeholder: 'Sélectionnez une option',
         options: {
-          demo: 'Prendre rendez-vous pour une démonstration',
+          demo: 'Demande de démonstration gratuite',
           callback: "Être rappelé pour plus d'informations",
           quote: 'Demande de devis',
         },
@@ -256,8 +261,8 @@ export default {
       title: 'Informations',
       address: {
         title: 'Adresse',
-        line1: '123 Rue de la Propreté',
-        line2: '75001 Paris, France',
+        line1: "Les Portes de l'Orne, Rue André Marie Ampère",
+        line2: '57360 Amnéville',
       },
       phone: {
         title: 'Téléphone',

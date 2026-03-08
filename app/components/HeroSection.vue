@@ -71,7 +71,7 @@
                 />
               </NuxtLink>
 
-              <NuxtLink
+              <!-- <NuxtLink
                 :to="localePath('/about')"
                 class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3 text-base font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 :aria-label="$t('hero.ctaSecondaryAriaLabel')"
@@ -82,7 +82,7 @@
                   class="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
                   aria-hidden="true"
                 />
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
           </div>
 

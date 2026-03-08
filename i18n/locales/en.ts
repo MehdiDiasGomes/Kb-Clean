@@ -64,28 +64,31 @@ export default {
         title: 'Wheeled bins',
         description:
           'Interior and exterior cleaning of your wheeled bins with our high-performance washing system.',
-        cta: 'Request a pre-booking',
-        ctaLabel: 'Request a pre-booking for wheeled bin cleaning',
+        cta: 'Learn more',
+        ctaLabel: 'Learn more about wheeled bin cleaning',
       },
       bioWaste: {
         title: 'Bio-waste shelters',
         description:
           'Hygiene for your bio-waste shelters ensured by an efficient and environmentally friendly process.',
-        cta: 'Request a pre-booking',
-        ctaLabel: 'Request a pre-booking for bio-waste shelter cleaning',
+        cta: 'Learn more',
+        ctaLabel: 'Learn more about bio-waste shelter cleaning',
       },
       bulkContainers: {
         title: 'Bulk containers',
         description:
           'All your bulk containers washed with hot water and high pressure to eliminate residue and bacteria.',
-        cta: 'Request a pre-booking',
-        ctaLabel: 'Request a pre-booking for bulk container cleaning',
+        cta: 'Learn more',
+        ctaLabel: 'Learn more about bulk container cleaning',
       },
     },
   },
   formulas: {
     sectionTitle: 'Our Plans',
     intro: 'Discover our different plans adapted to all needs',
+    badge: 'Flexible plans',
+    learnMore: 'Learn more',
+    ctaIntro: 'Not sure which plan to choose? Contact us for a personalized demonstration.',
     viewAll: 'View all our plans',
     viewAllLabel: 'Discover all available plans',
     oneTime: {
@@ -179,8 +182,9 @@ export default {
           'Waste bins are one of the main sources of bacteria and bad odors around the home. KleanBac cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
       },
     },
-    cta: 'Request a pre-booking',
-    ctaLabel: 'Request a pre-booking for our services',
+    cta: 'Request a free demonstration',
+    ctaSubtext: 'On-site or at home',
+    ctaLabel: 'Request a free demonstration on-site or at home',
   },
   footer: {
     copyright: 'All rights reserved.',
@@ -224,7 +228,7 @@ export default {
         label: 'Request Type',
         placeholder: 'Select an option',
         options: {
-          demo: 'Schedule a demonstration',
+          demo: 'Free demonstration request',
           callback: 'Request a callback for more information',
           quote: 'Request a quote',
         },
