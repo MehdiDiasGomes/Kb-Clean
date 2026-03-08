@@ -26,11 +26,11 @@ export default {
   },
   hero: {
     title: 'KleanBac',
-    titleHighlight: 'The reference for cleaning and disinfecting your bins and containers',
+    titleHighlight: 'Eco-friendly waste bin cleaning coming soon to your area',
     subtitle: 'Professional solutions for spotless bins',
-    ctaPrimary: 'Get a quote',
+    ctaPrimary: "I'm interested in the launch",
     ctaSecondary: 'Discover our services',
-    ctaPrimaryAriaLabel: 'Request a free quote for bin cleaning',
+    ctaPrimaryAriaLabel: 'Express your interest in the KleanBac launch',
     ctaSecondaryAriaLabel: 'Discover our cleaning services',
     imageAlt: 'KleanBac waste container cleaning services',
     badge: '100% Eco-Friendly',
@@ -41,12 +41,12 @@ export default {
         label: 'Water consumption',
       },
       chemical: {
-        value: '0%',
-        label: 'Chemical products',
+        value: '100%',
+        label: 'Biodegradable products',
       },
       co2: {
-        value: '-50%',
-        label: 'CO₂ emissions',
+        value: '100%',
+        label: 'Electric',
       },
     },
   },
@@ -64,22 +64,22 @@ export default {
         title: 'Wheeled bins',
         description:
           'Interior and exterior cleaning of your wheeled bins with our high-performance washing system.',
-        cta: 'Learn more',
-        ctaLabel: 'Discover our wheeled bin cleaning service',
+        cta: 'Request a pre-booking',
+        ctaLabel: 'Request a pre-booking for wheeled bin cleaning',
       },
       bioWaste: {
         title: 'Bio-waste shelters',
         description:
           'Hygiene for your bio-waste shelters ensured by an efficient and environmentally friendly process.',
-        cta: 'Learn more',
-        ctaLabel: 'Discover our bio-waste shelter cleaning service',
+        cta: 'Request a pre-booking',
+        ctaLabel: 'Request a pre-booking for bio-waste shelter cleaning',
       },
       bulkContainers: {
         title: 'Bulk containers',
         description:
           'All your bulk containers washed with hot water and high pressure to eliminate residue and bacteria.',
-        cta: 'Learn more',
-        ctaLabel: 'Discover our bulk container cleaning service',
+        cta: 'Request a pre-booking',
+        ctaLabel: 'Request a pre-booking for bulk container cleaning',
       },
     },
   },
@@ -179,8 +179,8 @@ export default {
           'Waste bins are one of the main sources of bacteria and bad odors around the home. KleanBac cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
       },
     },
-    cta: 'Contact us',
-    ctaLabel: 'Contact us for a personalized quote',
+    cta: 'Request a pre-booking',
+    ctaLabel: 'Request a pre-booking for our services',
   },
   footer: {
     copyright: 'All rights reserved.',
@@ -255,8 +255,8 @@ export default {
       title: 'Information',
       address: {
         title: 'Address',
-        line1: '123 Clean Street',
-        line2: '75001 Paris, France',
+        line1: "Les Portes de l'Orne, Rue André Marie Ampère",
+        line2: '57360 Amnéville, France',
       },
       phone: {
         title: 'Phone',
