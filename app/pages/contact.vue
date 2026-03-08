@@ -40,9 +40,10 @@
                           <SelectItem value="callback">
                             {{ $t('contact.form.requestType.options.callback') }}
                           </SelectItem>
-                          <SelectItem value="quote">
+                          <!-- Quote option temporarily hidden -->
+                          <!-- <SelectItem value="quote">
                             {{ $t('contact.form.requestType.options.quote') }}
-                          </SelectItem>
+                          </SelectItem> -->
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -146,7 +147,8 @@
               <div
                 class="flex w-full max-md:flex-col max-lg:justify-between lg:flex-col items-start gap-6"
               >
-                <div class="flex items-center gap-4">
+                <!-- Phone number temporarily hidden -->
+                <!-- <div class="flex items-center gap-4">
                   <div
                     class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-muted"
                   >
@@ -158,7 +160,7 @@
                   >
                     {{ $t('contact.info.phone.display') }}
                   </a>
-                </div>
+                </div> -->
 
                 <div class="flex items-center gap-4">
                   <div
@@ -230,6 +232,12 @@ useSeoMeta({
 const { elementRef: formRef, isVisible: isFormVisible } = useScrollAnimation(0.1)
 const { elementRef: sidebarRef, isVisible: isSidebarVisible } = useScrollAnimation(0.1)
 
+const route = useRoute()
+const validRequestTypes = ['demo', 'callback', 'quote']
+const initialRequestType = validRequestTypes.includes(route.query.type as string)
+  ? (route.query.type as string)
+  : ''
+
 const formSchema = toTypedSchema(
   z.object({
     lastName: z.string().min(2, t('contact.form.validation.lastNameMin')),
@@ -246,7 +254,7 @@ const form = useForm({
     lastName: '',
     email: '',
     companyName: '',
-    requestType: '',
+    requestType: initialRequestType,
     message: '',
   },
 })

@@ -63,9 +63,7 @@
         </div>
 
         <div class="flex justify-center">
-          <ButtonCta to="/contact" :aria-label="$t('clients.ctaLabel')">
-            {{ $t('clients.cta') }}
-          </ButtonCta>
+          <CtaFreeDemo />
         </div>
       </div>
     </div>
