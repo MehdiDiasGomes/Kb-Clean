@@ -112,11 +112,6 @@ export default {
       description:
         'Deux interventions par an pour conserver des bacs propres et limiter les nuisances. Formule simple et économique.',
     },
-    annual: {
-      title: 'Formule Annuelle',
-      description:
-        "Un programme d'entretien annuel planifié à l'avance. Idéal pour les particuliers souhaitant une solution clé en main.",
-    },
     subscriptionIndividual: {
       title: 'Formule Abonnement Particulier',
       description:
