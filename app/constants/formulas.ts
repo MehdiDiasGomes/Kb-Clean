@@ -27,10 +27,10 @@ export const formulaCards: FormulaCard[] = [
     icon: 'CalendarRange',
   },
   {
-    id: 'annual',
-    titleKey: 'formulas.annual.title',
-    descriptionKey: 'formulas.annual.description',
-    icon: 'CalendarCheck',
+    id: 'custom',
+    titleKey: 'formulas.custom.title',
+    descriptionKey: 'formulas.custom.description',
+    icon: 'Settings',
   },
   // {
   //   id: 'biannual',

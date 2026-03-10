@@ -111,11 +111,6 @@ export default {
       description:
         'Two interventions per year to keep bins clean and limit nuisances. Simple and economical plan.',
     },
-    annual: {
-      title: 'Annual Plan',
-      description:
-        'An annual maintenance program planned in advance. Ideal for individuals looking for a turnkey solution.',
-    },
     subscriptionIndividual: {
       title: 'Individual Subscription',
       description:
