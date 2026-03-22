@@ -1,16 +1,24 @@
 <template>
-  <div>
-    <section
-      class="relative h-screen w-full bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/images/about/hero-bg.webp')"
-    >
+  <div class="overflow-x-hidden">
+    <section class="relative w-full overflow-hidden">
+      <NuxtImg
+        src="/images/about/hero-bg.webp"
+        :alt="$t('about.hero.imageAlt')"
+        class="block w-full max-w-full h-auto"
+      />
+
       <div
-        class="absolute inset-0 bg-linear-to-br from-primary/50 to-primary/90"
+        class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-primary/30"
         aria-hidden="true"
       />
 
-      <div class="absolute inset-0 flex items-center justify-center page-padding-x">
-        <div class="mx-auto max-w-7xl">
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+        aria-hidden="true"
+      />
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="space-y-12">
             <div
               ref="heroRef"
