@@ -24,15 +24,6 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
           margin: 40px auto;
           background-color: #ffffff;
         }
-        .header {
-          padding: 40px 40px 30px;
-          text-align: center;
-          border-bottom: 1px solid #e5e5e5;
-        }
-        .logo {
-          max-width: 180px;
-          height: auto;
-        }
         .content {
           padding: 40px;
         }
@@ -74,10 +65,6 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
     </head>
     <body>
       <div class="container">
-        <div class="header">
-          <img src="https://votre-domaine.com/images/brand/logo.webp" alt="BINOVYA" class="logo">
-        </div>
-
         <div class="content">
           <div class="field">
             <div class="label">Nom</div>
