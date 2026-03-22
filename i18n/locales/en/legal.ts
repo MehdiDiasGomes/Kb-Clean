@@ -16,7 +16,7 @@ export default {
   intellectualProperty: {
     title: 'Intellectual Property',
     content:
-      'All content on this site (texts, images, logos, videos) is protected by copyright. Any reproduction, representation, modification or distribution, in whole or in part, of the content of this site, by any means whatsoever, without the prior written authorization of KleanBac, is prohibited and would constitute an infringement sanctioned by articles L.335-2 and following of the French Intellectual Property Code.',
+      'All content on this site (texts, images, logos, videos) is protected by copyright. Any reproduction, representation, modification or distribution, in whole or in part, of the content of this site, by any means whatsoever, without the prior written authorization of BINOVYA, is prohibited and would constitute an infringement sanctioned by articles L.335-2 and following of the French Intellectual Property Code.',
   },
   personalData: {
     title: 'Personal Data',
@@ -31,7 +31,7 @@ export default {
   liability: {
     title: 'Liability',
     content:
-      'KleanBac strives to ensure the accuracy and updating of information published on this site. However, KleanBac cannot guarantee the accuracy, precision or completeness of the information made available on this site. KleanBac cannot be held responsible for errors, lack of availability of information and services.',
+      'BINOVYA strives to ensure the accuracy and updating of information published on this site. However, BINOVYA cannot guarantee the accuracy, precision or completeness of the information made available on this site. BINOVYA cannot be held responsible for errors, lack of availability of information and services.',
   },
   applicableLaw: {
     title: 'Applicable Law',

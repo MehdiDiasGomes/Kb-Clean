@@ -5,16 +5,16 @@ export default {
       titleHighlight: 'wheeled bins',
       stats: 'A reliable and regular service across the entire French territory',
       subtitle:
-        'KleanBac ensures thorough cleaning and disinfection of your wheeled bins using our high-performance washing technology.',
+        'BINOVYA ensures thorough cleaning and disinfection of your wheeled bins using our high-performance washing technology.',
       cta: 'Request a pre-booking',
       ctaLabel: 'Request a pre-booking for wheeled bin cleaning',
-      imageAlt: 'KleanBac high-performance washing technology for wheeled bins',
+      imageAlt: 'BINOVYA high-performance washing technology for wheeled bins',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the wheeled bin cleaning process',
     },
     features: {
       title: 'An innovative washing system and eco-responsible solutions',
-      descriptionLine1: 'At KleanBac, innovation and ecology go hand in hand.',
+      descriptionLine1: 'At BINOVYA, innovation and ecology go hand in hand.',
       descriptionLine2:
         'Our washing equipment is designed to minimize environmental impact. Chemical-free, with reduced water consumption and limited CO₂ emissions, we combine efficiency with environmental respect.',
       items: {
@@ -41,9 +41,9 @@ export default {
       },
     },
     process: {
-      title: 'The KleanBac operating method',
+      title: 'The BINOVYA operating method',
       descriptionLine1:
-        'At KleanBac, we combine innovation, rigor and field expertise to guarantee impeccable bins.',
+        'At BINOVYA, we combine innovation, rigor and field expertise to guarantee impeccable bins.',
       descriptionLine2:
         'Thanks to high-performance washing equipment, digitized monitoring of our interventions and precise intervention protocols, we ensure cleaning adapted to each site. For each visit, before/after photos are sent to you, concrete proof of our requirements and the quality of service provided.',
     },
@@ -72,16 +72,16 @@ export default {
       stats:
         'Washing service for above-ground, underground and semi-underground columns across France',
       subtitle:
-        'KleanBac ensures complete cleaning of your waste columns with our professional process adapted to all types of waste collection points.',
+        'BINOVYA ensures complete cleaning of your waste columns with our professional process adapted to all types of waste collection points.',
       cta: 'Request a pre-booking',
       ctaLabel: 'Request a pre-booking for waste column cleaning',
-      imageAlt: 'KleanBac professional washing service for waste columns',
+      imageAlt: 'BINOVYA professional washing service for waste columns',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the waste column cleaning process',
     },
     features: {
       title: 'An innovative washing system and eco-responsible solutions',
-      descriptionLine1: 'At KleanBac, innovation and ecology go hand in hand.',
+      descriptionLine1: 'At BINOVYA, innovation and ecology go hand in hand.',
       descriptionLine2:
         'Our washing equipment is designed to minimize environmental impact. Chemical-free, with reduced water consumption and limited CO₂ emissions, we combine efficiency with environmental respect.',
       items: {
@@ -108,7 +108,7 @@ export default {
       },
     },
     process: {
-      title: 'The KleanBac operating method',
+      title: 'The BINOVYA operating method',
       descriptionLine1:
         'A methodical cleaning process for impeccable columns, regardless of collection point type.',
       descriptionLine2:
@@ -138,16 +138,16 @@ export default {
       titleHighlight: 'washing service',
       stats: 'Regular maintenance service for your bio-waste shelters across France',
       subtitle:
-        'KleanBac ensures hygiene and disinfection of your bio-waste shelters using our efficient and environmentally friendly process.',
+        'BINOVYA ensures hygiene and disinfection of your bio-waste shelters using our efficient and environmentally friendly process.',
       cta: 'Request a pre-booking',
       ctaLabel: 'Request a pre-booking for bio-waste shelter cleaning',
-      imageAlt: 'KleanBac professional washing service for bio-waste shelters',
+      imageAlt: 'BINOVYA professional washing service for bio-waste shelters',
       imagePlaceholder: 'Image required',
       imageDescription: 'Illustration showing the bio-waste shelter cleaning process',
     },
     features: {
       title: 'An innovative washing system and eco-responsible solutions',
-      descriptionLine1: 'At KleanBac, innovation and ecology go hand in hand.',
+      descriptionLine1: 'At BINOVYA, innovation and ecology go hand in hand.',
       descriptionLine2:
         'Our washing equipment is designed to minimize environmental impact. Chemical-free, with reduced water consumption and limited CO₂ emissions, we combine efficiency with environmental respect.',
       items: {
@@ -174,7 +174,7 @@ export default {
       },
     },
     process: {
-      title: 'The KleanBac operating method',
+      title: 'The BINOVYA operating method',
       descriptionLine1:
         'Our recipe for cleanliness? Washing technology, a monitoring platform, and methodical expertise.',
       descriptionLine2:
