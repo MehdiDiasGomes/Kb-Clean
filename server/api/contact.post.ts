@@ -49,7 +49,7 @@ export default defineEventHandler(async event => {
     })
 
     const { data, error } = await resend.emails.send({
-      from: 'BINOVYA Contact <onboarding@resend.dev>',
+      from: 'BINOVYA Contact <contact@dg-zenith.com>',
       to: [config.contactEmailTo],
       subject: `Nouveau contact: ${requestTypeLabel} - ${body.lastName}`,
       html: emailHtml,
