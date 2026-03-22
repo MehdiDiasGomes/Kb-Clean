@@ -1,37 +1,37 @@
 <template>
   <div class="overflow-x-hidden">
-    <section class="relative w-full overflow-hidden">
-      <NuxtImg
-        src="/images/about/hero-bg.webp"
-        :alt="$t('about.hero.imageAlt')"
-        class="block w-full max-w-full h-auto"
-      />
+    <section class="relative w-full min-h-[70vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <NuxtImg
+          src="/images/about/hero-bg.webp"
+          :alt="$t('about.hero.imageAlt')"
+          class="h-full w-full object-cover"
+        />
 
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-primary/30"
-        aria-hidden="true"
-      />
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-primary/30"
+          aria-hidden="true"
+        />
 
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
-        aria-hidden="true"
-      />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
+          aria-hidden="true"
+        />
+      </div>
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="space-y-12">
-            <div
-              ref="heroRef"
-              :class="['text-center scroll-animate', isHeroVisible && 'is-visible']"
-            >
-              <h1 class="font-heading text-4xl text-white sm:text-5xl md:text-6xl">
-                {{ $t('about.hero.titleBefore') }}
-                {{ $t('about.hero.titleHighlight') }}
-              </h1>
-              <p class="mx-auto mt-6 max-w-3xl text-lg text-white/90">
-                {{ $t('about.hero.subtitle') }}
-              </p>
-            </div>
+      <div class="relative z-10 w-full px-4 py-24 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div
+            ref="heroRef"
+            :class="['text-center scroll-animate', isHeroVisible && 'is-visible']"
+          >
+            <h1 class="font-heading text-3xl text-white sm:text-5xl md:text-6xl">
+              {{ $t('about.hero.titleBefore') }}
+              {{ $t('about.hero.titleHighlight') }}
+            </h1>
+            <p class="mx-auto mt-6 max-w-3xl text-base text-white/90 sm:text-lg">
+              {{ $t('about.hero.subtitle') }}
+            </p>
           </div>
         </div>
       </div>
