@@ -25,15 +25,15 @@ export default {
     closeSubmenu: 'Fermer le menu',
   },
   hero: {
-    title: 'KleanBac',
+    title: 'BINOVYA',
     titleHighlight:
       'Le lavage écologique de bacs à déchets arrive prochainement dans votre secteur',
     subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
     ctaPrimary: 'Je suis intéressé par le lancement',
     ctaSecondary: 'Découvrir nos services',
-    ctaPrimaryAriaLabel: 'Manifester votre intérêt pour le lancement de KleanBac',
+    ctaPrimaryAriaLabel: 'Manifester votre intérêt pour le lancement de BINOVYA',
     ctaSecondaryAriaLabel: 'Découvrir nos services de nettoyage',
-    imageAlt: 'Services de lavage de contenants à déchets KleanBac',
+    imageAlt: 'Services de lavage de contenants à déchets BINOVYA',
     badge: '100% Écologique',
     scrollIndicator: 'Défiler vers le bas',
     stats: {
@@ -52,7 +52,7 @@ export default {
     },
   },
   solutions: {
-    sectionTitle: 'KleanBac vous accompagne pour un environnement plus propre',
+    sectionTitle: 'BINOVYA vous accompagne pour un environnement plus propre',
     intro: {
       line1:
         'Un nettoyage régulier de vos conteneurs élimine les mauvaises odeurs et limite la prolifération bactérienne.',
@@ -146,7 +146,7 @@ export default {
     },
     intro: {
       line1: {
-        prefix: 'KleanBac intervient auprès de',
+        prefix: 'BINOVYA intervient auprès de',
         bold1: 'tous les professionnels',
         middle: "pour qui l'",
         bold2: 'hygiène des contenants',
@@ -176,7 +176,7 @@ export default {
       individuals: {
         title: 'Particulier',
         description:
-          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. KleanBac nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
+          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. BINOVYA nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
       },
     },
     cta: 'Demander une démonstration gratuite',
@@ -219,7 +219,7 @@ export default {
       companyName: {
         label: "Nom de l'entreprise",
         optional: '(optionnel)',
-        placeholder: 'KleanBac SARL',
+        placeholder: 'BINOVYA SARL',
       },
       requestType: {
         label: 'Type de demande',
@@ -266,7 +266,7 @@ export default {
       },
       email: {
         title: 'Email',
-        address: "contact{'@'}kleanbac.fr",
+        address: "contact{'@'}binovya.fr",
       },
       hours: {
         title: 'Horaires',
@@ -278,7 +278,7 @@ export default {
   about,
   ...solutions,
   common: {
-    logoAlt: 'Logo KleanBac',
+    logoAlt: 'Logo BINOVYA',
     backToHome: "Retour à la page d'accueil",
     language: 'Langue',
     selectLanguage: 'Sélectionner la langue',
@@ -289,53 +289,53 @@ export default {
   },
   seo: {
     home: {
-      title: 'KleanBac - Nettoyage et désinfection de bacs à déchets',
+      title: 'BINOVYA - Nettoyage et désinfection de bacs à déchets',
       description:
-        "KleanBac, spécialiste du nettoyage écologique de bacs roulants, abris biodéchets et conteneurs. Service professionnel, rapide et 100% respectueux de l'environnement.",
+        "BINOVYA, spécialiste du nettoyage écologique de bacs roulants, abris biodéchets et conteneurs. Service professionnel, rapide et 100% respectueux de l'environnement.",
     },
     about: {
-      title: 'Qui sommes-nous ? - KleanBac',
+      title: 'Qui sommes-nous ? - BINOVYA',
       description:
-        "Découvrez KleanBac, votre partenaire pour le nettoyage et la désinfection écologique de bacs à déchets. Expertise, qualité et respect de l'environnement.",
+        "Découvrez BINOVYA, votre partenaire pour le nettoyage et la désinfection écologique de bacs à déchets. Expertise, qualité et respect de l'environnement.",
     },
     contact: {
-      title: 'Contactez-nous - KleanBac',
+      title: 'Contactez-nous - BINOVYA',
       description:
-        "Besoin d'un devis ou d'informations ? Contactez KleanBac pour le nettoyage professionnel de vos bacs à déchets. Réponse rapide garantie.",
+        "Besoin d'un devis ou d'informations ? Contactez BINOVYA pour le nettoyage professionnel de vos bacs à déchets. Réponse rapide garantie.",
     },
     faq: {
-      title: 'FAQ - KleanBac',
+      title: 'FAQ - BINOVYA',
       description:
         'Questions fréquentes sur nos services de nettoyage de bacs à déchets. Efficacité, écologie, fréquence, durée des interventions.',
     },
     formulas: {
-      title: 'Nos formules - KleanBac',
+      title: 'Nos formules - BINOVYA',
       description:
         'Découvrez nos formules de nettoyage adaptées à tous les besoins : ponctuelle, mensuelle, trimestrielle, professionnels, collectivités et sur mesure.',
     },
     privacy: {
-      title: 'Politique de confidentialité - KleanBac',
+      title: 'Politique de confidentialité - BINOVYA',
       description:
-        'Politique de confidentialité de KleanBac. Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée.',
+        'Politique de confidentialité de BINOVYA. Découvrez comment nous protégeons vos données personnelles et respectons votre vie privée.',
     },
     legal: {
-      title: 'Mentions légales - KleanBac',
+      title: 'Mentions légales - BINOVYA',
       description:
-        "Mentions légales de KleanBac. Informations sur notre entreprise et nos conditions d'utilisation.",
+        "Mentions légales de BINOVYA. Informations sur notre entreprise et nos conditions d'utilisation.",
     },
     solutions: {
       rollingBins: {
-        title: 'Nettoyage de bacs roulants - KleanBac',
+        title: 'Nettoyage de bacs roulants - BINOVYA',
         description:
           'Service de nettoyage professionnel pour bacs roulants. Intérieur et extérieur, haute performance, 100% écologique. Devis gratuit.',
       },
       bioWasteShelters: {
-        title: "Nettoyage d'abris biodéchets - KleanBac",
+        title: "Nettoyage d'abris biodéchets - BINOVYA",
         description:
           "Nettoyage et désinfection d'abris à biodéchets. Procédé efficace et respectueux de l'environnement pour une hygiène parfaite.",
       },
       columns: {
-        title: 'Nettoyage de colonnes à déchets - KleanBac',
+        title: 'Nettoyage de colonnes à déchets - BINOVYA',
         description:
           'Service de nettoyage professionnel pour colonnes et conteneurs collectifs. Eau chaude haute pression, écologique et efficace.',
       },

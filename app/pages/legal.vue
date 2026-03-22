@@ -19,7 +19,7 @@
             <div class="space-y-2 text-muted-foreground">
               <p>
                 <strong class="text-foreground">{{ $t('legal.publisher.company') }}:</strong>
-                KleanBac
+                BINOVYA
               </p>
               <p>
                 <strong class="text-foreground">{{ $t('legal.publisher.address') }}:</strong>

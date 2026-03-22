@@ -16,7 +16,7 @@ export default {
   intellectualProperty: {
     title: 'Propriété intellectuelle',
     content:
-      "L'ensemble du contenu de ce site (textes, images, logos, vidéos) est protégé par le droit d'auteur. Toute reproduction, représentation, modification ou distribution, totale ou partielle, du contenu de ce site, par quelque procédé que ce soit, sans l'autorisation préalable écrite de KleanBac, est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.",
+      "L'ensemble du contenu de ce site (textes, images, logos, vidéos) est protégé par le droit d'auteur. Toute reproduction, représentation, modification ou distribution, totale ou partielle, du contenu de ce site, par quelque procédé que ce soit, sans l'autorisation préalable écrite de BINOVYA, est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.",
   },
   personalData: {
     title: 'Données personnelles',
@@ -31,7 +31,7 @@ export default {
   liability: {
     title: 'Responsabilité',
     content:
-      "KleanBac s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, KleanBac ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. KleanBac ne saurait être tenue responsable des erreurs, d'une absence de disponibilité des informations et des services.",
+      "BINOVYA s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, BINOVYA ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. BINOVYA ne saurait être tenue responsable des erreurs, d'une absence de disponibilité des informations et des services.",
   },
   applicableLaw: {
     title: 'Droit applicable',

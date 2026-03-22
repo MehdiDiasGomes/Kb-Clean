@@ -12,7 +12,7 @@
         <NuxtImg
           src="/images/brand/logo.webp"
           :alt="$t('common.logoAlt')"
-          class="w-36 object-contain object-left max-md:w-40"
+          class="w-14 object-contain object-left"
         />
       </NuxtLink>
 
@@ -72,7 +72,7 @@
             <NuxtImg
               src="/images/brand/logo.webp"
               :alt="$t('common.logoAlt')"
-              class="h-auto w-32 object-contain object-left"
+              class="h-auto w-14 object-contain object-left"
             />
           </SheetHeader>
 

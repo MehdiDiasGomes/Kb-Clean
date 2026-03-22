@@ -25,7 +25,7 @@
           </NuxtLink>
         </nav>
         <p class="text-center text-sm text-muted-foreground">
-          © {{ currentYear }} KleanBac. {{ $t('footer.copyright') }}
+          © {{ currentYear }} BINOVYA. {{ $t('footer.copyright') }}
         </p>
       </div>
     </div>

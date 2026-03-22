@@ -25,14 +25,14 @@ export default {
     closeSubmenu: 'Close menu',
   },
   hero: {
-    title: 'KleanBac',
+    title: 'BINOVYA',
     titleHighlight: 'Eco-friendly waste bin cleaning coming soon to your area',
     subtitle: 'Professional solutions for spotless bins',
     ctaPrimary: "I'm interested in the launch",
     ctaSecondary: 'Discover our services',
-    ctaPrimaryAriaLabel: 'Express your interest in the KleanBac launch',
+    ctaPrimaryAriaLabel: 'Express your interest in the BINOVYA launch',
     ctaSecondaryAriaLabel: 'Discover our cleaning services',
-    imageAlt: 'KleanBac waste container cleaning services',
+    imageAlt: 'BINOVYA waste container cleaning services',
     badge: '100% Eco-Friendly',
     scrollIndicator: 'Scroll down',
     stats: {
@@ -51,7 +51,7 @@ export default {
     },
   },
   solutions: {
-    sectionTitle: 'KleanBac supports you for a cleaner environment',
+    sectionTitle: 'BINOVYA supports you for a cleaner environment',
     intro: {
       line1:
         'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
@@ -145,7 +145,7 @@ export default {
     },
     intro: {
       line1: {
-        prefix: 'KleanBac serves',
+        prefix: 'BINOVYA serves',
         bold1: 'all professionals',
         middle: 'for whom',
         bold2: 'container hygiene',
@@ -174,7 +174,7 @@ export default {
       individuals: {
         title: 'Homeowners',
         description:
-          'Waste bins are one of the main sources of bacteria and bad odors around the home. KleanBac cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
+          'Waste bins are one of the main sources of bacteria and bad odors around the home. BINOVYA cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
       },
     },
     cta: 'Request a free demonstration',
@@ -217,7 +217,7 @@ export default {
       companyName: {
         label: 'Company Name',
         optional: '(optional)',
-        placeholder: 'KleanBac LLC',
+        placeholder: 'BINOVYA LLC',
       },
       requestType: {
         label: 'Request Type',
@@ -264,7 +264,7 @@ export default {
       },
       email: {
         title: 'Email',
-        address: "contact{'@'}kleanbac.fr",
+        address: "contact{'@'}binovya.fr",
       },
       hours: {
         title: 'Business Hours',
@@ -276,7 +276,7 @@ export default {
   about,
   ...solutions,
   common: {
-    logoAlt: 'KleanBac Logo',
+    logoAlt: 'BINOVYA Logo',
     backToHome: 'Back to home page',
     language: 'Language',
     selectLanguage: 'Select language',
@@ -287,52 +287,52 @@ export default {
   },
   seo: {
     home: {
-      title: 'KleanBac - Waste Bin Cleaning and Disinfection',
+      title: 'BINOVYA - Waste Bin Cleaning and Disinfection',
       description:
-        'KleanBac, specialist in eco-friendly cleaning of wheeled bins, bio-waste shelters and containers. Professional, fast and 100% environmentally friendly service.',
+        'BINOVYA, specialist in eco-friendly cleaning of wheeled bins, bio-waste shelters and containers. Professional, fast and 100% environmentally friendly service.',
     },
     about: {
-      title: 'About Us - KleanBac',
+      title: 'About Us - BINOVYA',
       description:
-        'Discover KleanBac, your partner for eco-friendly cleaning and disinfection of waste bins. Expertise, quality and environmental respect.',
+        'Discover BINOVYA, your partner for eco-friendly cleaning and disinfection of waste bins. Expertise, quality and environmental respect.',
     },
     contact: {
-      title: 'Contact Us - KleanBac',
+      title: 'Contact Us - BINOVYA',
       description:
-        'Need a quote or information? Contact KleanBac for professional cleaning of your waste bins. Fast response guaranteed.',
+        'Need a quote or information? Contact BINOVYA for professional cleaning of your waste bins. Fast response guaranteed.',
     },
     faq: {
-      title: 'FAQ - KleanBac',
+      title: 'FAQ - BINOVYA',
       description:
         'Frequently asked questions about our waste bin cleaning services. Effectiveness, ecology, frequency, service duration.',
     },
     formulas: {
-      title: 'Our Plans - KleanBac',
+      title: 'Our Plans - BINOVYA',
       description:
         'Discover our cleaning plans tailored to all needs: one-time, monthly, quarterly, professional, municipal and custom.',
     },
     privacy: {
-      title: 'Privacy Policy - KleanBac',
+      title: 'Privacy Policy - BINOVYA',
       description:
-        'KleanBac privacy policy. Learn how we protect your personal data and respect your privacy.',
+        'BINOVYA privacy policy. Learn how we protect your personal data and respect your privacy.',
     },
     legal: {
-      title: 'Legal Notice - KleanBac',
-      description: 'KleanBac legal notice. Information about our company and terms of use.',
+      title: 'Legal Notice - BINOVYA',
+      description: 'BINOVYA legal notice. Information about our company and terms of use.',
     },
     solutions: {
       rollingBins: {
-        title: 'Wheeled Bin Cleaning - KleanBac',
+        title: 'Wheeled Bin Cleaning - BINOVYA',
         description:
           'Professional cleaning service for wheeled bins. Interior and exterior, high performance, 100% eco-friendly. Free quote.',
       },
       bioWasteShelters: {
-        title: 'Bio-Waste Shelter Cleaning - KleanBac',
+        title: 'Bio-Waste Shelter Cleaning - BINOVYA',
         description:
           'Cleaning and disinfection of bio-waste shelters. Efficient and environmentally friendly process for perfect hygiene.',
       },
       columns: {
-        title: 'Waste Column Cleaning - KleanBac',
+        title: 'Waste Column Cleaning - BINOVYA',
         description:
           'Professional cleaning service for columns and bulk containers. Hot water high pressure, eco-friendly and efficient.',
       },

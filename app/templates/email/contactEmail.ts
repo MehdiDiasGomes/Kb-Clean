@@ -75,7 +75,7 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
     <body>
       <div class="container">
         <div class="header">
-          <img src="https://votre-domaine.com/images/brand/logo.webp" alt="KleanBac" class="logo">
+          <img src="https://votre-domaine.com/images/brand/logo.webp" alt="BINOVYA" class="logo">
         </div>
 
         <div class="content">
@@ -112,7 +112,7 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
         </div>
 
         <div class="footer">
-          Nouveau message de contact KleanBac
+          Nouveau message de contact BINOVYA
         </div>
       </div>
     </body>
