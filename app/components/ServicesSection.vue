@@ -1,54 +1,36 @@
 <template>
-  <section class="page-padding-x bg-background py-16 md:py-24">
-    <div ref="elementRef" :class="['mx-auto max-w-7xl scroll-animate', isVisible && 'is-visible']">
-      <div class="space-y-16">
-        <div class="space-y-8 text-center">
-          <h2
-            class="font-subheading text-2xl italic text-foreground sm:text-3xl md:text-4xl lg:text-5xl"
-          >
-            {{ $t('solutions.sectionTitle') }}
-          </h2>
+  <section id="services" class="bg-paper py-20">
+    <div class="mx-auto max-w-[1180px] px-8">
+      <div class="mb-12 text-center">
+        <span class="mb-2.5 block text-[12.5px] font-black uppercase tracking-[1.5px] text-primary">
+          {{ $t('services.eyebrow') }}
+        </span>
+        <h2 class="text-[32px] font-black text-ink">{{ $t('services.title') }}</h2>
+        <p class="mx-auto mt-3 max-w-[560px] text-[15px] leading-relaxed text-muted-foreground">
+          {{ $t('services.subtitle') }}
+        </p>
+      </div>
 
-          <div class="mx-auto max-w-3xl space-y-4">
-            <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('solutions.intro.line1') }}
-            </p>
-            <p class="text-base text-muted-foreground md:text-lg">
-              {{ $t('solutions.intro.line2') }}
-            </p>
-            <p class="text-base font-semibold text-foreground md:text-lg">
-              {{ $t('solutions.intro.line3') }}
-            </p>
+      <div class="grid grid-cols-2 gap-5 lg:grid-cols-4">
+        <div
+          v-for="service in serviceItems"
+          :key="service.key"
+          class="group overflow-hidden rounded-2xl border border-[#e6eef2] bg-white shadow-sm transition-all hover:-translate-y-1.5 hover:shadow-lg"
+        >
+          <div class="relative flex h-32 items-center justify-center overflow-hidden bg-gradient-to-br from-navy-900 to-navy-800">
+            <NuxtImg
+              v-if="service.image"
+              :src="service.image"
+              :alt="$t(service.titleKey)"
+              class="h-full w-full object-cover transition-transform duration-400 group-hover:scale-105"
+              width="300"
+              loading="lazy"
+            />
+            <Icon v-else :name="service.icon" class="h-12 w-12 text-turquoise" aria-hidden="true" />
           </div>
-        </div>
-
-        <div class="grid gap-8 md:grid-cols-3">
-          <div
-            v-for="service in serviceCards"
-            :key="service.href"
-            class="flex flex-col items-center space-y-6 rounded-3xl bg-primary px-6 py-10 text-center shadow-lg transition-transform"
-          >
-            <div class="flex h-24 w-24 items-center justify-center">
-              <Icon :name="service.icon" class="h-20 w-20 text-card" aria-hidden="true" />
-            </div>
-            <h3 class="text-2xl font-bold text-card">
-              {{ $t(service.titleKey) }}
-            </h3>
-            <p class="flex-1 text-base leading-relaxed text-primary-foreground">
-              {{ $t(service.descriptionKey) }}
-            </p>
-            <NuxtLink
-              :to="service.href"
-              class="group inline-flex items-center gap-2 rounded-full border-2 border-secondary bg-secondary px-6 py-3 text-base font-bold text-secondary-foreground transition-all hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-              :aria-label="$t(service.ctaLabelKey)"
-            >
-              {{ $t(service.ctaKey) }}
-              <Icon
-                name="ArrowRight"
-                class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-                aria-hidden="true"
-              />
-            </NuxtLink>
+          <div class="p-4">
+            <h3 class="mb-1.5 text-[14px] font-black leading-snug text-ink">{{ $t(service.titleKey) }}</h3>
+            <p class="text-[12.5px] leading-snug text-muted-foreground">{{ $t(service.descKey) }}</p>
           </div>
         </div>
       </div>
@@ -57,20 +39,24 @@
 </template>
 
 <script setup lang="ts">
-import { serviceCards } from '@/constants/services'
+type ServiceItem = {
+  key: string
+  icon: string
+  image?: string
+  titleKey: string
+  descKey: string
+}
 
-const { elementRef, isVisible } = useScrollAnimation(0.4)
+const serviceItems: ServiceItem[] = [
+  { key: 'bins', icon: 'Trash2', image: '/images/services/bins.png', titleKey: 'services.items.bins.title', descKey: 'services.items.bins.desc' },
+  { key: 'pav', icon: 'Package', image: '/images/services/pav.png', titleKey: 'services.items.pav.title', descKey: 'services.items.pav.desc' },
+  {
+    key: 'urban',
+    icon: 'Landmark',
+    image: '/images/services/urban.png',
+    titleKey: 'services.items.urban.title',
+    descKey: 'services.items.urban.desc',
+  },
+  { key: 'signage', icon: 'SignpostBig', image: '/images/services/signage.png', titleKey: 'services.items.signage.title', descKey: 'services.items.signage.desc' },
+]
 </script>
-
-<style scoped>
-.scroll-animate {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.scroll-animate.is-visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-</style>

@@ -1,311 +1,90 @@
 <template>
-  <section class="relative w-full min-h-dvh overflow-hidden">
-    <div class="absolute inset-0">
-      <NuxtImg
-        src="/images/kb_clean_hero.webp"
-        :alt="$t('hero.imageAlt')"
-        class="h-full w-full object-cover scale-105 hero-image"
-        width="1920"
-        loading="eager"
-        fetchpriority="high"
-      />
+  <section id="accueil" class="overflow-hidden bg-gradient-to-b from-[#020810] via-navy-950 to-navy-900 py-20">
+    <div class="mx-auto max-w-[1180px] px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr]">
+        <!-- Texte -->
+        <div>
+          <span class="mb-3.5 inline-block text-[13px] font-bold uppercase tracking-[1.5px] text-turquoise">
+            {{ $t('hero.eyebrow') }}
+          </span>
+          <h1 class="mb-5 text-[44px] font-black leading-[1.12] text-white lg:text-5xl">
+            {{ $t('hero.titleMain') }}
+            <span class="text-turquoise">{{ $t('hero.titleAccent') }}</span>
+          </h1>
+          <p class="mb-8 max-w-[500px] text-[16.5px] leading-relaxed text-[#c4d6e2]">
+            {{ $t('hero.lead') }}
+          </p>
 
-      <div
-        class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-primary/30"
-        aria-hidden="true"
-      />
-
-      <div
-        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"
-        aria-hidden="true"
-      />
-    </div>
-
-    <div class="absolute top-20 right-10 hidden lg:block" aria-hidden="true">
-      <div class="floating-shape h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
-    </div>
-    <div class="absolute bottom-40 left-10 hidden lg:block" aria-hidden="true">
-      <div class="floating-shape-delayed h-48 w-48 rounded-full bg-secondary/10 blur-3xl" />
-    </div>
-
-    <div class="relative z-10 flex h-full min-h-dvh flex-col page-padding-x">
-      <div class="mx-auto w-full max-w-7xl flex-1 flex items-center pt-24 pb-8 sm:pt-28 sm:pb-12 md:py-24 lg:py-28">
-        <div class="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center w-full">
-          <div class="space-y-4 sm:space-y-5 md:space-y-6">
-            <div class="hero-badge inline-flex items-center gap-2 rounded-full bg-primary/20 px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-sm border border-primary/30">
-              <span class="relative flex h-2 w-2">
-                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                <span class="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-              </span>
-              <span class="text-xs sm:text-sm font-medium text-white">
-                {{ $t('hero.badge') }}
-              </span>
-            </div>
-
-            <div class="space-y-2 sm:space-y-3">
-              <h1 class="hero-title">
-                <span class="block text-3xl font-heading font-bold tracking-tight text-white xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl">
-                  {{ $t('hero.title') }}
-                </span>
-              </h1>
-              <p class="hero-highlight text-base font-heading text-white/90 xs:text-lg sm:text-xl md:text-xl lg:text-2xl leading-snug max-w-2xl">
-                {{ $t('hero.titleHighlight') }}
-              </p>
-            </div>
-
-            <p class="hero-subtitle text-sm font-body text-white/70 sm:text-base max-w-xl leading-relaxed">
-              {{ $t('hero.subtitle') }}
-            </p>
-
-            <div class="hero-cta flex flex-col gap-3 sm:flex-row sm:items-center pt-2">
-              <NuxtLink
-                :to="localePath('/contact')"
-                class="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                :aria-label="$t('hero.ctaPrimaryAriaLabel')"
-              >
-                {{ $t('hero.ctaPrimary') }}
-                <Icon
-                  name="ArrowRight"
-                  class="h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </NuxtLink>
-            </div>
-
-            <div class="hero-stats-mobile pt-4 grid grid-cols-3 gap-2 sm:gap-3 lg:hidden">
-              <div
-                v-for="stat in stats"
-                :key="stat.key"
-                class="flex flex-col items-center rounded-xl bg-white/5 p-2.5 sm:p-3 backdrop-blur-sm border border-white/10"
-              >
-                <Icon
-                  :name="stat.icon"
-                  class="h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1"
-                  aria-hidden="true"
-                />
-                <p class="text-base font-heading font-bold text-white sm:text-lg md:text-xl">
-                  {{ stat.value }}
-                </p>
-                <p class="text-[9px] sm:text-[10px] md:text-xs text-white/60 text-center leading-tight mt-0.5">
-                  {{ stat.label }}
-                </p>
-              </div>
-            </div>
+          <div class="mb-8 flex flex-wrap gap-3.5">
+            <a
+              href="#"
+              class="flex items-center gap-2 rounded-lg bg-primary px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/35 transition-all hover:-translate-y-px hover:bg-primary/90"
+              :aria-label="$t('hero.ctaReserverAriaLabel')"
+            >
+              <Icon name="CalendarCheck" :size="16" aria-hidden="true" />
+              {{ $t('hero.ctaReserver') }}
+            </a>
+            <a
+              href="#pro"
+              class="flex items-center gap-2 rounded-lg border border-white/25 px-5 py-3.5 text-sm font-bold text-white transition-all hover:border-turquoise hover:bg-turquoise/8"
+              :aria-label="$t('hero.ctaDevisAriaLabel')"
+            >
+              <Icon name="FileText" :size="16" aria-hidden="true" />
+              {{ $t('hero.ctaDevis') }}
+            </a>
           </div>
 
-          <div class="hero-stats hidden lg:flex flex-col justify-center">
-            <div class="grid grid-cols-1 gap-4">
-              <div
-                v-for="(stat, index) in stats"
-                :key="stat.key"
-                class="stat-card group"
-                :style="{ animationDelay: `${1.2 + index * 0.15}s` }"
-              >
-                <div class="flex items-center gap-3 rounded-xl bg-white/5 p-4 backdrop-blur-md border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-white/20">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20">
-                    <Icon
-                      :name="stat.icon"
-                      class="h-6 w-6 text-primary"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-2xl font-heading font-bold text-white">
-                      {{ stat.value }}
-                    </p>
-                    <p class="text-xs text-white/60">
-                      {{ stat.label }}
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="mt-2 grid grid-cols-2 gap-3.5 sm:grid-cols-4">
+            <div
+              v-for="badge in heroBadges"
+              :key="badge.key"
+              class="flex flex-col items-center rounded-xl border border-turquoise/25 bg-white/4 px-2 py-3.5 text-center transition-all hover:-translate-y-1 hover:border-turquoise"
+            >
+              <Icon :name="badge.icon" class="mb-2 h-8 w-8 text-turquoise" aria-hidden="true" />
+              <span class="text-[11px] font-bold leading-tight tracking-wide text-[#e7f2f7]">
+                {{ $t(badge.labelKey) }}
+              </span>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="scroll-indicator pb-4 sm:pb-6 flex justify-center">
-        <button
-          type="button"
-          class="flex flex-col items-center gap-1 text-white/60 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-full p-2"
-          :aria-label="$t('hero.scrollIndicator')"
-          @click="scrollToContent"
-        >
-          <span class="text-[10px] font-medium uppercase tracking-widest hidden sm:block">
-            {{ $t('hero.scrollIndicator') }}
-          </span>
-          <div class="flex h-7 w-4 sm:h-8 sm:w-5 items-start justify-center rounded-full border-2 border-white/30 p-1">
-            <div class="scroll-dot h-1 w-1 sm:h-1.5 sm:w-1 rounded-full bg-white" />
+        <!-- Image -->
+        <div class="relative">
+          <NuxtImg
+            src="/images/hero.png"
+            :alt="$t('hero.imageAlt')"
+            class="block w-full rounded-[18px] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)]"
+            width="600"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <div
+            class="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-xs font-black text-navy-950 shadow-[0_10px_24px_rgba(0,0,0,0.25)]"
+            aria-live="polite"
+          >
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+            </span>
+            {{ $t('hero.platNote') }}
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-type StatItem = {
+type HeroBadge = {
   key: string
-  value: string
-  label: string
   icon: string
+  labelKey: string
 }
 
-const { t } = useI18n()
-const localePath = useLocalePath()
-
-const stats = computed((): StatItem[] => [
-  {
-    key: 'water',
-    value: t('hero.stats.water.value'),
-    label: t('hero.stats.water.label'),
-    icon: 'Droplets',
-  },
-  {
-    key: 'chemical',
-    value: t('hero.stats.chemical.value'),
-    label: t('hero.stats.chemical.label'),
-    icon: 'Leaf',
-  },
-  {
-    key: 'co2',
-    value: t('hero.stats.co2.value'),
-    label: t('hero.stats.co2.label'),
-    icon: 'Zap',
-  },
-])
-
-const scrollToContent = (): void => {
-  window.scrollTo({
-    top: window.innerHeight,
-    behavior: 'smooth',
-  })
-}
+const heroBadges: HeroBadge[] = [
+  { key: 'steam', icon: 'Thermometer', labelKey: 'hero.badges.steam' },
+  { key: 'eco', icon: 'Leaf', labelKey: 'hero.badges.eco' },
+  { key: 'electric', icon: 'Zap', labelKey: 'hero.badges.electric' },
+  { key: 'natural', icon: 'Droplets', labelKey: 'hero.badges.natural' },
+]
 </script>
-
-<style scoped>
-.hero-image {
-  animation: heroZoom 20s ease-out forwards;
-}
-
-@keyframes heroZoom {
-  from {
-    transform: scale(1.05);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.hero-badge {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
-}
-
-.hero-title {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards;
-}
-
-.hero-highlight {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
-}
-
-.hero-subtitle {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.8s forwards;
-}
-
-.hero-cta {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 1s forwards;
-}
-
-.hero-stats-mobile {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 1.2s forwards;
-}
-
-.stat-card {
-  opacity: 0;
-  transform: translateX(30px);
-  animation: fadeSlideLeft 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.scroll-indicator {
-  opacity: 0;
-  animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) 1.5s forwards;
-}
-
-.scroll-dot {
-  animation: scrollBounce 2s ease-in-out infinite;
-}
-
-.floating-shape {
-  animation: float 8s ease-in-out infinite;
-}
-
-.floating-shape-delayed {
-  animation: float 8s ease-in-out infinite 2s;
-}
-
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeSlideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes scrollBounce {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(12px);
-    opacity: 0.3;
-  }
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(5deg);
-  }
-}
-</style>
