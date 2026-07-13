@@ -7,185 +7,154 @@ import solutions from './en/solutions'
 export default {
   nav: {
     home: 'Home',
-    about: 'About us',
-    solutions: {
-      title: 'Our solutions',
-      wheeledBins: 'Wheeled bins',
-      bioWasteShelters: 'Bio-waste shelters',
-      columns: 'Columns',
-    },
-    formulas: 'Our Plans',
-    contact: 'Contact us',
-    menu: 'Menu',
+    services: 'Our services',
+    particuliers: 'Individuals',
+    pro: 'Professionals & Authorities',
+    contact: 'Contact',
+    reserver: 'Book',
+    reserverAriaLabel: 'Book an intervention',
     mainNavAriaLabel: 'Main navigation',
     mobileNavAriaLabel: 'Mobile navigation menu',
-    openMenu: 'Open navigation menu',
+    openMenu: 'Open menu',
     closeMenu: 'Close menu',
-    openSubmenu: 'Open menu',
-    closeSubmenu: 'Close menu',
+    menu: 'Menu',
   },
   hero: {
-    title: 'BINOVYA',
-    titleHighlight: 'Eco-friendly waste bin cleaning coming soon to your area',
-    subtitle: 'Professional solutions for spotless bins',
-    ctaPrimary: "I'm interested in the launch",
-    ctaSecondary: 'Discover our services',
-    ctaPrimaryAriaLabel: 'Express your interest in the BINOVYA launch',
-    ctaSecondaryAriaLabel: 'Discover our cleaning services',
-    imageAlt: 'BINOVYA waste container cleaning services',
-    badge: '100% Eco-Friendly',
-    scrollIndicator: 'Scroll down',
-    stats: {
-      water: {
-        value: '-80%',
-        label: 'Water consumption',
+    tagline: 'Next-generation urban hygiene',
+    eyebrow: 'Professional steam cleaning',
+    titleMain: 'Urban hygiene',
+    titleAccent: 'next generation',
+    lead: 'We clean your waste bins, PAV, street furniture, signage and collection areas using a professional, eco-friendly method adapted to the needs of individuals, professionals and local authorities.',
+    ctaReserver: 'Book an intervention',
+    ctaReserverAriaLabel: 'Book an intervention online',
+    ctaDevis: 'Request a quote',
+    ctaDevisAriaLabel: 'Contact us for a professional quote',
+    platNote: '100% electric vehicle',
+    imageAlt: 'BINOVYA professional steam cleaning',
+    badges: {
+      steam: 'HIGH-TEMPERATURE STEAM',
+      eco: 'ECO-FRIENDLY',
+      electric: '100% ELECTRIC UTILITY VEHICLE',
+      natural: 'NATURAL PRODUCTS',
+    },
+  },
+  trust: {
+    fast: 'Fast intervention',
+    flexible: 'Flexible time slots',
+    payment: 'Secure payment',
+  },
+  services: {
+    eyebrow: 'What we do',
+    title: 'Our services',
+    subtitle: 'Four steam cleaning interventions to restore urban spaces to their full cleanliness.',
+    newBadge: 'NEW',
+    items: {
+      bins: {
+        title: 'Wheeled bin cleaning',
+        desc: 'Eliminates dirt, bacteria and bad odors from your wheeled bins.',
       },
-      chemical: {
-        value: '100%',
-        label: 'Biodegradable products',
+      pav: {
+        title: 'PAV cleaning',
+        desc: 'Voluntary drop-off points deep cleaned by steam.',
       },
-      co2: {
-        value: '100%',
-        label: 'Electric',
+      urban: {
+        title: 'Street furniture',
+        desc: 'Benches, bus shelters, road equipment restored to new.',
+      },
+      signage: {
+        title: 'Signage',
+        desc: 'Signs, bollards and signage decontaminated and restored.',
       },
     },
   },
-  solutions: {
-    sectionTitle: 'BINOVYA supports you for a cleaner environment',
-    intro: {
-      line1:
-        'Regular cleaning of your containers eliminates bad odors and limits bacterial proliferation.',
-      line2: 'Clean bins mean better health and a commitment to responsible waste sorting.',
-      line3:
-        'Our goal: To guarantee you efficient and 100% eco-friendly cleaning designed for your hygiene and the planet',
+  offers: {
+    eyebrow: 'Individuals',
+    title: 'Book your intervention',
+    subtitle: 'Simply book your intervention online in just a few clicks.',
+    cta: 'Book an intervention',
+    small: {
+      title: 'Small bins',
+      desc: 'For standard wheeled bins up to 140L.',
+      price: '€15 for the first bin',
+      priceNote: '€10 from the second bin',
+      ctaAriaLabel: 'Book an intervention for small bins',
     },
-    offerings: {
-      wasteBins: {
-        title: 'Wheeled bins',
-        description:
-          'Interior and exterior cleaning of your wheeled bins with our high-performance washing system.',
-        cta: 'Learn more',
-        ctaLabel: 'Learn more about wheeled bin cleaning',
-      },
-      bioWaste: {
-        title: 'Bio-waste shelters',
-        description:
-          'Hygiene for your bio-waste shelters ensured by an efficient and environmentally friendly process.',
-        cta: 'Learn more',
-        ctaLabel: 'Learn more about bio-waste shelter cleaning',
-      },
-      bulkContainers: {
-        title: 'Bulk containers',
-        description:
-          'All your bulk containers washed with hot water and high pressure to eliminate residue and bacteria.',
-        cta: 'Learn more',
-        ctaLabel: 'Learn more about bulk container cleaning',
-      },
+    large: {
+      title: 'Large bins',
+      badge: 'Large format',
+      desc: 'For bins of 240L and above, PAV and collective containers.',
+      price: '€24.90 for the first bin',
+      priceNote: '€19.90 from the second bin',
+      ctaAriaLabel: 'Book an intervention for large bins',
+    },
+    features: {
+      cleaning: 'High-pressure cleaning',
+      disinfection: 'Complete disinfection',
+      deodorization: 'Odor neutralization',
+      eco: '100% natural products',
+      hightemp: 'High-temperature steam',
     },
   },
-  formulas: {
-    sectionTitle: 'Our Plans',
-    intro: 'Discover our different plans adapted to all needs',
-    badge: 'Flexible plans',
-    learnMore: 'Learn more',
-    ctaIntro: 'Not sure which plan to choose? Contact us for a personalized demonstration.',
-    viewAll: 'View all our plans',
-    viewAllLabel: 'Discover all available plans',
-    oneTime: {
-      title: 'One-Time Service',
-      description:
-        'Complete cleaning and disinfection of your waste bins, with no commitment. Ideal for occasional needs or a thorough renewal cleaning.',
+  proForm: {
+    eyebrow: 'Professionals & Authorities',
+    title: 'Contact us',
+    subtitle: 'Fill in the form to send us your request.',
+    fields: {
+      lastName: 'Last name',
+      lastNamePlaceholder: 'Smith',
+      firstName: 'First name',
+      firstNamePlaceholder: 'John',
+      society: 'Company / Authority',
+      societyPlaceholder: 'City of ...',
+      phone: 'Phone',
+      phonePlaceholder: '+44 XX XX XX XX',
+      email: 'Email',
+      emailPlaceholder: "contact{'@'}company.com",
+      subject: 'Subject',
+      subjectPlaceholder: 'Select a subject',
+      message: 'Message',
+      messagePlaceholder: 'Describe your needs...',
     },
-    monthly: {
-      title: 'Monthly Plan',
-      description:
-        'Regular monthly cleaning to ensure clean, healthy, odor-free bins all year round. Convenient and hassle-free solution.',
+    subjects: {
+      quote: 'Quote request',
+      meeting: 'Meeting request',
+      info: 'Additional information',
+      other: 'Other',
     },
-    quarterly: {
-      title: 'Quarterly Plan',
-      description:
-        'Scheduled maintenance every three months. Perfect for maintaining good hygiene while managing your budget.',
-    },
-    biannual: {
-      title: 'Biannual Plan',
-      description:
-        'Two interventions per year to keep bins clean and limit nuisances. Simple and economical plan.',
-    },
-    subscriptionIndividual: {
-      title: 'Individual Subscription',
-      description:
-        'A recurring service adapted to your household rhythm. Automatic scheduling and guaranteed peace of mind.',
-    },
-    condominium: {
-      title: 'Condominium Plan',
-      description:
-        'Regular cleaning of shared bins and containers. A solution adapted to the needs of residences and property managers.',
-    },
-    professional: {
-      title: 'Professional Plan',
-      description:
-        'Designed for shops, restaurants and businesses. Interventions scheduled according to business activity and professional constraints.',
-    },
-    municipality: {
-      title: 'Municipality Plan',
-      description:
-        'Maintenance of waste bins and columns in compliance with hygiene standards. Sustainable and eco-friendly solution adapted to local authorities.',
-    },
-    custom: {
-      title: 'Custom Plan',
-      description:
-        'A personalized plan according to your specific needs. Frequency, number of bins and type of intervention adapted to your situation.',
-    },
+    submit: 'SEND MY REQUEST',
+    submitting: 'Sending...',
+    submitAriaLabel: 'Send my contact request',
+    success: 'Your request has been sent! We will get back to you within 48 hours.',
+    error: 'An error occurred. Please try again or contact us by phone.',
   },
-  clients: {
-    sectionTitle: {
-      prefix: 'Tailored solutions for',
-      bold: 'all stakeholders',
-      suffix: 'in urban sanitation',
-    },
-    intro: {
-      line1: {
-        prefix: 'BINOVYA serves',
-        bold1: 'all professionals',
-        middle: 'for whom',
-        bold2: 'container hygiene',
-        suffix: 'is essential.',
-      },
-      line2: {
-        prefix: 'Our',
-        bold1: 'mobile expertise',
-        middle: 'and',
-        bold2: 'strict protocols',
-        middle2: 'guarantee',
-        bold3: 'fast, reliable service',
-        suffix: 'that meets health standards.',
-      },
-    },
-    types: {
-      municipalities: {
-        title: 'Municipalities',
-        description:
-          'Cleaning and disinfection of wheeled bins, bio-waste shelters and containers for local authorities',
-      },
-      businesses: {
-        title: 'Businesses',
-        description: 'Wheeled bin cleaning solutions tailored to private business needs',
-      },
-      individuals: {
-        title: 'Homeowners',
-        description:
-          'Waste bins are one of the main sources of bacteria and bad odors around the home. BINOVYA cleans, disinfects and sanitizes your bins directly at your home, for a healthier, cleaner and more pleasant environment every day.',
-      },
-    },
-    cta: 'Request a free demonstration',
-    ctaSubtext: 'On-site or at home',
-    ctaLabel: 'Request a free demonstration on-site or at home',
+  beforeAfter: {
+    imageAlt: 'Before/after result of BINOVYA steam cleaning',
   },
   footer: {
     copyright: 'All rights reserved.',
-    privacy: 'Privacy Policy',
-    legal: 'Legal Notice',
-    faq: 'FAQ',
+    brand: {
+      tagline: 'Next-generation urban hygiene.',
+    },
+    social: {
+      facebook: 'Follow us on Facebook',
+      instagram: 'Follow us on Instagram',
+      linkedin: 'Follow us on LinkedIn',
+    },
+    contact: {
+      title: 'Contact us',
+    },
+    commitments: {
+      title: 'Our commitments',
+      eco: 'Environmental respect',
+      steam: 'High-temperature steam',
+      quality: 'Quality service',
+    },
+    info: {
+      title: 'Information',
+      legal: 'Legal notice',
+      cgv: 'Terms of sale',
+      privacy: 'Privacy policy',
+    },
   },
   privacy,
   legal,
