@@ -7,187 +7,154 @@ import solutions from './fr/solutions'
 export default {
   nav: {
     home: 'Accueil',
-    about: 'Qui sommes nous ?',
-    solutions: {
-      title: 'Nos solutions',
-      wheeledBins: 'Bacs roulants',
-      bioWasteShelters: 'Abris bacs biodéchets',
-      columns: 'Colonnes',
-    },
-    formulas: 'Nos formules',
-    contact: 'Nous contacter',
-    menu: 'Menu',
+    services: 'Nos services',
+    particuliers: 'Particuliers',
+    pro: 'Professionnels & Collectivités',
+    contact: 'Contact',
+    reserver: 'Réserver',
+    reserverAriaLabel: 'Réserver une intervention',
     mainNavAriaLabel: 'Navigation principale',
     mobileNavAriaLabel: 'Menu de navigation mobile',
-    openMenu: 'Ouvrir le menu de navigation',
+    openMenu: 'Ouvrir le menu',
     closeMenu: 'Fermer le menu',
-    openSubmenu: 'Ouvrir le menu',
-    closeSubmenu: 'Fermer le menu',
+    menu: 'Menu',
   },
   hero: {
-    title: 'BINOVYA',
-    titleHighlight:
-      'Le lavage écologique de bacs à déchets arrive prochainement dans votre secteur',
-    subtitle: 'Des solutions professionnelles pour des poubelles impeccables',
-    ctaPrimary: 'Je suis intéressé par le lancement',
-    ctaSecondary: 'Découvrir nos services',
-    ctaPrimaryAriaLabel: 'Manifester votre intérêt pour le lancement de BINOVYA',
-    ctaSecondaryAriaLabel: 'Découvrir nos services de nettoyage',
-    imageAlt: 'Services de lavage de contenants à déchets BINOVYA',
-    badge: '100% Écologique',
-    scrollIndicator: 'Défiler vers le bas',
-    stats: {
-      water: {
-        value: '-80%',
-        label: "Consommation d'eau",
+    tagline: "L'hygiène urbaine nouvelle génération",
+    eyebrow: 'Nettoyage vapeur professionnel',
+    titleMain: "L'hygiène urbaine",
+    titleAccent: 'nouvelle génération',
+    lead: "Nous nettoyons vos bacs à déchets, PAV, mobilier urbain, signalisation et zones de regroupement grâce à une méthode professionnelle, éco-responsable et adaptée aux besoins des particuliers, professionnels et collectivités.",
+    ctaReserver: 'Réserver une intervention',
+    ctaReserverAriaLabel: 'Réserver une intervention en ligne',
+    ctaDevis: 'Demander un devis',
+    ctaDevisAriaLabel: 'Contacter pour un devis professionnel',
+    platNote: 'Véhicule 100% électrique',
+    imageAlt: 'Nettoyage vapeur professionnel BINOVYA',
+    badges: {
+      steam: 'VAPEUR HAUTE TEMPÉRATURE',
+      eco: 'ÉCO-RESPONSABLE',
+      electric: 'UTILITAIRE 100% ÉLECTRIQUE',
+      natural: 'PRODUITS NATURELS',
+    },
+  },
+  trust: {
+    fast: 'Intervention rapide',
+    flexible: 'Créneaux flexibles',
+    payment: 'Paiement sécurisé',
+  },
+  services: {
+    eyebrow: 'Ce que nous faisons',
+    title: 'Nos services',
+    subtitle: "Quatre interventions de nettoyage vapeur pour redonner à l'espace urbain toute sa propreté.",
+    newBadge: 'NOUVEAU',
+    items: {
+      bins: {
+        title: 'Nettoyage des bacs roulants',
+        desc: 'Élimine saletés, bactéries et mauvaises odeurs de vos bacs roulants.',
       },
-      chemical: {
-        value: '100%',
-        label: 'Produits biodégradables',
+      pav: {
+        title: 'Nettoyage des PAV',
+        desc: "Points d'apport volontaire nettoyés en profondeur par vapeur.",
       },
-      co2: {
-        value: '100%',
-        label: 'Électrique',
+      urban: {
+        title: 'Mobilier urbain',
+        desc: 'Bancs, abris bus, équipements de voirie remis à neuf.',
+      },
+      signage: {
+        title: 'Signalisation',
+        desc: 'Panneaux, bornes et signalétique décontaminés et restaurés.',
       },
     },
   },
-  solutions: {
-    sectionTitle: 'BINOVYA vous accompagne pour un environnement plus propre',
-    intro: {
-      line1:
-        'Un nettoyage régulier de vos conteneurs élimine les mauvaises odeurs et limite la prolifération bactérienne.',
-      line2: "Des bacs propres, c'est un geste santé et un engagement pour le tri responsable.",
-      line3:
-        'Notre objectif : Vous garantir un nettoyage performant et 100 % écologique pensé pour votre hygiène et pour la planète',
+  offers: {
+    eyebrow: 'Particuliers',
+    title: 'Réservez votre intervention',
+    subtitle: 'Réservez simplement votre intervention en ligne en quelques clics.',
+    cta: 'Réserver une intervention',
+    small: {
+      title: 'Petits bacs',
+      desc: 'Bac 240L — nettoyage vapeur haute température.',
+      price: '19,90 €',
+      priceNote: '9,90 € à partir du deuxième',
+      ctaAriaLabel: 'Réserver une intervention pour petits bacs',
     },
-    offerings: {
-      wasteBins: {
-        title: 'Bacs roulants',
-        description:
-          'Nettoyage intérieur et extérieur de vos bacs roulants grâce à notre système de lavage haute performance.',
-        cta: 'En savoir plus',
-        ctaLabel: 'En savoir plus sur le nettoyage de bacs roulants',
-      },
-      bioWaste: {
-        title: 'Abris biodéchets',
-        description:
-          "L'hygiène de vos abris biodéchets assurée par un procédé efficace et respectueux de l'environnement.",
-        cta: 'En savoir plus',
-        ctaLabel: 'En savoir plus sur le nettoyage d\'abris biodéchets',
-      },
-      bulkContainers: {
-        title: 'Conteneurs collectifs',
-        description:
-          "Tous vos conteneurs collectifs lavés à l'eau chaude et haute pression pour éliminer résidus et bactéries.",
-        cta: 'En savoir plus',
-        ctaLabel: 'En savoir plus sur le nettoyage de conteneurs collectifs',
-      },
+    large: {
+      title: 'Grands bacs',
+      badge: 'Grand format',
+      desc: 'À partir de 660L — nettoyage vapeur haute température.',
+      price: '39,90 €',
+      priceNote: '29,90 € à partir du deuxième',
+      ctaAriaLabel: 'Réserver une intervention pour grands bacs',
+    },
+    features: {
+      cleaning: 'Nettoyage haute pression',
+      disinfection: 'Désinfection complète',
+      deodorization: 'Neutralisation des odeurs',
+      eco: 'Produits 100% naturels',
+      hightemp: 'Vapeur haute température',
     },
   },
-  formulas: {
-    sectionTitle: 'Nos formules',
-    intro: 'Découvrez nos différentes formules adaptées à tous les besoins',
-    badge: 'Formules flexibles',
-    learnMore: 'En savoir plus',
-    ctaIntro: 'Vous ne savez pas quelle formule choisir ? Contactez-nous pour une démonstration personnalisée.',
-    viewAll: 'Voir toutes nos formules',
-    viewAllLabel: 'Découvrir toutes les formules disponibles',
-    oneTime: {
-      title: 'Formule Ponctuelle',
-      description:
-        'Nettoyage et désinfection complète de vos bacs à déchets, sans engagement. Idéal pour un besoin occasionnel ou un nettoyage de remise à neuf.',
+  proForm: {
+    eyebrow: 'Professionnels & Collectivités',
+    title: 'Nous contacter',
+    subtitle: 'Remplissez le formulaire pour nous faire parvenir votre demande.',
+    fields: {
+      lastName: 'Nom',
+      lastNamePlaceholder: 'Dupont',
+      firstName: 'Prénom',
+      firstNamePlaceholder: 'Jean',
+      society: 'Société / Collectivité',
+      societyPlaceholder: 'Mairie de ...',
+      phone: 'Téléphone',
+      phonePlaceholder: '06 XX XX XX XX',
+      email: 'Email',
+      emailPlaceholder: "contact{'@'}societe.fr",
+      subject: 'Objet',
+      subjectPlaceholder: 'Sélectionnez un objet',
+      message: 'Message',
+      messagePlaceholder: 'Décrivez votre besoin...',
     },
-    monthly: {
-      title: 'Formule Mensuelle',
-      description:
-        "Un nettoyage régulier chaque mois pour garantir des bacs propres, sains et sans odeur toute l'année. Solution confortable et sans contrainte.",
+    subjects: {
+      quote: 'Demande de devis',
+      meeting: 'Demande de rendez-vous',
+      info: "Complément d'information",
+      other: 'Autre',
     },
-    quarterly: {
-      title: 'Formule Trimestrielle',
-      description:
-        'Un entretien programmé tous les trois mois. Parfait pour maintenir une bonne hygiène tout en maîtrisant son budget.',
-    },
-    biannual: {
-      title: 'Formule Semestrielle',
-      description:
-        'Deux interventions par an pour conserver des bacs propres et limiter les nuisances. Formule simple et économique.',
-    },
-    subscriptionIndividual: {
-      title: 'Formule Abonnement Particulier',
-      description:
-        'Un service récurrent adapté au rythme de votre foyer. Planification automatique et tranquillité assurée.',
-    },
-    condominium: {
-      title: 'Formule Copropriété',
-      description:
-        'Nettoyage régulier des bacs communs et conteneurs partagés. Une solution adaptée aux besoins des résidences et syndics.',
-    },
-    professional: {
-      title: 'Formule Professionnels',
-      description:
-        "Conçue pour les commerces, restaurants et entreprises. Interventions planifiées selon l'activité et les contraintes professionnelles.",
-    },
-    municipality: {
-      title: 'Formule Collectivités',
-      description:
-        "Entretien des bacs et colonnes à déchets dans le respect des normes d'hygiène. Solution durable et écologique adaptée aux collectivités.",
-    },
-    custom: {
-      title: 'Formule Sur Mesure',
-      description:
-        "Une formule personnalisée selon vos besoins spécifiques. Fréquence, nombre de bacs et type d'intervention adaptés à votre situation.",
-    },
+    submit: 'ENVOYER MA DEMANDE',
+    submitting: 'Envoi en cours...',
+    submitAriaLabel: 'Envoyer ma demande de contact',
+    success: 'Votre demande a bien été envoyée ! Nous reviendrons vers vous sous 48h.',
+    error: 'Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.',
   },
-  clients: {
-    sectionTitle: {
-      prefix: 'Des solutions adaptées à',
-      bold: 'tous les acteurs',
-      suffix: 'de la propreté urbaine',
-    },
-    intro: {
-      line1: {
-        prefix: 'BINOVYA intervient auprès de',
-        bold1: 'tous les professionnels',
-        middle: "pour qui l'",
-        bold2: 'hygiène des contenants',
-        suffix: 'est essentielle.',
-      },
-      line2: {
-        prefix: 'Notre',
-        bold1: 'expertise mobile',
-        middle: 'et nos',
-        bold2: 'protocoles stricts',
-        middle2: 'garantissent un service',
-        bold3: 'rapide, fiable et conforme',
-        suffix: 'aux normes sanitaires.',
-      },
-    },
-    types: {
-      municipalities: {
-        title: 'Collectivités',
-        description:
-          'Nettoyage et désinfection de bacs roulants, abris biodéchets et conteneurs pour les municipalités',
-      },
-      businesses: {
-        title: 'Entreprises',
-        description:
-          'Solutions de nettoyage de bacs roulants adaptées aux besoins des entreprises privées',
-      },
-      individuals: {
-        title: 'Particulier',
-        description:
-          "Les bacs à déchets sont l'un des principaux foyers de bactéries et de mauvaises odeurs autour de l'habitat. BINOVYA nettoie, désinfecte et assainit vos bacs directement chez vous, pour un environnement plus sain, plus propre et plus agréable au quotidien.",
-      },
-    },
-    cta: 'Demander une démonstration gratuite',
-    ctaSubtext: 'Sur site ou à domicile',
-    ctaLabel: 'Demander une démonstration gratuite sur site ou à domicile',
+  beforeAfter: {
+    imageAlt: 'Résultat avant/après nettoyage vapeur BINOVYA',
   },
   footer: {
     copyright: 'Tous droits réservés.',
-    privacy: 'Politique de confidentialité',
-    legal: 'Mentions légales',
-    faq: 'FAQ',
+    brand: {
+      tagline: "L'hygiène urbaine nouvelle génération.",
+    },
+    social: {
+      facebook: 'Suivez-nous sur Facebook',
+      instagram: 'Suivez-nous sur Instagram',
+      linkedin: 'Suivez-nous sur LinkedIn',
+    },
+    contact: {
+      title: 'Nous contacter',
+    },
+    commitments: {
+      title: 'Nos engagements',
+      eco: "Respect de l'environnement",
+      steam: 'Vapeur haute température',
+      quality: 'Service de qualité',
+    },
+    info: {
+      title: 'Informations',
+      legal: 'Mentions légales',
+      cgv: 'CGV',
+      privacy: 'Politique de confidentialité',
+    },
   },
   privacy,
   legal,
