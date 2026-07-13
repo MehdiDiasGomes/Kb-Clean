@@ -4,9 +4,11 @@ import { generateContactEmailHtml } from '@/templates/email/contactEmail'
 
 type ContactFormData = {
   lastName: string
+  firstName: string
+  society?: string
+  phone?: string
   email: string
-  companyName?: string
-  requestType: string
+  subject: string
   message: string
 }
 
@@ -14,7 +16,7 @@ export default defineEventHandler(async event => {
   const config = useRuntimeConfig()
   const body = await readBody<ContactFormData>(event)
 
-  if (!body.lastName || !body.email || !body.requestType || !body.message) {
+  if (!body.lastName || !body.firstName || !body.email || !body.subject || !body.message) {
     throw createError({
       statusCode: 400,
       statusMessage: 'Missing required fields',
@@ -32,26 +34,29 @@ export default defineEventHandler(async event => {
   try {
     const resend = new Resend(config.resendApiKey)
 
-    const requestTypeLabels: Record<string, { fr: string; en: string }> = {
-      demo: { fr: 'Démonstration', en: 'Demo' },
-      callback: { fr: 'Rappel téléphonique', en: 'Callback' },
-      quote: { fr: 'Devis', en: 'Quote' },
+    const subjectLabels: Record<string, string> = {
+      quote: 'Demande de devis',
+      meeting: 'Demande de rendez-vous',
+      info: "Complément d'information",
+      other: 'Autre',
     }
 
-    const requestTypeLabel = requestTypeLabels[body.requestType]?.fr || body.requestType
+    const subjectLabel = subjectLabels[body.subject] ?? body.subject
 
     const emailHtml = generateContactEmailHtml({
       lastName: body.lastName,
+      firstName: body.firstName,
+      society: body.society,
+      phone: body.phone,
       email: body.email,
-      companyName: body.companyName,
-      requestTypeLabel,
+      subjectLabel,
       message: body.message,
     })
 
     const { data, error } = await resend.emails.send({
       from: 'BINOVYA Contact <contact@dg-zenith.com>',
       to: [config.contactEmailTo],
-      subject: `Nouveau contact: ${requestTypeLabel} - ${body.lastName}`,
+      subject: `Nouveau contact: ${subjectLabel} - ${body.lastName} ${body.firstName}`,
       html: emailHtml,
       replyTo: body.email,
     })
