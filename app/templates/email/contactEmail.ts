@@ -1,8 +1,10 @@
 type ContactEmailData = {
   lastName: string
+  firstName: string
+  society?: string
+  phone?: string
   email: string
-  companyName?: string
-  requestTypeLabel: string
+  subjectLabel: string
   message: string
 }
 
@@ -68,7 +70,7 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
         <div class="content">
           <div class="field">
             <div class="label">Nom</div>
-            <div class="value">${data.lastName}</div>
+            <div class="value">${data.lastName} ${data.firstName}</div>
           </div>
 
           <div class="field">
@@ -76,20 +78,23 @@ export const generateContactEmailHtml = (data: ContactEmailData): string => `
             <div class="value"><a href="mailto:${data.email}">${data.email}</a></div>
           </div>
 
-          ${
-            data.companyName
-              ? `
+          ${data.phone ? `
           <div class="field">
-            <div class="label">Entreprise</div>
-            <div class="value">${data.companyName}</div>
+            <div class="label">Téléphone</div>
+            <div class="value"><a href="tel:${data.phone}">${data.phone}</a></div>
           </div>
-          `
-              : ''
-          }
+          ` : ''}
+
+          ${data.society ? `
+          <div class="field">
+            <div class="label">Société / Collectivité</div>
+            <div class="value">${data.society}</div>
+          </div>
+          ` : ''}
 
           <div class="field">
-            <div class="label">Type de demande</div>
-            <div class="value">${data.requestTypeLabel}</div>
+            <div class="label">Objet</div>
+            <div class="value">${data.subjectLabel}</div>
           </div>
 
           <div class="field">
