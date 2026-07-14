@@ -25,11 +25,11 @@
             <li class="flex items-center gap-2">
               <Icon name="Globe" :size="14" aria-hidden="true" class="text-turquoise" />
               <a
-                href="https://binovya.fr"
+                href="https://binovya.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="transition-colors hover:text-white"
-              >binovya.fr</a>
+              >binovya.com</a>
             </li>
           </ul>
         </div>
