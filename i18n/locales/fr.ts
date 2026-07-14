@@ -55,15 +55,15 @@ export default {
       },
       pav: {
         title: 'Nettoyage des PAV',
-        desc: "Points d'apport volontaire nettoyés en profondeur par vapeur.",
+        desc: "Hygiène et propreté de vos points d'apport volontaire.",
       },
       urban: {
         title: 'Mobilier urbain',
-        desc: 'Bancs, abris bus, équipements de voirie remis à neuf.',
+        desc: 'Bancs, abribus, potelets... retrouvent tout leur éclat.',
       },
       signage: {
         title: 'Signalisation',
-        desc: 'Panneaux, bornes et signalétique décontaminés et restaurés.',
+        desc: 'Panneaux, plaques de rue, signalisation verticale...',
       },
     },
   },
