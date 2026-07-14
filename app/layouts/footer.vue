@@ -9,38 +9,9 @@
             <span class="text-xl font-black text-white">BINOVYA</span>
             <span class="text-lg text-turquoise">●</span>
           </div>
-          <p class="mb-5 text-[13px] leading-relaxed text-[#7d93a8]">
+          <p class="text-[13px] leading-relaxed text-[#7d93a8]">
             {{ $t('footer.brand.tagline') }}
           </p>
-          <div class="flex items-center gap-3">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              :aria-label="$t('footer.social.facebook')"
-              class="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-[#7d93a8] transition-colors hover:border-turquoise hover:text-turquoise"
-            >
-              <Icon name="Facebook" :size="16" aria-hidden="true" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              :aria-label="$t('footer.social.instagram')"
-              class="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-[#7d93a8] transition-colors hover:border-turquoise hover:text-turquoise"
-            >
-              <Icon name="Instagram" :size="16" aria-hidden="true" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              :aria-label="$t('footer.social.linkedin')"
-              class="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-[#7d93a8] transition-colors hover:border-turquoise hover:text-turquoise"
-            >
-              <Icon name="Linkedin" :size="16" aria-hidden="true" />
-            </a>
-          </div>
         </div>
 
         <!-- Colonne 2 : Contact -->
