@@ -55,15 +55,15 @@ export default {
       },
       pav: {
         title: 'PAV cleaning',
-        desc: 'Voluntary drop-off points deep cleaned by steam.',
+        desc: 'Keeping your voluntary drop-off points clean and hygienic.',
       },
       urban: {
         title: 'Street furniture',
-        desc: 'Benches, bus shelters, road equipment restored to new.',
+        desc: 'Benches, bus shelters, bollards... restored to their former glory.',
       },
       signage: {
         title: 'Signage',
-        desc: 'Signs, bollards and signage decontaminated and restored.',
+        desc: 'Road signs, street name plates, vertical signage...',
       },
     },
   },
